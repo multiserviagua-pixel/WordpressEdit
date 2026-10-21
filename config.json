@@ -1,0 +1,36 @@
+{
+  "sitio": "https://humannaia.com",
+  "urls": [
+    "/",
+    "/servicios-humanaia/",
+    "/que-es-humanaia/"
+  ],
+  "pesos": {
+    "rendimiento": 20,
+    "accesibilidad": 15,
+    "seo": 15,
+    "contenido": 20,
+    "comprension": 15,
+    "conversion": 15
+  },
+  "objetivos": {
+    "lighthouse_rendimiento": 90,
+    "lighthouse_accesibilidad": 95,
+    "lighthouse_seo": 95,
+    "lcp_ms": 2500,
+    "cls": 0.1,
+    "tbt_ms": 200,
+    "indice_meta": 85
+  },
+  "seo": {
+    "titulo_min": 30,
+    "titulo_max": 65,
+    "descripcion_min": 70,
+    "descripcion_max": 160,
+    "max_enlaces_a_comprobar": 150
+  },
+  "lighthouse": {
+    "version": "12",
+    "repeticiones": 3
+  }
+}
