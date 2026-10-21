@@ -1,0 +1,37 @@
+name: Carril
+
+# Comprueba que cada agente solo modifica archivos de su carril:
+# ramas chatgpt/* → contenido; ramas claude/* → todo salvo el contenido de ChatGPT.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  comprobar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Archivos fuera del carril
+        env:
+          RAMA: ${{ github.head_ref }}
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: |
+          cambios=$(git diff --name-only "$BASE"...HEAD)
+          echo "Archivos modificados:"; echo "$cambios"
+          case "$RAMA" in
+            chatgpt/*)
+              permitido='^(entregas/textos/|entregas/imagenes/|revisiones/[0-9-]+_(rubrica|comprension|revision-chatgpt)\.md$|datos/manual\.json$)' ;;
+            claude/*)
+              permitido='^(scripts/|tests/|\.github/|config\.json$|package\.json$|datos/|revisiones/[0-9-]+_revision-claude\.md$|informe\.md$|resultados/|README\.md$|MEDICION\.md$|AGENTS\.md$|CLAUDE\.md$)' ;;
+            *)
+              echo "Rama sin carril (ni chatgpt/ ni claude/): la revisa la persona responsable."; exit 0 ;;
+          esac
+          fuera=$(echo "$cambios" | grep -Ev "$permitido" || true)
+          if [ -n "$fuera" ]; then
+            echo "::error::Estos archivos no son del carril de $RAMA:"; echo "$fuera"
+            exit 1
+          fi
+          echo "Todo dentro del carril."
