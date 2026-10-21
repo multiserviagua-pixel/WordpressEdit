@@ -1,0 +1,23 @@
+{
+  "contenido": {
+    "nota": null,
+    "autor": "ChatGPT",
+    "revisado_por": "Claude",
+    "fecha": null,
+    "notas": "Rúbrica de datos/rubrica.md, 10 criterios x 10 puntos sobre las páginas de config.json."
+  },
+  "comprension": {
+    "nota": null,
+    "autor": "ChatGPT",
+    "revisado_por": "Claude",
+    "fecha": null,
+    "notas": "Test de 60 segundos: 5 perfiles simulados + personas reales. % de respuestas correctas."
+  },
+  "conversion": {
+    "nota": null,
+    "autor": "Claude",
+    "revisado_por": "Persona responsable",
+    "fecha": null,
+    "notas": "Se activa con 4 semanas de datos de GA4 (Site Kit): conversiones frente al objetivo acordado."
+  }
+}
