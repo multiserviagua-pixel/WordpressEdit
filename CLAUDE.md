@@ -16,6 +16,7 @@ Mismo proyecto y mismas reglas que `AGENTS.md` (instrucciones de Codex). Aquí e
 2. Antes de llevar a la copia un texto o imagen de ChatGPT, su pull request tiene que estar aprobada y unida.
 3. Los cambios en WordPress se anotan en el issue de la tarea: qué página, qué ID y qué cambió.
 4. Ramas `claude/<numero-issue>-<tarea-corta>`; commits y PR siguiendo la plantilla.
+5. Al revisar una PR de ChatGPT con resultado **Cambios pedidos**, el comentario empieza mencionando a `@codex` (por ejemplo: "@codex corrige en esta misma rama los puntos marcados abajo."). Si la revisión es **Aprobado**, o si ya se pidieron cambios 2 veces, no se menciona a `@codex`.
 
 ## Cuando revisas una pull request de ChatGPT/Codex
 

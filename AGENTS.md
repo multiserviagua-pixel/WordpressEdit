@@ -30,10 +30,12 @@ Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y C
    - Imágenes: `entregas/imagenes/<seccion>/<nombre-descriptivo>.webp`, máx. 200 KB, con su texto alternativo en `entregas/imagenes/alt.md`.
    - Notas de rúbrica y comprensión: `datos/manual.json` (solo los campos `contenido` y `comprension`) y la justificación en `revisiones/AAAA-MM-DD_rubrica.md`.
 4. Abre la pull request con la plantilla, enlazando el issue (`Cierra #N`) y marcando tu autochequeo.
-5. Claude revisa. Si pide cambios, corrige en la misma rama. Tras dos rondas sin acuerdo, decide la persona responsable.
+5. Claude revisa. Si pide cambios, corrige en la misma rama. Cuando Claude pide cambios, su comentario empieza mencionando a `@codex`: atiéndelo en cuanto lo recibas, en esa misma rama, sin abrir otra pull request. Tras dos rondas sin acuerdo, decide la persona responsable.
 6. La persona responsable aprueba y une la pull request. Después Claude lleva el contenido a la copia de WordPress.
 
-## Cuando revisas una pull request de Claude
+## Code Review Rules
+
+*(Cuando revisas una pull request de Claude.)*
 
 Comenta en la pull request con esta lista y termina con **Aprobado** o **Cambios pedidos**:
 
