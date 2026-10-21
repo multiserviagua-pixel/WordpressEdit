@@ -1,0 +1,17 @@
+[
+  {
+    "fecha": "2026-10-21",
+    "etiqueta": "Línea base",
+    "indice": 71.5,
+    "cobertura": 50,
+    "bloques": {
+      "rendimiento": 54.1,
+      "accesibilidad": 95.1,
+      "seo": 71,
+      "contenido": null,
+      "comprension": null,
+      "conversion": null
+    },
+    "sitio": "https://humannaia.com"
+  }
+]
