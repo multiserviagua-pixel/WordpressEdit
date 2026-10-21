@@ -1,0 +1,55 @@
+name: Tarea
+description: Una tarea del plan con dueño y revisor
+title: "[Sprint N] "
+body:
+  - type: dropdown
+    id: dueno
+    attributes:
+      label: Dueño (escribe)
+      options:
+        - ChatGPT/Codex
+        - Claude
+        - Persona responsable
+    validations:
+      required: true
+  - type: dropdown
+    id: revisor
+    attributes:
+      label: Revisor
+      options:
+        - Claude
+        - ChatGPT/Codex
+        - Persona responsable
+    validations:
+      required: true
+  - type: dropdown
+    id: sprint
+    attributes:
+      label: Sprint
+      options:
+        - "Sprint 0 · Proteger y medir"
+        - "Sprint 1 · Identidad y arquitectura"
+        - "Sprint 2 · Diseño y plataforma"
+        - "Sprint 3 · Contenido y desarrollo"
+        - "Sprint 4 · SEO y lanzamiento"
+    validations:
+      required: true
+  - type: textarea
+    id: que
+    attributes:
+      label: Qué hay que hacer
+    validations:
+      required: true
+  - type: input
+    id: objeto
+    attributes:
+      label: Objeto afectado
+      description: Página, ID de WordPress o archivo del repositorio
+  - type: textarea
+    id: aceptacion
+    attributes:
+      label: Criterios de aceptación
+      value: |
+        - [ ]
+    validations:
+      required: true
