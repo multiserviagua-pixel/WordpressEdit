@@ -2,7 +2,7 @@
 
 Centro de trabajo para mejorar **humannaia.com** entre ChatGPT/Codex y Claude, con revisión cruzada y medición del avance.
 
-- Plan: *Plan de orquestación Claude + ChatGPT · Humana IA 2.0* (documento del proyecto en Claude).
+- Plan: [`docs/plan-orquestacion.md`](docs/plan-orquestacion.md) (copia del documento editable en el proyecto de Claude).
 - Instrucciones de cada agente: [`AGENTS.md`](AGENTS.md) (Codex) y [`CLAUDE.md`](CLAUDE.md) (Claude).
 - Medición nocturna del Índice HumanIA: [`MEDICION.md`](MEDICION.md) · último informe en [`informe.md`](informe.md).
 
@@ -37,4 +37,5 @@ Centro de trabajo para mejorar **humannaia.com** entre ChatGPT/Codex y Claude, c
 | `entregas/imagenes/` | Imágenes WebP para la web y `alt.md` | ChatGPT/Codex |
 | `revisiones/` | Rúbricas, tests de comprensión y revisiones largas | Ambos |
 | `datos/` | Notas manuales del índice y rúbrica | Ambos (por campo) |
+| `docs/` | Plan de orquestación | Claude (con revisión de ChatGPT) |
 | `scripts/`, `tests/`, `config.json`, `.github/` | Medición y automatización | Claude |
