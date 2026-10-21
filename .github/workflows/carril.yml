@@ -25,7 +25,7 @@ jobs:
             chatgpt/*)
               permitido='^(entregas/textos/|entregas/imagenes/|revisiones/[0-9-]+_(rubrica|comprension|revision-chatgpt)\.md$|datos/manual\.json$)' ;;
             claude/*)
-              permitido='^(scripts/|tests/|\.github/|config\.json$|package\.json$|datos/|revisiones/[0-9-]+_revision-claude\.md$|informe\.md$|resultados/|README\.md$|MEDICION\.md$|AGENTS\.md$|CLAUDE\.md$)' ;;
+              permitido='^(docs/|scripts/|tests/|\.github/|config\.json$|package\.json$|datos/|revisiones/[0-9-]+_revision-claude\.md$|informe\.md$|resultados/|README\.md$|MEDICION\.md$|AGENTS\.md$|CLAUDE\.md$)' ;;
             *)
               echo "Rama sin carril (ni chatgpt/ ni claude/): la revisa la persona responsable."; exit 0 ;;
           esac
