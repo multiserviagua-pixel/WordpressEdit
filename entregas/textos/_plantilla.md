@@ -9,7 +9,7 @@ estado: borrador          # borrador | en revisión | aprobado
 
 # H1 de la página (uno solo)
 
-Texto de la primera pantalla: qué hace HumanIA, para quién y el primer paso.
+Texto de la primera pantalla: qué hace HumanaIA, para quién y el primer paso.
 
 **Llamada a la acción:** texto del botón → destino
 

@@ -1,10 +1,10 @@
-# HumanIA web
+# HumanaIA web
 
 Centro de trabajo para mejorar **humannaia.com** entre ChatGPT/Codex y Claude, con revisión cruzada y medición del avance.
 
 - Plan: [`docs/plan-orquestacion.md`](docs/plan-orquestacion.md) (copia del documento editable en el proyecto de Claude).
 - Instrucciones de cada agente: [`AGENTS.md`](AGENTS.md) (Codex) y [`CLAUDE.md`](CLAUDE.md) (Claude).
-- Medición nocturna del Índice HumanIA: [`MEDICION.md`](MEDICION.md) · último informe en [`informe.md`](informe.md).
+- Medición nocturna del Índice HumanaIA: [`MEDICION.md`](MEDICION.md) · último informe en [`informe.md`](informe.md).
 
 ## Quién hace qué
 

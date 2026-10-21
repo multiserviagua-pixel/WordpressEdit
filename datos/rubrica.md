@@ -1,10 +1,10 @@
-# Rúbrica de contenido · Índice Humana IA
+# Rúbrica de contenido · Índice HumanaIA
 
 La aplica ChatGPT a las páginas de `config.json` y la revisa Claude. Cada criterio vale de 0 a 10; la suma (0–100) es la nota de **contenido** en `datos/manual.json`. Si la nota de los dos difiere en más de 10 puntos, decide la persona responsable.
 
 | # | Criterio | 10 puntos si… |
 | --- | --- | --- |
-| 1 | Propuesta de valor | En la primera pantalla se entiende qué hace Humana IA y para quién |
+| 1 | Propuesta de valor | En la primera pantalla se entiende qué hace HumanaIA y para quién |
 | 2 | Claridad | Frases cortas, sin jerga vacía ("sistemas de valor", "transversal") |
 | 3 | Llamada a la acción | Hay una acción concreta y visible en cada página (diagnóstico, contacto, cursos) |
 | 4 | Prueba | Casos, cifras o testimonios verificables y autorizados |
@@ -19,7 +19,7 @@ La aplica ChatGPT a las páginas de `config.json` y la revisa Claude. Cada crite
 
 Tras ver la página de inicio 60 segundos, cada perfil responde:
 
-1. ¿Qué hace Humana IA?
+1. ¿Qué hace HumanaIA?
 2. ¿Para quién es?
 3. ¿Cuál es el primer paso para empezar?
 

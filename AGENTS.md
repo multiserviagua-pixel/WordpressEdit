@@ -1,6 +1,6 @@
-# Instrucciones para Codex (ChatGPT) · Proyecto HumanIA web
+# Instrucciones para Codex (ChatGPT) · Proyecto HumanaIA web
 
-Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y Claude, según el *Plan de orquestación Claude + ChatGPT · Humana IA 2.0*. Lee también `README.md`.
+Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y Claude, según el *Plan de orquestación Claude + ChatGPT · HumanaIA 2.0*. Lee también `README.md`.
 
 ## Tu carril
 
@@ -15,7 +15,7 @@ Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y C
 
 ## Reglas
 
-1. **Marca:** en los textos se escribe siempre **HumanIA**. El dominio y los emails siguen siendo `humannaia.com`.
+1. **Marca:** en los textos se escribe siempre **HumanaIA**. El dominio y los emails siguen siendo `humannaia.com`.
 2. **WordPress:** no modifiques WordPress. Si tienes acceso, solo puedes leer la copia de pruebas `https://humannaia.com/staging`. Nunca escribas en la web real `https://humannaia.com`.
 3. **Nada inventado:** ni cifras, ni clientes, ni testimonios, ni casos. Lo no verificado se marca `[PENDIENTE DE CONFIRMAR: ...]`.
 4. **Un dueño por archivo:** solo editas archivos de tu carril (abajo). Para cambiar algo de Claude, abre un issue.
@@ -40,7 +40,7 @@ Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y C
 Comenta en la pull request con esta lista y termina con **Aprobado** o **Cambios pedidos**:
 
 - [ ] La página de la copia dice exactamente el texto aprobado.
-- [ ] Tono, nombre HumanIA y paleta de marca coherentes.
+- [ ] Tono, nombre HumanaIA y paleta de marca coherentes.
 - [ ] La llamada a la acción se ve sin hacer scroll en móvil.
 - [ ] El recorrido del visitante tiene sentido.
 - [ ] Los textos alternativos describen de verdad cada imagen.

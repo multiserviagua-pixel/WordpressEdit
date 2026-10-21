@@ -1,6 +1,6 @@
-# Medición del Índice HumanIA
+# Medición del Índice HumanaIA
 
-Mide cada noche humannaia.com y calcula el **Índice Humana IA (0–100)** y su **% de evolución**, según el plan de orquestación Claude + ChatGPT. Los resultados se guardan en este repositorio, así que el historial queda versionado.
+Mide cada noche humannaia.com y calcula el **Índice HumanaIA (0–100)** y su **% de evolución**, según el plan de orquestación Claude + ChatGPT. Los resultados se guardan en este repositorio, así que el historial queda versionado.
 
 ## Qué mide
 
@@ -20,8 +20,8 @@ Cada nota se normaliza a 0–100 frente a su objetivo (`config.json`). El índic
 
 ## Cómo se usa
 
-- **Automático:** cada noche (02:00 UTC) se ejecuta *Actions → Medición Índice Humana IA* y se guardan `informe.md` y `resultados/`.
-- **A mano, al cerrar un sprint:** *Actions → Medición Índice Humana IA → Run workflow*, con una etiqueta como `Cierre Sprint 1`. Se puede indicar otra URL (por ejemplo, la de staging) en el campo `sitio`.
+- **Automático:** cada noche (02:00 UTC) se ejecuta *Actions → Medición Índice HumanaIA* y se guardan `informe.md` y `resultados/`.
+- **A mano, al cerrar un sprint:** *Actions → Medición Índice HumanaIA → Run workflow*, con una etiqueta como `Cierre Sprint 1`. Se puede indicar otra URL (por ejemplo, la de staging) en el campo `sitio`.
 - **Notas manuales:** editar `datos/manual.json` con la nota (0–100), el autor y la fecha. Se incorporan en la siguiente medición.
 - **Páginas medidas, pesos y objetivos:** `config.json`. Para medir siempre otra web, define la variable de repositorio `SITIO` en *Settings → Secrets and variables → Actions → Variables*.
 

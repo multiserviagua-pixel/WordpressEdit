@@ -1,4 +1,4 @@
-# Índice Humana IA · 2026-10-21
+# Índice HumanaIA · 2026-10-21
 
 **Línea base**
 

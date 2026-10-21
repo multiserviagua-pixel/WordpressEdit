@@ -1,10 +1,10 @@
-# Plan de orquestación Claude + ChatGPT · HumanIA
+# Plan de orquestación Claude + ChatGPT · HumanaIA
 
-_Actualizado: 21/10/2026 · Versión editable: documento "Plan de orquestación Claude + ChatGPT · Humana IA 2.0" en el proyecto de Claude._
+_Actualizado: 21/10/2026 · Versión editable: documento "Plan de orquestación Claude + ChatGPT · HumanaIA 2.0" en el proyecto de Claude._
 
 ## Resumen
 
-Claude y ChatGPT trabajan en carriles separados sobre humannaia.com, se revisan el uno al otro antes de publicar y miden juntos el avance con un índice común de 0 a 100. La propuesta de ChatGPT "Humana IA 2.0" (marca, 5 líneas de servicio, método CONECTA, arquitectura de 8 secciones, diagnóstico interactivo y laboratorio) se toma como documento estratégico de partida; este plan define quién ejecuta cada parte, cómo se revisa y cómo se mide.
+Claude y ChatGPT trabajan en carriles separados sobre humannaia.com, se revisan el uno al otro antes de publicar y miden juntos el avance con un índice común de 0 a 100. La propuesta de ChatGPT "HumanaIA 2.0" (marca, 5 líneas de servicio, método CONECTA, arquitectura de 8 secciones, diagnóstico interactivo y laboratorio) se toma como documento estratégico de partida; este plan define quién ejecuta cada parte, cómo se revisa y cómo se mide.
 
 Tres principios:
 
@@ -18,12 +18,12 @@ El Sprint 0 está en marcha: copia de pruebas creada, línea base medida (índic
 
 | Área | Estado | Dónde |
 | --- | --- | --- |
-| Marca | Nombre comercial decidido: **HumanIA** (dominio y emails siguen en humannaia.com) | — |
+| Marca | Nombre comercial decidido: **HumanaIA** (dominio y emails siguen en humannaia.com) | — |
 | Copia de pruebas | Creada con WP Staging en humannaia.com/staging, protegida con acceso y no indexable; emails bloqueados | Conector WordpressStaged |
 | Web real | Sin cambios; solo lectura | Conector Wordpress |
 | Centro de trabajo | GitHub con carriles, plantillas y comprobación automática de carril (PR #1 y #2 unidas) | Este repositorio |
 | Medición | Nocturna en GitHub Actions; línea base 71,5/100 con el 50 % del peso medido (rendimiento 54, accesibilidad 95, SEO 71) | [`informe.md`](../informe.md) |
-| Ciclo automático de Claude | Tarea programada "Turno HumanIA web": laborables 8:59, 11:59, 14:59, 17:59 y 20:59 | [Bitácora #11](https://github.com/multiserviagua-pixel/WordpressEdit/issues/11) |
+| Ciclo automático de Claude | Tarea programada "Turno HumanaIA web": laborables 8:59, 11:59, 14:59, 17:59 y 20:59 | [Bitácora #11](https://github.com/multiserviagua-pixel/WordpressEdit/issues/11) |
 | Correcciones en la copia | Marca, erratas, enlaces, SEO de 3 páginas y texto alternativo de 12 imágenes | [Issue #10](https://github.com/multiserviagua-pixel/WordpressEdit/issues/10) |
 | Codex (ChatGPT) | Pendiente de conectar al repositorio; tiene asignadas las tareas #3, #4 y #9 | [`AGENTS.md`](../AGENTS.md) |
 
@@ -35,7 +35,7 @@ ChatGPT lleva la estrategia, el texto y las imágenes; Claude lleva la ejecució
 
 | Área | Dueño (escribe) | Revisor | Por qué este reparto |
 | --- | --- | --- | --- |
-| Estrategia, marca, método CONECTA, mapa de páginas | ChatGPT | Claude | Ya redactó la propuesta Humana IA 2.0; Claude contrasta con lo que existe en el sitio |
+| Estrategia, marca, método CONECTA, mapa de páginas | ChatGPT | Claude | Ya redactó la propuesta HumanaIA 2.0; Claude contrasta con lo que existe en el sitio |
 | Textos: inicio, servicios, casos, FAQ, blog | ChatGPT | Claude | Redacción y tono; Claude revisa datos, SEO on-page y longitud |
 | Imágenes generadas, iconos, imagen para redes | ChatGPT | Claude | Genera imágenes; Claude revisa peso, formato, alt y coherencia |
 | Maquetación en Elementor, plantillas, menús | Claude | ChatGPT | Acceso de escritura a la copia vía Easy MCP AI; ChatGPT revisa fidelidad al texto y a la marca |
@@ -77,7 +77,7 @@ flowchart LR
     H --> P[Publicar y medir<br/><i>Claude, con registro</i>]
 ```
 
-**Lista de control de Claude al revisar a ChatGPT:** datos y nombres verificables, sin casos ni métricas sin autorización; título de 50–60 caracteres y descripción de 140–160; un solo H1 y jerarquía H2/H3; palabra clave objetivo presente; imágenes ≤ 200 KB en WebP con alt descriptivo; marca escrita como HumanIA.
+**Lista de control de Claude al revisar a ChatGPT:** datos y nombres verificables, sin casos ni métricas sin autorización; título de 50–60 caracteres y descripción de 140–160; un solo H1 y jerarquía H2/H3; palabra clave objetivo presente; imágenes ≤ 200 KB en WebP con alt descriptivo; marca escrita como HumanaIA.
 
 **Lista de control de ChatGPT al revisar a Claude:** la página publicada dice exactamente el texto aprobado; tono y paleta de marca; llamada a la acción visible sin hacer scroll en móvil; recorrido del visitante coherente; textos alternativos que describen de verdad la imagen; nada de contenido de la plantilla demo.
 
@@ -97,7 +97,7 @@ Cada puerta exige: revisión cruzada cerrada, batería de pruebas pasada y compa
 
 ## Pruebas conjuntas y % de evolución
 
-Al final de cada sprint los dos agentes pasan la misma batería sobre las mismas URL y el resultado se resume en un Índice HumanIA de 0 a 100. Claude ejecuta las pruebas automáticas, ChatGPT las de comprensión y contenido, y cada uno revisa los resultados del otro. Una diferencia de más de 10 puntos entre las notas de ambos en una misma prueba obliga a revisarla con la persona responsable. El detalle técnico de la medición está en [`MEDICION.md`](../MEDICION.md).
+Al final de cada sprint los dos agentes pasan la misma batería sobre las mismas URL y el resultado se resume en un Índice HumanaIA de 0 a 100. Claude ejecuta las pruebas automáticas, ChatGPT las de comprensión y contenido, y cada uno revisa los resultados del otro. Una diferencia de más de 10 puntos entre las notas de ambos en una misma prueba obliga a revisarla con la persona responsable. El detalle técnico de la medición está en [`MEDICION.md`](../MEDICION.md).
 
 ### Batería de pruebas del sitio
 
@@ -107,7 +107,7 @@ Al final de cada sprint los dos agentes pasan la misma batería sobre las mismas
 | Accesibilidad | 15 % | Nota Lighthouse, alt en imágenes, contraste, foco | Claude | Lighthouse + revisión manual |
 | SEO técnico | 15 % | Auditoría de sitio, metadatos, schema, enlaces rotos, indexación | Claude | Checklist propia, OpenRush, Search Console |
 | Contenido | 20 % | Rúbrica de 10 criterios ([`datos/rubrica.md`](../datos/rubrica.md)) | ChatGPT puntúa, Claude revisa | Rúbrica compartida |
-| Comprensión | 15 % | ¿Un visitante entiende en 60 s qué hace HumanIA, para quién y cómo empezar? 5 perfiles simulados + 3 personas reales | ChatGPT | Test y guion |
+| Comprensión | 15 % | ¿Un visitante entiende en 60 s qué hace HumanaIA, para quién y cómo empezar? 5 perfiles simulados + 3 personas reales | ChatGPT | Test y guion |
 | Conversión | 15 % | Contactos, uso del diagnóstico, clics en llamadas a la acción | Claude | Site Kit (GA4) |
 
 ### Fórmulas
@@ -201,7 +201,7 @@ El riesgo principal ya está acotado: todo el trabajo va a la copia de pruebas y
 - [x] Claude: montar GitHub como centro de trabajo (carriles, plantillas, comprobación de carril)
 - [x] Claude: corregir marca, erratas, enlaces, SEO y texto alternativo en la copia (#10)
 - [x] Claude: ciclo automático de turnos y bitácora (#11)
-- [x] Persona responsable: nombre comercial único (HumanIA)
+- [x] Persona responsable: nombre comercial único (HumanaIA)
 - [ ] Persona responsable: copia de seguridad de la web real (#5)
 - [ ] Persona responsable: confirmar email de Ester y compartir fotos reales (#6)
 - [ ] Persona responsable: decidir papelera de borradores, WPForms y AI Engine, y banner (#8)
@@ -211,7 +211,7 @@ El riesgo principal ya está acotado: todo el trabajo va a la copia de pruebas y
 
 ## Fuentes
 
-- Propuesta "Humana IA 2.0" de ChatGPT (21/10/2026), aportada por la persona responsable
+- Propuesta "HumanaIA 2.0" de ChatGPT (21/10/2026), aportada por la persona responsable
 - Revisión del sitio vía Easy MCP AI: plugins activos, páginas, diagnóstico y registro de auditoría (19 y 21/10/2026)
 - [OpenAI: modo desarrollador y conectores MCP en ChatGPT](https://help.openai.com/en/articles/12584461-developer-mode-apps-and-full-mcp-connectors-in-chatgpt)
 - [SE Ranking: mejores MCP de SEO](https://seranking.com/blog/best-seo-mcps/)
