@@ -1,4 +1,4 @@
-# Instrucciones para Claude · Proyecto HumanIA web
+# Instrucciones para Claude · Proyecto HumanaIA web
 
 Mismo proyecto y mismas reglas que `AGENTS.md` (instrucciones de Codex). Aquí está el carril de Claude.
 
@@ -27,5 +27,5 @@ Comenta con esta lista y termina con **Aprobado** o **Cambios pedidos**:
 - [ ] Un solo H1 y jerarquía H2/H3 correcta.
 - [ ] Palabra clave objetivo presente.
 - [ ] Imágenes en WebP, máx. 200 KB, con texto alternativo descriptivo.
-- [ ] Marca escrita como HumanIA.
+- [ ] Marca escrita como HumanaIA.
 - [ ] Solo toca archivos de su carril.

@@ -1,4 +1,4 @@
-// Calcula el Índice Humana IA, lo añade al historial y escribe el informe.
+// Calcula el Índice HumanaIA, lo añade al historial y escribe el informe.
 // Uso: node scripts/indice.mjs   (ETIQUETA="Cierre Sprint 0" para marcar la medición)
 import { readdir, writeFile, appendFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
@@ -27,7 +27,7 @@ async function leerLighthouse(config) {
 
 function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
   const l = [];
-  l.push(`# Índice Humana IA · ${actual.fecha}`, '');
+  l.push(`# Índice HumanaIA · ${actual.fecha}`, '');
   if (actual.etiqueta) l.push(`**${actual.etiqueta}**`, '');
   l.push(`**Índice: ${f(actual.indice)} / 100** · meta ${config.objetivos.indice_meta} · medido el ${actual.cobertura} % del peso total`, '');
   if (historial.length > 1) {

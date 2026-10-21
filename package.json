@@ -2,7 +2,7 @@
   "name": "humannaia-medicion",
   "version": "1.0.0",
   "private": true,
-  "description": "Medición automática del Índice Humana IA (rendimiento, accesibilidad, SEO, contenido, comprensión y conversión) de humannaia.com",
+  "description": "Medición automática del Índice HumanaIA (rendimiento, accesibilidad, SEO, contenido, comprensión y conversión) de humannaia.com",
   "type": "module",
   "engines": {
     "node": ">=22"
