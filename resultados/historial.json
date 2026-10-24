@@ -43,5 +43,20 @@
       "conversion": null
     },
     "sitio": "https://humannaia.com"
+  },
+  {
+    "fecha": "2026-10-24",
+    "etiqueta": null,
+    "indice": 74.4,
+    "cobertura": 50,
+    "bloques": {
+      "rendimiento": 61.5,
+      "accesibilidad": 95.1,
+      "seo": 71,
+      "contenido": null,
+      "comprension": null,
+      "conversion": null
+    },
+    "sitio": "https://humannaia.com"
   }
 ]
