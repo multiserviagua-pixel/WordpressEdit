@@ -1,18 +1,18 @@
-# Índice Humana IA · 2026-10-24
+# Índice Humana IA · 2026-10-25
 
-**Índice: 74.4 / 100** · meta 85 · medido el 50 % del peso total
+**Índice: 72.8 / 100** · meta 85 · medido el 50 % del peso total
 
-- Evolución desde la base (2026-10-21): **+4.1 %**
-- Evolución desde la medición anterior (2026-10-23): **+3.2 %**
-- Avance hacia la meta: **21.5 %**
+- Evolución desde la base (2026-10-21): **+1.8 %**
+- Evolución desde la medición anterior (2026-10-24): **-2.2 %**
+- Avance hacia la meta: **9.6 %**
 
 ## Bloques
 
 | Bloque | Peso | Base | Anterior | Actual | vs base | vs anterior |
 | --- | --- | --- | --- | --- | --- | --- |
-| Rendimiento | 20 % | 54.1 | 56.5 | 61.5 | +13.7 % | +8.8 % |
+| Rendimiento | 20 % | 54.1 | 61.5 | 57.4 | +6.1 % | -6.7 % |
 | Accesibilidad | 15 % | 95.1 | 95.1 | 95.1 | 0 % | 0 % |
-| SEO técnico | 15 % | 71 | 69.8 | 71 | 0 % | +1.7 % |
+| SEO técnico | 15 % | 71 | 71 | 71 | 0 % | 0 % |
 | Contenido | 20 % | — | — | — | — | — |
 | Comprensión | 15 % | — | — | — | — | — |
 | Conversión | 15 % | — | — | — | — | — |
@@ -23,9 +23,9 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 | Página | Rendimiento | Accesibilidad | SEO | Buenas prácticas | LCP | CLS | TBT | Checklist SEO |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | 45 | 91 | 77 | 75 | 16.42 s | 0 | 506 ms | 51.3 |
-| /servicios-humanaia/ | 53 | 89 | 92 | 71 | 7.86 s | 0.054 | 331 ms | 56.3 |
-| /que-es-humanaia/ | 65 | 91 | 92 | 75 | 4.07 s | 0.054 | 365 ms | 43.8 |
+| / | 46 | 91 | 77 | 75 | 15.56 s | 0 | 481 ms | 51.3 |
+| /servicios-humanaia/ | 46 | 89 | 92 | 71 | 10.98 s | 0.054 | 556 ms | 56.3 |
+| /que-es-humanaia/ | 62 | 91 | 92 | 75 | 3.93 s | 0 | 498 ms | 43.8 |
 
 ## Qué corregir (checklist SEO)
 
@@ -53,6 +53,7 @@ Enlaces internos comprobados: 7 · rotos: 1
 
 | Fecha | Índice | Cobertura | Etiqueta |
 | --- | --- | --- | --- |
+| 2026-10-25 | 72.8 | 50 % |  |
 | 2026-10-24 | 74.4 | 50 % |  |
 | 2026-10-23 | 72.1 | 50 % |  |
 | 2026-10-22 | 72.2 | 50 % |  |
