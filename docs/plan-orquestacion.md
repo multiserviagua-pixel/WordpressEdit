@@ -57,7 +57,7 @@ La coordinación pasa por GitHub (este repositorio) y por el registro de auditor
 3. **Comprobación automática de carril.** Si una rama de ChatGPT toca código o una de Claude toca textos o imágenes de ChatGPT, la pull request falla.
 4. **ChatGPT entrega en GitHub, no en WordPress.** Textos en `entregas/textos/`, imágenes en `entregas/imagenes/`; Claude los lleva a la nueva web cuando la pull request está unida.
 5. **Solo la nueva web se modifica.** Toda escritura va a nueva.humannaia.com; la web real queda intacta hasta el lanzamiento.
-6. **Nada se une sin la persona responsable.** Las IAs proponen y revisan; solo ella une a `main`.
+6. **Quién une a `main`.** Las pull requests de ChatGPT/Codex las une Claude cuando su revisión termina en Aprobado y la comprobación Carril pasa (autorización de la persona responsable, 26/10/2026). Las de Claude, y cualquier caso tras dos rondas sin acuerdo, las une la persona responsable.
 7. **Nada destructivo en automático.** Borrar, cambiar plugins o ajustes de seguridad queda como `decide-persona`.
 8. **Pausa y trazabilidad.** La etiqueta `pausa` detiene a los agentes; cada turno deja resumen en la bitácora #11 y los cambios en WordPress se anotan en su issue (página, ID, cambio).
 9. **Material en bruto en Drive.** Fotos originales y archivos grandes se comparten por Drive; lo que va a la web pasa por GitHub.
