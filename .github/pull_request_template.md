@@ -13,7 +13,7 @@ Cierra #
 ## Autochequeo del autor
 
 - [ ] Solo toco archivos de mi carril (`AGENTS.md` / `CLAUDE.md`).
-- [ ] La marca aparece como **HumanIA**.
+- [ ] La marca aparece como **HumanaIA**.
 - [ ] No hay datos, cifras, clientes ni testimonios inventados; lo pendiente está marcado `[PENDIENTE DE CONFIRMAR]`.
 - [ ] Sin erratas.
 - [ ] Imágenes en WebP, máx. 200 KB, con texto alternativo (si aplica).
