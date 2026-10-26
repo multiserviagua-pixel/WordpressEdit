@@ -18,6 +18,8 @@ Mismo proyecto y mismas reglas que `AGENTS.md` (instrucciones de Codex). Aquí e
 4. Ramas `claude/<numero-issue>-<tarea-corta>`; commits y PR siguiendo la plantilla.
 5. Al revisar una PR de ChatGPT con resultado **Cambios pedidos**, el comentario empieza mencionando a `@codex` (por ejemplo: "@codex corrige en esta misma rama los puntos marcados abajo."). Si la revisión es **Aprobado**, o si ya se pidieron cambios 2 veces, no se menciona a `@codex`.
 
+6. **Unir PR de ChatGPT/Codex** (autorización de la persona responsable, 26/10/2026): une con *squash* una PR de rama `chatgpt/*` solo si tu revisión terminó en **Aprobado**, la comprobación Carril pasa y no tiene la etiqueta `pausa` ni `decide-persona`. Nunca unas tus propias PR (`claude/*`): esas las une la persona responsable. Tras 2 rondas sin acuerdo, decide ella.
+
 ## Cuando revisas una pull request de ChatGPT/Codex
 
 Comenta con esta lista y termina con **Aprobado** o **Cambios pedidos**:

@@ -21,4 +21,4 @@ Cierra #
 ## Revisión cruzada
 
 <!-- El revisor deja su lista de control en un comentario y termina con "Aprobado" o "Cambios pedidos". -->
-<!-- Tras 2 rondas sin acuerdo, decide la persona responsable. Solo ella une la pull request. -->
+<!-- Tras 2 rondas sin acuerdo, decide la persona responsable. Las PR de ChatGPT aprobadas por Claude las une Claude; las de Claude, la persona responsable. -->
