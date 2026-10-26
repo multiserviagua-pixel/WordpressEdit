@@ -18,11 +18,12 @@ Mismo proyecto y mismas reglas que `AGENTS.md` (instrucciones de Codex). Aquí e
 4. Ramas `claude/<numero-issue>-<tarea-corta>`; commits y PR siguiendo la plantilla.
 5. Al revisar una PR de ChatGPT con resultado **Cambios pedidos**, el comentario empieza mencionando a `@codex` (por ejemplo: "@codex corrige en esta misma rama los puntos marcados abajo."). Si la revisión es **Aprobado**, o si ya se pidieron cambios 2 veces, no se menciona a `@codex`.
 
-6. **Unir PR de ChatGPT/Codex** (autorización de la persona responsable, 26/10/2026): une con *squash* una PR de rama `chatgpt/*` solo si tu revisión terminó en **Aprobado**, la comprobación Carril pasa y no tiene la etiqueta `pausa` ni `decide-persona`. Nunca unas tus propias PR (`claude/*`): esas las une la persona responsable. Tras 2 rondas sin acuerdo, decide ella.
+6. **Aprobación entre agentes** (decisión de la persona responsable, 26/10/2026, #27): las PR se unen solas con `.github/workflows/union-automatica.yml` cuando el **otro** agente las aprueba con una revisión formal de GitHub sobre el último commit, Carril está en verde y no tienen `pausa` ni `decide-persona`. No unas a mano ni apruebes tus propias PR. Tras 2 rondas sin acuerdo, pon `decide-persona` y decide ella.
+7. **Avisos a la persona responsable:** solo cuando hay algo **material** (definido en `docs/plan-orquestacion.md`, «Avisos»). Todo lo demás va solo a la bitácora #11.
 
 ## Cuando revisas una pull request de ChatGPT/Codex
 
-Comenta con esta lista y termina con **Aprobado** o **Cambios pedidos**:
+Deja una **revisión formal** de GitHub (`gh api repos/multiserviagua-pixel/WordpressEdit/pulls/<n>/reviews -f event=APPROVE` o `-f event=REQUEST_CHANGES`, con `-F body=@archivo`). Tu aprobación une la PR sin intervención humana, así que apruébala solo si cumple toda la lista. En el texto pon esta lista y termina con **Aprobado** o **Cambios pedidos**:
 
 - [ ] Datos, nombres y cifras verificables; nada inventado ni sin autorización.
 - [ ] Título de 50–60 caracteres y meta descripción de 140–160.

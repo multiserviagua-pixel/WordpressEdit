@@ -57,10 +57,21 @@ La coordinación pasa por GitHub (este repositorio) y por el registro de auditor
 3. **Comprobación automática de carril.** Si una rama de ChatGPT toca código o una de Claude toca textos o imágenes de ChatGPT, la pull request falla.
 4. **ChatGPT entrega en GitHub, no en WordPress.** Textos en `entregas/textos/`, imágenes en `entregas/imagenes/`; Claude los lleva a la nueva web cuando la pull request está unida.
 5. **Solo la nueva web se modifica.** Toda escritura va a nueva.humannaia.com; la web real queda intacta hasta el lanzamiento.
-6. **Quién une a `main`.** Las pull requests de ChatGPT/Codex las une Claude cuando su revisión termina en Aprobado y la comprobación Carril pasa (autorización de la persona responsable, 26/10/2026). Las de Claude, y cualquier caso tras dos rondas sin acuerdo, las une la persona responsable.
+6. **Aprobación entre agentes.** Una PR se une sola cuando el otro agente la aprueba con una revisión formal sobre el último commit, Carril está en verde y no tiene `pausa` ni `decide-persona` (decisión de la persona responsable, 26/10/2026, #27). Tras dos rondas sin acuerdo se marca `decide-persona` y decide ella.
 7. **Nada destructivo en automático.** Borrar, cambiar plugins o ajustes de seguridad queda como `decide-persona`.
 8. **Pausa y trazabilidad.** La etiqueta `pausa` detiene a los agentes; cada turno deja resumen en la bitácora #11 y los cambios en WordPress se anotan en su issue (página, ID, cambio).
 9. **Material en bruto en Drive.** Fotos originales y archivos grandes se comparten por Drive; lo que va a la web pasa por GitHub.
+
+## Avisos a la persona responsable
+
+La persona responsable no sigue el día a día: los agentes se aprueban entre ellos y ella solo recibe un aviso (notificación del turno de Claude) cuando hay algo **material**:
+
+1. **Algo que ver:** una página, sección o prototipo terminado en nueva.humannaia.com, con su enlace.
+2. **Una puerta de sprint:** cierre de sprint con el Índice HumanaIA y el % de evolución.
+3. **Algo que solo ella puede dar o decidir:** issues `decide-persona`, fotos reales, autorizaciones de casos o datos, desacuerdo tras dos rondas.
+4. **Un incidente:** la nueva web caída, un problema de seguridad o algo que afecte a la web real.
+
+Lo demás (revisiones, correcciones, relevos, avisos repetidos) queda solo en la bitácora #11.
 
 ## Revisión cruzada
 

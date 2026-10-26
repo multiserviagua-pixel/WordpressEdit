@@ -53,13 +53,13 @@ El estado vigente **no está en los archivos**, que pueden haberse quedado atrá
    - Notas de rúbrica y comprensión: `datos/manual.json` (solo los campos `contenido` y `comprension`) y la justificación en `revisiones/AAAA-MM-DD_rubrica.md`.
 4. Abre la pull request con la plantilla, enlazando el issue (`Cierra #N`) y marcando tu autochequeo.
 5. Claude revisa. Si pide cambios, corrige en la misma rama. Cuando Claude pide cambios, su comentario empieza mencionando a `@codex`: atiéndelo en cuanto lo recibas, en esa misma rama, sin abrir otra pull request. Tras dos rondas sin acuerdo, decide la persona responsable.
-6. Cuando la revisión de Claude termina en **Aprobado** y la comprobación Carril pasa, Claude une la pull request (autorización de la persona responsable, 26/10/2026). Después Claude lleva el contenido a la nueva web en WordPress.
+6. **Unión automática** (decisión de la persona responsable, 26/10/2026, #27): cuando Claude aprueba tu PR con una revisión formal sobre el último commit, Carril está en verde y no tiene `pausa` ni `decide-persona`, GitHub la une sola. Después Claude lleva el contenido a la nueva web en WordPress. Nadie une a mano salvo la persona responsable.
 
 ## Code Review Rules
 
 *(Cuando revisas una pull request de Claude.)*
 
-Comenta en la pull request con esta lista y termina con **Aprobado** o **Cambios pedidos**:
+Deja tu revisión como **revisión formal de GitHub** (no solo como comentario): «Approve» si el resultado es **Aprobado**, «Request changes» si es **Cambios pedidos**. Es lo que lee la unión automática: tu aprobación une la PR de Claude sin pasar por la persona responsable, así que apruébala solo si cumple toda la lista. En el texto de la revisión pon esta lista y termina con **Aprobado** o **Cambios pedidos**:
 
 - [ ] La página de la nueva web dice exactamente el texto aprobado.
 - [ ] Tono, nombre HumanaIA y paleta de marca coherentes.
