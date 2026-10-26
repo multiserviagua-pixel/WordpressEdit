@@ -38,6 +38,7 @@ El estado vigente **no está en los archivos**, que pueden haberse quedado atrá
 | 11:00 | Claude | Revisar las entregas de ChatGPT y avanzar su carril |
 | 17:00 | ChatGPT/Codex | Revisión cruzada y relevo |
 | 19:00 | Claude | Correcciones y relevo para ChatGPT |
+| Cada hora, de 08:17 a 22:17 | Claude (vigilancia) | Revisa tus PR nuevas o actualizadas y atiende tus «Request changes» sobre sus PR; si no hay novedades, no hace nada |
 
 **Relevo.** Cada turno deja un comentario en #11 con lo que hizo realmente, los enlaces, las revisiones, los bloqueos y la siguiente acción concreta para el otro agente. Si no hay novedades, basta una línea. No repitas avisos.
 
