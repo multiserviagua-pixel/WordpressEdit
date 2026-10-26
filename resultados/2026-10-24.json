@@ -1,0 +1,228 @@
+{
+  "fecha": "2026-10-24",
+  "etiqueta": null,
+  "indice": 74.4,
+  "cobertura": 50,
+  "bloques": {
+    "rendimiento": 61.5,
+    "accesibilidad": 95.1,
+    "seo": 71,
+    "contenido": null,
+    "comprension": null,
+    "conversion": null
+  },
+  "sitio": "https://humannaia.com",
+  "evolucion": {
+    "fecha_base": "2026-10-21",
+    "fecha_anterior": "2026-10-23",
+    "indice_base": 71.5,
+    "evolucion_vs_base": 4.1,
+    "evolucion_vs_anterior": 3.2,
+    "avance_hacia_meta": 21.5,
+    "comparable": true,
+    "bloques_comparados": [
+      "rendimiento",
+      "accesibilidad",
+      "seo"
+    ],
+    "por_bloque": {
+      "rendimiento": {
+        "base": 54.1,
+        "anterior": 56.5,
+        "actual": 61.5,
+        "vs_base": 13.7,
+        "vs_anterior": 8.8
+      },
+      "accesibilidad": {
+        "base": 95.1,
+        "anterior": 95.1,
+        "actual": 95.1,
+        "vs_base": 0,
+        "vs_anterior": 0
+      },
+      "seo": {
+        "base": 71,
+        "anterior": 69.8,
+        "actual": 71,
+        "vs_base": 0,
+        "vs_anterior": 1.7
+      },
+      "contenido": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "comprension": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "conversion": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      }
+    }
+  },
+  "lighthouse": {
+    "/": {
+      "rendimiento": 50.79892858261327,
+      "accesibilidad": 95.78947368421052,
+      "seo_lighthouse": 81.05263157894737,
+      "bruto": {
+        "rendimiento": 45,
+        "accesibilidad": 91,
+        "seo": 77,
+        "buenas_practicas": 75,
+        "lcp_ms": 16416.281,
+        "cls": 0,
+        "tbt_ms": 505.5
+      }
+    },
+    "/servicios-humanaia/": {
+      "rendimiento": 61.48334461758249,
+      "accesibilidad": 93.6842105263158,
+      "seo_lighthouse": 96.84210526315789,
+      "bruto": {
+        "rendimiento": 53,
+        "accesibilidad": 89,
+        "seo": 92,
+        "buenas_practicas": 71,
+        "lcp_ms": 7859.054999999999,
+        "cls": 0.05361482381530984,
+        "tbt_ms": 331
+      }
+    },
+    "/que-es-humanaia/": {
+      "rendimiento": 72.14589485414876,
+      "accesibilidad": 95.78947368421052,
+      "seo_lighthouse": 96.84210526315789,
+      "bruto": {
+        "rendimiento": 65,
+        "accesibilidad": 91,
+        "seo": 92,
+        "buenas_practicas": 75,
+        "lcp_ms": 4070.7210000000014,
+        "cls": 0.05361482381530984,
+        "tbt_ms": 365
+      }
+    }
+  },
+  "seo": {
+    "sitio": "https://humannaia.com",
+    "paginas": [
+      {
+        "ruta": "/",
+        "url": "https://humannaia.com/",
+        "estado": 200,
+        "titulo": "HUMANNAIA - IA inteligencia Artificial",
+        "descripcion": null,
+        "h1": 0,
+        "imagenes": 34,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 31,
+        "canonical": "https://humannaia.com/",
+        "og_image": "https://humannaia.com/wp-content/uploads/2022/11/home-about-sec-image-1.jpg",
+        "idioma": "es",
+        "json_ld": 1,
+        "enlaces_rotos": [
+          "https://humannaia.com/about"
+        ],
+        "puntuacion": {
+          "nota": 51.3,
+          "fallos": [
+            "Sin meta descripción",
+            "0 encabezados H1 (debe haber 1)",
+            "31 de 34 imágenes sin texto alternativo",
+            "1 enlaces internos rotos"
+          ]
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/",
+        "url": "https://humannaia.com/servicios-humanaia/",
+        "estado": 200,
+        "titulo": "servicios-ok-humanaia - HUMANNAIA",
+        "descripcion": null,
+        "h1": 0,
+        "imagenes": 12,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 11,
+        "canonical": "https://humannaia.com/servicios-humanaia/",
+        "og_image": "https://humannaia.com/wp-content/uploads/2022/11/home-why-choose-us-image.png",
+        "idioma": "es",
+        "json_ld": 1,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 56.3,
+          "fallos": [
+            "Sin meta descripción",
+            "0 encabezados H1 (debe haber 1)",
+            "11 de 12 imágenes sin texto alternativo"
+          ]
+        }
+      },
+      {
+        "ruta": "/que-es-humanaia/",
+        "url": "https://humannaia.com/que-es-humanaia/",
+        "estado": 200,
+        "titulo": "¿Qué es Humanaia? - HUMANNAIA",
+        "descripcion": null,
+        "h1": 0,
+        "imagenes": 4,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 3,
+        "canonical": "https://humannaia.com/que-es-humanaia/",
+        "og_image": "https://humanaia.estudiothewaves.com/wp-content/uploads/2023/11/banner-07-bg.jpg",
+        "idioma": "es",
+        "json_ld": 1,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 43.8,
+          "fallos": [
+            "Título de 29 caracteres (ideal 30–65)",
+            "Sin meta descripción",
+            "0 encabezados H1 (debe haber 1)",
+            "3 de 4 imágenes sin texto alternativo"
+          ]
+        }
+      }
+    ],
+    "enlaces_comprobados": 7,
+    "enlaces_rotos": [
+      {
+        "url": "https://humannaia.com/about",
+        "estado": 404
+      }
+    ]
+  },
+  "manual": {
+    "contenido": {
+      "nota": null,
+      "autor": "ChatGPT",
+      "revisado_por": "Claude",
+      "fecha": null,
+      "notas": "Rúbrica de datos/rubrica.md, 10 criterios x 10 puntos sobre las páginas de config.json."
+    },
+    "comprension": {
+      "nota": null,
+      "autor": "ChatGPT",
+      "revisado_por": "Claude",
+      "fecha": null,
+      "notas": "Test de 60 segundos: 5 perfiles simulados + personas reales. % de respuestas correctas."
+    },
+    "conversion": {
+      "nota": null,
+      "autor": "Claude",
+      "revisado_por": "Persona responsable",
+      "fecha": null,
+      "notas": "Se activa con 4 semanas de datos de GA4 (Site Kit): conversiones frente al objetivo acordado."
+    }
+  }
+}
