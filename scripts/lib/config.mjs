@@ -17,7 +17,7 @@ export async function leerJSON(ruta, porDefecto = undefined) {
 
 export async function cargarConfig() {
   const config = await leerJSON(path.join(RAIZ, 'config.json'));
-  // SITIO permite apuntar a staging o a un servidor local sin tocar config.json.
+  // SITIO permite apuntar a la nueva web (https://nueva.humannaia.com) o a un servidor local sin tocar config.json.
   if (process.env.SITIO) config.sitio = process.env.SITIO;
   config.sitio = config.sitio.replace(/\/+$/, '');
   return config;

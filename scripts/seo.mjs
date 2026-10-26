@@ -1,5 +1,5 @@
 // Comprobaciones SEO on-page y enlaces rotos de cada URL de config.json.
-// Uso: node scripts/seo.mjs   (SITIO=https://staging... para otra web)
+// Uso: node scripts/seo.mjs   (SITIO=https://nueva.humannaia.com para la nueva web)
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { cargarConfig, urlCompleta, slug, TMP, asegurarCarpeta } from './lib/config.mjs';

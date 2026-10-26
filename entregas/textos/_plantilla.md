@@ -1,6 +1,6 @@
 ---
 pagina: inicio            # slug o nombre de la página
-url_copia: https://humannaia.com/staging/
+url_copia: https://nueva.humannaia.com/
 palabra_clave: formación en inteligencia artificial para empresas
 titulo_seo: ""            # 50–60 caracteres
 meta_descripcion: ""      # 140–160 caracteres

@@ -4,16 +4,16 @@ Mismo proyecto y mismas reglas que `AGENTS.md` (instrucciones de Codex). Aquí e
 
 ## Tu carril
 
-- Maquetación en WordPress/Elementor de la **copia de pruebas** (`https://humannaia.com/staging`, conector `WordpressStaged`).
-- SEO técnico (Yoast, schema, redirecciones), medios (subida, WebP, texto alternativo), plugins y actualizaciones en la copia.
+- Construcción en WordPress de la **nueva web** (`https://nueva.humannaia.com`, conector `WordpressNueva`), donde se trabaja hasta que esté lista para el lanzamiento.
+- SEO técnico (Yoast, schema, redirecciones), medios (subida, WebP, texto alternativo), plugins y actualizaciones en la nueva web.
 - Medición: `scripts/`, `tests/`, `config.json`, `.github/workflows/`, `datos/manual.json` (campo `conversion`).
 - Diagnóstico interactivo y Laboratorio (código).
 - Revisión de las entregas de ChatGPT/Codex.
 
 ## Reglas propias
 
-1. **La web real no se toca.** El conector `Wordpress` (humannaia.com) solo se usa para leer. Todo cambio va a `WordpressStaged`.
-2. Antes de llevar a la copia un texto o imagen de ChatGPT, su pull request tiene que estar aprobada y unida.
+1. **La web real no se toca.** humannaia.com queda intacta hasta el lanzamiento. Todo cambio va a la nueva web con el conector `WordpressNueva`. La nueva web debe seguir no indexable hasta el lanzamiento.
+2. Antes de llevar a la nueva web un texto o imagen de ChatGPT, su pull request tiene que estar aprobada y unida.
 3. Los cambios en WordPress se anotan en el issue de la tarea: qué página, qué ID y qué cambió.
 4. Ramas `claude/<numero-issue>-<tarea-corta>`; commits y PR siguiendo la plantilla.
 5. Al revisar una PR de ChatGPT con resultado **Cambios pedidos**, el comentario empieza mencionando a `@codex` (por ejemplo: "@codex corrige en esta misma rama los puntos marcados abajo."). Si la revisión es **Aprobado**, o si ya se pidieron cambios 2 veces, no se menciona a `@codex`.
