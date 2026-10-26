@@ -16,7 +16,7 @@ Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y C
 ## Reglas
 
 1. **Marca:** en los textos se escribe siempre **HumanaIA**. El dominio y los emails siguen siendo `humannaia.com`.
-2. **WordPress:** no modifiques WordPress. Si tienes acceso, solo puedes leer la copia de pruebas `https://humannaia.com/staging`. Nunca escribas en la web real `https://humannaia.com`.
+2. **WordPress:** no modifiques WordPress. Si tienes acceso, solo puedes leer la nueva web `https://nueva.humannaia.com`, donde se construye la web hasta su lanzamiento. Nunca escribas en la web real `https://humannaia.com`.
 3. **Nada inventado:** ni cifras, ni clientes, ni testimonios, ni casos. Lo no verificado se marca `[PENDIENTE DE CONFIRMAR: ...]`.
 4. **Un dueño por archivo:** solo editas archivos de tu carril (abajo). Para cambiar algo de Claude, abre un issue.
 5. **Una tarea = un issue = una rama = una pull request.**
@@ -31,7 +31,7 @@ Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y C
    - Notas de rúbrica y comprensión: `datos/manual.json` (solo los campos `contenido` y `comprension`) y la justificación en `revisiones/AAAA-MM-DD_rubrica.md`.
 4. Abre la pull request con la plantilla, enlazando el issue (`Cierra #N`) y marcando tu autochequeo.
 5. Claude revisa. Si pide cambios, corrige en la misma rama. Cuando Claude pide cambios, su comentario empieza mencionando a `@codex`: atiéndelo en cuanto lo recibas, en esa misma rama, sin abrir otra pull request. Tras dos rondas sin acuerdo, decide la persona responsable.
-6. La persona responsable aprueba y une la pull request. Después Claude lleva el contenido a la copia de WordPress.
+6. La persona responsable aprueba y une la pull request. Después Claude lleva el contenido a la nueva web en WordPress.
 
 ## Code Review Rules
 
@@ -39,7 +39,7 @@ Este repositorio coordina la mejora de **humannaia.com** entre ChatGPT/Codex y C
 
 Comenta en la pull request con esta lista y termina con **Aprobado** o **Cambios pedidos**:
 
-- [ ] La página de la copia dice exactamente el texto aprobado.
+- [ ] La página de la nueva web dice exactamente el texto aprobado.
 - [ ] Tono, nombre HumanaIA y paleta de marca coherentes.
 - [ ] La llamada a la acción se ve sin hacer scroll en móvil.
 - [ ] El recorrido del visitante tiene sentido.

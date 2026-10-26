@@ -19,7 +19,7 @@ El Sprint 0 está en marcha: copia de pruebas creada, línea base medida (índic
 | Área | Estado | Dónde |
 | --- | --- | --- |
 | Marca | Nombre comercial decidido: **HumanaIA** (dominio y emails siguen en humannaia.com) | — |
-| Copia de pruebas | Creada con WP Staging en humannaia.com/staging, protegida con acceso y no indexable; emails bloqueados | Conector WordpressStaged |
+| Nueva web | WordPress propio en el subdominio nueva.humannaia.com (Axarnet), con su base de datos y no indexable; ahí se construye la web hasta el lanzamiento. La copia humannaia.com/staging queda abandonada | Conector WordpressNueva |
 | Web real | Sin cambios; solo lectura | Conector Wordpress |
 | Centro de trabajo | GitHub con carriles, plantillas y comprobación automática de carril (PR #1 y #2 unidas) | Este repositorio |
 | Medición | Nocturna en GitHub Actions; línea base 71,5/100 con el 50 % del peso medido (rendimiento 54, accesibilidad 95, SEO 71) | [`informe.md`](../informe.md) |
@@ -56,7 +56,7 @@ La coordinación pasa por GitHub (este repositorio) y por el registro de auditor
 2. **Instrucciones en el propio repositorio.** [`AGENTS.md`](../AGENTS.md) (lo lee Codex) y [`CLAUDE.md`](../CLAUDE.md) (lo lee Claude) fijan carriles, reglas y listas de control.
 3. **Comprobación automática de carril.** Si una rama de ChatGPT toca código o una de Claude toca textos o imágenes de ChatGPT, la pull request falla.
 4. **ChatGPT entrega en GitHub, no en WordPress.** Textos en `entregas/textos/`, imágenes en `entregas/imagenes/`; Claude los lleva a la copia cuando la pull request está unida.
-5. **Solo la copia de pruebas se modifica.** Toda escritura va a humannaia.com/staging; la web real solo se lee hasta el lanzamiento.
+5. **Solo la nueva web se modifica.** Toda escritura va a nueva.humannaia.com; la web real queda intacta hasta el lanzamiento.
 6. **Nada se une sin la persona responsable.** Las IAs proponen y revisan; solo ella une a `main`.
 7. **Nada destructivo en automático.** Borrar, cambiar plugins o ajustes de seguridad queda como `decide-persona`.
 8. **Pausa y trazabilidad.** La etiqueta `pausa` detiene a los agentes; cada turno deja resumen en la bitácora #11 y los cambios en WordPress se anotan en su issue (página, ID, cambio).
@@ -147,7 +147,7 @@ Ya están en marcha Easy MCP AI (web real y copia), GitHub con Actions, WP Stagi
 | Conector o servicio | Para quién | Uso en el plan | Estado |
 | --- | --- | --- | --- |
 | [Easy MCP AI](https://easymcpai.com/blog/claude-mcp-wordpress) · web real ("Wordpress") | Claude y ChatGPT | Solo lectura y comparación | Conectado |
-| Easy MCP AI · copia ("WordpressStaged") | Claude (escritura), ChatGPT (lectura) | Todo el trabajo en WordPress; integración de Yoast activada | Conectado a Claude |
+| Easy MCP AI · nueva web ("WordpressNueva") | Claude (escritura), ChatGPT (lectura) | Todo el trabajo en WordPress | Conectado a Claude |
 | GitHub (este repositorio) | Ambos | Centro de trabajo: issues, pull requests, revisiones, medición | Conectado a Claude |
 | Codex (ChatGPT) | ChatGPT | Escribir en GitHub: ramas y pull requests de contenido | Pendiente de conectar |
 | GitHub Actions + Lighthouse | Automático | Medición nocturna del índice | Funcionando |
