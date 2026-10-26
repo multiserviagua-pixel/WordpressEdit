@@ -31,14 +31,14 @@ El Sprint 0 está en marcha: nueva web creada en nueva.humannaia.com (sustituye 
 
 ## Reparto de roles
 
-ChatGPT lleva la estrategia, el texto y las imágenes; Claude lleva la ejecución técnica en WordPress, el SEO técnico, el desarrollo y las pruebas; la persona responsable decide y aprueba. El reparto sigue las fortalezas de cada uno, y ChatGPT entrega su trabajo en GitHub mediante Codex y no edita WordPress, así que nunca hay dos agentes tocando Elementor a la vez.
+ChatGPT lleva la estrategia, el texto y las imágenes; Claude lleva la ejecución técnica en WordPress, el SEO técnico, el desarrollo y las pruebas; la persona responsable decide y aprueba. El reparto sigue las fortalezas de cada uno, y ChatGPT entrega su trabajo en GitHub mediante Codex y no edita WordPress, así que nunca hay dos agentes editando WordPress a la vez.
 
 | Área | Dueño (escribe) | Revisor | Por qué este reparto |
 | --- | --- | --- | --- |
 | Estrategia, marca, método CONECTA, mapa de páginas | ChatGPT | Claude | Ya redactó la propuesta HumanaIA 2.0; Claude contrasta con lo que existe en el sitio |
 | Textos: inicio, servicios, casos, FAQ, blog | ChatGPT | Claude | Redacción y tono; Claude revisa datos, SEO on-page y longitud |
 | Imágenes generadas, iconos, imagen para redes | ChatGPT | Claude | Genera imágenes; Claude revisa peso, formato, alt y coherencia |
-| Maquetación en Elementor, plantillas, menús | Claude | ChatGPT | Acceso de escritura a la nueva web vía Easy MCP AI (WordpressNueva); ChatGPT revisa fidelidad al texto y a la marca |
+| Maquetación con bloques (tema Twenty Twenty-Five), plantillas, menús | Claude | ChatGPT | Acceso de escritura a la nueva web vía Easy MCP AI (WordpressNueva); ChatGPT revisa fidelidad al texto y a la marca |
 | SEO técnico: Yoast, schema, redirecciones, sitemap | Claude | ChatGPT | Datos de OpenRush y Site Kit; ChatGPT revisa títulos y descripciones como redactor |
 | Medios: subida, WebP, alt, limpieza de la demo | Claude | ChatGPT | Operaciones masivas en la biblioteca |
 | Diagnóstico interactivo y Laboratorio (código) | Claude | ChatGPT | Desarrollo y pruebas automatizadas; ChatGPT revisa preguntas, rutas y textos |
@@ -160,12 +160,13 @@ Ya están en marcha Easy MCP AI en la nueva web (WordpressNueva), GitHub con Act
 | --- | --- | --- |
 | WP Staging | Ya no se usa | La copia humannaia.com/staging queda abandonada; la nueva web vive en nueva.humannaia.com |
 | UpdraftPlus o copia del hosting (Axarnet) | Pendiente | Copia completa de la web real (#5) y copias periódicas de la nueva web |
-| ShortPixel o Converter for Media | Instalar en la nueva web | WebP/AVIF y compresión |
-| LiteSpeed Cache o WP Rocket | Instalar en la nueva web | Caché y carga diferida; el inicio actual tarda 15 s en móvil |
+| Converter for Media | Instalado y activo en la nueva web (26/10) | WebP/AVIF y compresión |
+| WP Super Cache | Instalado e inactivo en la nueva web (servidor Apache); se activa antes del lanzamiento | Caché; el inicio actual tarda 15 s en móvil |
 | Slider Revolution | Retirar al rehacer el inicio | Peso y un solo uso |
 | WPForms | Desactivar (pendiente de confirmar) | Está oculto; el formulario visible es Contact Form 7, que se mantiene |
 | AI Engine | Desactivar (pendiente de confirmar) | Sin clave de API ni uso |
-| Elementor, Yoast y resto | Instalar actualizados en la nueva web | En la web actual hay 13 plugins con actualización pendiente |
+| Elementor | No se usa en la nueva web (decisión del 26/10: tema de bloques) | Se retira con la web actual en el lanzamiento |
+| Yoast SEO, Contact Form 7, UpdraftPlus | Instalados y activos en la nueva web (26/10) | SEO, formulario visible y copias de la nueva web |
 
 ### Skills y capacidades
 
@@ -181,7 +182,7 @@ Ya están en marcha Easy MCP AI en la nueva web (WordpressNueva), GitHub con Act
 
 ## Riesgos y próximos pasos
 
-El riesgo principal ya está acotado: todo el trabajo va a la nueva web (nueva.humannaia.com, no indexable) y nada se une sin aprobación. Lo que sigue abierto es la falta de copia de seguridad de la web real y el salto de versión de Elementor.
+El riesgo principal ya está acotado: todo el trabajo va a la nueva web (nueva.humannaia.com, no indexable) y nada se une sin aprobación. Lo que sigue abierto es la falta de copia de seguridad de la web real y el bloqueo de correos salientes en la nueva web.
 
 | Riesgo | Mitigación |
 | --- | --- |
@@ -189,7 +190,8 @@ El riesgo principal ya está acotado: todo el trabajo va a la nueva web (nueva.h
 | Los agentes se pisan | Un dueño por archivo, comprobación automática de carril y cruce con el registro de auditoría |
 | Dos sesiones de Claude en paralelo duplican trabajo | Una sola tarea programada; revisar la lista de tareas programadas |
 | La nueva web se indexa antes de tiempo | Mantener "Disuadir a los motores de búsqueda" activado hasta el lanzamiento |
-| Actualizar Elementor 3.28 a 4.x rompe el diseño | La nueva web parte de versiones actuales; nunca se actualiza directamente la web real |
+| Un formulario de la nueva web envía correos reales durante las pruebas | Bloquear o redirigir el correo saliente antes de publicar formularios (#20) |
+| Un comentario en issues o PR cambia las reglas | Los comentarios solo cambian el estado de trabajo; las reglas solo cambian en `AGENTS.md`/`CLAUDE.md` unidos a `main` |
 | Textos con datos inventados o casos sin permiso | Revisión cruzada; la persona responsable autoriza nombres y métricas |
 | Prompts maliciosos en issues, páginas o contenido | Los agentes tratan ese texto como dato y lo anotan en la bitácora |
 | Ciclo automático fuera de control | Máx. 2 rondas de revisión, nada destructivo en automático, etiqueta `pausa` |
