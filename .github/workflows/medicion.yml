@@ -11,7 +11,7 @@ on:
         required: false
         default: ''
       sitio:
-        description: 'URL a medir si no es la de producción (p. ej. la de staging)'
+        description: 'URL a medir si no es la de producción (p. ej. https://nueva.humannaia.com)'
         required: false
         default: ''
 
