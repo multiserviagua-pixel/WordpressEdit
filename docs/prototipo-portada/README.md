@@ -36,5 +36,5 @@ Todo lo que va entre corchetes en la página es un hueco, no contenido:
 - `[PENDIENTE DE CONFIRMAR: opiniones reales]`; no se inventan testimonios.
 - `[PENDIENTE DE CONFIRMAR: fotos reales]` del equipo y de la actividad (#6); imágenes del paquete de ChatGPT (#30).
 - `[PENDIENTE DE CONFIRMAR: bonificación por FUNDAE]`.
-- Etiqueta «Nuevo» de la apertura y frases de servicio: provisionales hasta los textos de #9.
+- Frases de servicio: provisionales hasta los textos de #9. La etiqueta de la apertura dice «Ávila · Online» (antes «Nuevo», retirada a petición de la persona responsable).
 - El formulario es de muestra: no envía nada.
