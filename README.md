@@ -20,7 +20,7 @@ Centro de trabajo para construir la nueva web de **HumanaIA** en **https://nueva
 2. El dueño trabaja en una rama `chatgpt/<issue>-…` o `claude/<issue>-…` y abre una **pull request**.
 3. La comprobación **Carril** verifica que solo toca archivos de su carril.
 4. El otro agente revisa con su lista de control y comenta **Aprobado** o **Cambios pedidos** (máx. 2 rondas).
-5. Si la PR es de ChatGPT y la revisión de Claude termina en **Aprobado**, la une Claude; si es de Claude, la une la persona responsable. Si es contenido, Claude lo lleva después a la nueva web en WordPress.
+5. Cuando el otro agente la aprueba con una revisión formal, con Carril en verde y sin `pausa` ni `decide-persona`, **se une sola** (unión automática, #27). Unir no es aceptar: las entregas materiales y el lanzamiento necesitan la aceptación expresa de la persona responsable. Si es contenido, Claude lo lleva después a la nueva web en WordPress. A la persona responsable solo se la avisa cuando hay algo material.
 
 ## Entornos
 
