@@ -36,5 +36,6 @@ Todo lo que va entre corchetes en la página es un hueco, no contenido:
 - `[PENDIENTE DE CONFIRMAR: opiniones reales]`; no se inventan testimonios.
 - `[PENDIENTE DE CONFIRMAR: fotos reales]` del equipo y de la actividad (#6); imágenes del paquete de ChatGPT (#30).
 - Formación bonificable por FUNDAE: descartada por la persona responsable (27/10/2026); no se menciona.
-- Frases de servicio: provisionales hasta los textos de #9. La etiqueta de la apertura dice «Ávila · Online» (antes «Nuevo», retirada a petición de la persona responsable).
+- Frases de servicio: provisionales hasta los textos de #9. La etiqueta de la apertura dice «HumanaIA» (cambio de la persona responsable, 27/10/2026).
+- En WordPress la portada está dividida en secciones con nombre, y la cabecera y el pie son partes de plantilla comunes: ver `docs/editar-la-web.md`.
 - El formulario es de muestra: no envía nada.
