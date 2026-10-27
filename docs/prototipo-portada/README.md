@@ -34,7 +34,8 @@ Todo lo que va entre corchetes en la página es un hueco, no contenido:
 - `[PENDIENTE DE CONFIRMAR: logos de clientes y permisos]`.
 - `[PENDIENTE DE CONFIRMAR: casos]` proyectos reales autorizados (problema, solución, resultado).
 - `[PENDIENTE DE CONFIRMAR: opiniones reales]`; no se inventan testimonios.
-- `[PENDIENTE DE CONFIRMAR: fotos reales]` del equipo y de la actividad (#6); imágenes del paquete de ChatGPT (#30).
+- `[PENDIENTE DE CONFIRMAR: fotos reales]` de la actividad (#6). Las del equipo ya están (27/10/2026, indicadas por la persona responsable): Gustavo, de gustavobeltran.es, y Ester, de la web original. Escenas generadas: paquete de ChatGPT (#30).
+- Imagen para compartir el enlace (miniatura en WhatsApp, LinkedIn, etc.): `docs/marca/og-humanaia.jpg`, el logotipo sobre blanco a 1200×630.
 - Formación bonificable por FUNDAE: descartada por la persona responsable (27/10/2026); no se menciona.
 - Frases de servicio: provisionales hasta los textos de #9. La etiqueta de la apertura dice «HumanaIA» (cambio de la persona responsable, 27/10/2026).
 - En WordPress la portada está dividida en secciones con nombre, y la cabecera y el pie son partes de plantilla comunes: ver `docs/editar-la-web.md`.
