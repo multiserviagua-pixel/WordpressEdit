@@ -92,6 +92,8 @@ a{color:#0050D0}a:hover{color:#02162D}
 .parallax{animation:para linear both;animation-timeline:scroll(root);animation-range:0px 900px}
 .big-word{animation:spread linear both;animation-timeline:view();animation-range:entry 0% cover 55%}
 }
+@media (max-width: 1024px){.proj-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.proj-grid .b-wide{grid-column:1 / -1 !important}.proj-grid .b-tall{grid-row:auto !important;min-height:380px !important}.hero-inner{padding-top:64px !important;padding-bottom:88px !important}.hero-visual{width:min(420px,100%) !important}.steps{grid-template-columns:repeat(4,minmax(0,1fr)) !important;gap:32px 20px !important}.team{flex-wrap:nowrap !important}.team > div{flex:1 1 0 !important}.team > div > div:first-child{aspect-ratio:1 / 1 !important}.arch{aspect-ratio:1 / 1 !important;max-width:420px !important}}
+@media (max-width: 640px){.sec-y{padding-top:64px !important;padding-bottom:64px !important}.sec-b{padding-bottom:64px !important}.hero-inner{padding-top:40px !important;padding-bottom:56px !important;gap:24px !important}.hero-visual{width:min(320px,86%) !important}.hero-visual .chip{padding:6px 10px 6px 6px !important;gap:6px !important;border-radius:14px !important}.hero-visual .chip > span:first-child{width:28px !important;height:28px !important;border-radius:10px !important}.hero-visual .chip > span:last-child{font-size:13px !important}.hero-pill{font-size:12px !important;flex-wrap:wrap;row-gap:6px}.proj-grid{grid-template-columns:1fr !important;grid-auto-rows:auto !important}.proj-grid .b-wide{grid-column:auto !important}.proj-grid .b-tall{min-height:340px !important}.proj-grid > article:not(.b-wide){min-height:200px}.car-card{height:360px !important;padding:24px !important}.car-card h3{font-size:22px !important}.car-card .arrow{top:20px !important;right:20px !important}.sol-row{padding:20px 4px !important;gap:6px 14px !important}.sol-row .arrow{display:none !important}.sol-row h3{flex:1 1 0 !important}.sol-row p{flex-basis:100% !important;margin-left:62px !important}.steps{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:32px 18px !important}.draw-line{display:none !important}.team{flex-wrap:nowrap !important;gap:12px !important}.team > div{flex:1 1 0 !important}.team > div:last-child{padding-top:24px !important}.team h3{font-size:18px !important}.team p{font-size:14px !important}.arch{aspect-ratio:1 / 1 !important}.quote-card{max-width:200px !important;bottom:16px !important;padding:16px !important}.faq-a{margin-right:0 !important}.contact-card{border-radius:28px !important}.contact-form{padding:20px !important}.tab-label{padding:0 14px !important;font-size:14px !important}}
 @media (prefers-reduced-motion: reduce){.float-a,.float-b,.float-c,.ring,.marquee-track,.blob-a,.blob-b,.reveal,.reveal-left,.step-in,.step-in > span,.draw-line,.carousel > *,.parallax,.big-word,.load-1,.load-2,.load-3{animation:none !important}.bento:hover,.btn:hover{transform:none}}
 </style>
 </helmet>
@@ -134,9 +136,9 @@ a{color:#0050D0}a:hover{color:#02162D}
 <div class="blob blob-a" aria-hidden="true" style="width: 620px; height: 620px; right: -140px; top: -120px; background: radial-gradient(circle, rgba(80,176,240,.55) 0%, rgba(80,176,240,0) 70%)"></div>
 <div class="blob blob-b" aria-hidden="true" style="width: 520px; height: 520px; left: -180px; bottom: -200px; background: radial-gradient(circle, rgba(0,80,208,.22) 0%, rgba(0,80,208,0) 70%)"></div>
 <div class="blob blob-a" aria-hidden="true" style="width: 360px; height: 360px; left: 38%; top: 30%; background: radial-gradient(circle, rgba(227,240,253,.9) 0%, rgba(227,240,253,0) 70%)"></div>
-<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div class="hero-inner" style="position: relative; max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
 <div style="flex: 999 1 560px; min-width: 0">
-<p class="glass" style="margin: 0 0 26px; display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 8px; border-radius: 999px; font-size: 14px; font-weight: 600; color: #02162D"><span style="padding: 4px 10px; border-radius: 999px; background: #02162D; color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: 1px">ÁVILA · ONLINE</span>Consultoría, automatización, desarrollo y formación</p>
+<p class="glass hero-pill" style="margin: 0 0 26px; display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 8px; border-radius: 999px; font-size: 14px; font-weight: 600; color: #02162D"><span style="padding: 4px 10px; border-radius: 999px; background: #02162D; color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: 1px">ÁVILA · ONLINE</span>Consultoría, automatización, desarrollo y formación</p>
 <h1 class="load-1" style="margin: 0; font-weight: 800; font-size: clamp(44px, 6.4vw, 84px); line-height: 1.0; letter-spacing: -0.035em; color: #02162D">La IA, <span class="grad-text">aplicada</span><br>a tu organización.</h1>
 <p class="load-2" style="margin: 28px 0 0; max-width: 560px; font-size: 20px; color: #4F5B66">Automatizamos procesos, desarrollamos soluciones a medida y formamos a tu equipo para usarlas con criterio.</p>
 <div class="load-3" style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 40px">
@@ -146,13 +148,13 @@ a{color:#0050D0}a:hover{color:#02162D}
 </div>
 </div>
 <div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
-<div class="parallax" style="position: relative; width: min(480px, 100%); aspect-ratio: 1 / 1">
+<div class="parallax hero-visual" style="position: relative; width: min(480px, 100%); aspect-ratio: 1 / 1">
 <svg class="ring" aria-hidden="true" viewBox="0 0 100 100" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="50" cy="50" r="48" fill="none" stroke="#B8D8F6" stroke-width=".4" stroke-dasharray="1.2 2.4"></circle><circle cx="50" cy="2" r="1.6" fill="#50B0F0"></circle><circle cx="98" cy="50" r="1.2" fill="#0050D0"></circle></svg>
 <div aria-hidden="true" style="position: absolute; inset: 11%; border-radius: 50%; background: radial-gradient(circle at 35% 28%, #FFFFFF 0%, #EEF6FE 55%, #D7EAFB 100%); box-shadow: 0 40px 100px rgba(0,80,208,.18), inset 0 0 0 1px rgba(255,255,255,.9)"></div>
 <img src="/_blob/667c8b5259ca9e4b5b62cd2f8209b355" alt="" style="position: absolute; left: 18%; top: 20%; width: 64%; height: auto">
-<div class="float-a glass" style="position: absolute; left: -4%; top: 12%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #0050D0, #50B0F0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l3-7 3 14 3-7h3"></path></svg></span><span style="font-size: 15px; font-weight: 700">Automatización</span></div>
-<div class="float-b glass" style="position: absolute; right: -6%; top: 44%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #02162D, #0050D0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"></path></svg></span><span style="font-size: 15px; font-weight: 700">Desarrollo a medida</span></div>
-<div class="float-c glass" style="position: absolute; left: 4%; bottom: 6%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #50B0F0, #A8D8F8); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#02162D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4z"></path><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"></path></svg></span><span style="font-size: 15px; font-weight: 700">Formación</span></div>
+<div class="float-a glass chip" style="position: absolute; left: -4%; top: 12%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #0050D0, #50B0F0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l3-7 3 14 3-7h3"></path></svg></span><span style="font-size: 15px; font-weight: 700">Automatización</span></div>
+<div class="float-b glass chip" style="position: absolute; right: -6%; top: 44%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #02162D, #0050D0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"></path></svg></span><span style="font-size: 15px; font-weight: 700">Desarrollo a medida</span></div>
+<div class="float-c glass chip" style="position: absolute; left: 4%; bottom: 6%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #50B0F0, #A8D8F8); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#02162D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4z"></path><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"></path></svg></span><span style="font-size: 15px; font-weight: 700">Formación</span></div>
 </div>
 </div>
 </div>
@@ -181,7 +183,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- BENTO: CÓMO PODEMOS AYUDARTE -->
 <section aria-labelledby="ayuda-t" style="background: #FFFFFF">
-<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 112px">
+<div class="sec-y" style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 112px">
 <div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
 <h2 id="ayuda-t" style="margin: 0; max-width: 640px; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Todo lo que la IA puede hacer por ti, <span class="grad-text">en un solo equipo.</span></h2>
 <p style="margin: 0; max-width: 380px; color: #4F5B66">Empieza por donde lo necesites: un diagnóstico, una automatización concreta o la formación de tu equipo.</p>
@@ -189,7 +191,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 <p style="margin: 40px 0 0; display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4F5B66"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0050D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>Desliza para ver todo lo que hacemos</p>
 <div class="carousel" tabindex="0" aria-label="Lo que hacemos, desliza para ver más" style="margin: 18px -24px 0; padding: 12px 24px 28px; display: flex; gap: 18px; overflow-x: auto; scroll-padding-left: 24px; -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 88%, transparent 100%); mask-image: linear-gradient(90deg, #000 0%, #000 88%, transparent 100%)">
 
-<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(560px, 86%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 36px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(560px, 86%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 36px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
 <span style="position: relative; align-self: flex-start; margin-right: 64px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.75); border: 1px solid #C9DFF4; color: #0050D0; font-size: 13px; font-weight: 700; letter-spacing: 1px">01 · CONSULTORÍA APLICADA</span>
 <h3 style="position: relative; margin: auto 0 0; max-width: 460px; font-weight: 800; font-size: 32px; line-height: 1.12; letter-spacing: -0.02em">Detectamos dónde la IA aporta valor real y la ponemos a funcionar.</h3>
 <div style="position: relative; margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px">
@@ -200,19 +202,19 @@ a{color:#0050D0}a:hover{color:#02162D}
 <span class="arrow" aria-hidden="true" style="position: absolute; top: 32px; right: 32px; width: 52px; height: 52px; border-radius: 26px; background: #0050D0; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
 </a>
 
-<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">02 · AUTOMATIZACIÓN</span>
 <h3 style="margin: auto 0 0; font-weight: 800; font-size: 24px; line-height: 1.2">Menos tareas repetitivas, más tiempo para lo importante.</h3>
 <span class="arrow" aria-hidden="true" style="position: absolute; top: 24px; right: 24px; width: 42px; height: 42px; border-radius: 21px; background: #FFFFFF; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
 </a>
 
-<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
 <svg aria-hidden="true" width="120" height="120" viewBox="0 0 120 120" style="position: absolute; right: -14px; top: -14px; opacity: .9"><circle cx="60" cy="60" r="58" fill="none" stroke="#B8D8F6" stroke-dasharray="3 5"></circle><circle cx="60" cy="60" r="36" fill="none" stroke="#50B0F0" stroke-width="1.5"></circle><circle cx="60" cy="60" r="10" fill="#0050D0"></circle></svg>
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">03 · DESARROLLO A MEDIDA</span>
 <h3 style="margin: auto 0 0; font-weight: 800; font-size: 24px; line-height: 1.2">Soluciones propias cuando ninguna herramienta encaja.</h3>
 </a>
 
-<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(460px, 84%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between">
+<a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(460px, 84%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between">
 <div>
 <span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">04 · FORMACIÓN</span>
 </div>
@@ -227,7 +229,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 <span class="arrow" aria-hidden="true" style="position: absolute; top: 24px; right: 24px; width: 42px; height: 42px; border-radius: 21px; background: #FFFFFF; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
 </a>
 
-<div class="bento" style="flex: 0 0 min(320px, 76%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); display: flex; flex-direction: column; justify-content: space-between">
+<div class="bento car-card" style="flex: 0 0 min(320px, 76%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); display: flex; flex-direction: column; justify-content: space-between">
 <p style="margin: 0; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em" class="grad-text">[Nº]</p>
 <p style="margin: 0; color: #4F5B66; font-size: 17px">automatizaciones y desarrollos entregados</p>
 </div>
@@ -238,10 +240,10 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- MANIFIESTO CON FOTO ASIMÉTRICA -->
 <section aria-labelledby="porque-t" style="position: relative; background: linear-gradient(180deg, #FFFFFF 0%, #F3F8FD 100%); overflow: hidden">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div class="sec-y" style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
 <div class="reveal" style="flex: 1 1 440px; min-width: 0; position: relative">
-<div style="aspect-ratio: 4 / 5; max-width: 460px; border-radius: 200px 200px 32px 32px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 32px; color: #4F5B66; font-size: 16px">[Foto real: el equipo de HumanaIA trabajando con un cliente]</div>
-<div class="glass float-b" style="position: absolute; right: 0; bottom: 40px; max-width: 250px; padding: 20px; border-radius: 24px; box-shadow: 0 20px 50px rgba(2,22,45,.12)">
+<div class="arch" style="aspect-ratio: 4 / 5; max-width: 460px; border-radius: 200px 200px 32px 32px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 32px; color: #4F5B66; font-size: 16px">[Foto real: el equipo de HumanaIA trabajando con un cliente]</div>
+<div class="glass float-b quote-card" style="position: absolute; right: 0; bottom: 40px; max-width: 250px; padding: 20px; border-radius: 24px; box-shadow: 0 20px 50px rgba(2,22,45,.12)">
 <p style="margin: 0; font-weight: 800; font-size: 17px; line-height: 1.3">“La IA no es el futuro. Es el presente.”</p>
 <p style="margin: 8px 0 0; font-size: 14px; color: #4F5B66">Equipo HumanaIA</p>
 </div>
@@ -260,7 +262,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- SOLUCIONES: LISTA EDITORIAL CON FILTRO -->
 <section id="soluciones" style="background: #FFFFFF">
-<div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
+<div class="sec-y" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
 <div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Nuestras soluciones</h2>
 <p style="margin: 0; max-width: 360px; color: #4F5B66">Filtra por lo que buscas: aplicar la IA o aprender a usarla.</p>
@@ -327,9 +329,9 @@ a{color:#0050D0}a:hover{color:#02162D}
 <section aria-labelledby="metodo-t" style="position: relative; overflow: hidden; background: linear-gradient(160deg, #D7EAFB 0%, #E3F0FD 35%, #F3F8FD 70%, #FFFFFF 100%); color: #02162D">
 <div class="blob blob-b" aria-hidden="true" style="width: 600px; height: 600px; right: -200px; top: -220px; background: radial-gradient(circle, rgba(80,176,240,.45) 0%, rgba(80,176,240,0) 70%)"></div>
 <div class="blob blob-a" aria-hidden="true" style="width: 480px; height: 480px; left: -160px; bottom: -240px; background: radial-gradient(circle, rgba(0,80,208,.14) 0%, rgba(0,80,208,0) 70%)"></div>
-<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 112px 24px">
+<div class="sec-y" style="position: relative; max-width: 1240px; margin: 0 auto; padding: 112px 24px">
 <h2 id="metodo-t" class="reveal" style="margin: 0; max-width: 720px; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Así trabajamos, <span class="grad-text">paso a paso.</span></h2>
-<div class="reveal" style="position: relative; margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 40px 28px">
+<div class="reveal steps" style="position: relative; margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 40px 28px">
 <div class="draw-line" aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 23px; height: 2px; background: linear-gradient(90deg, #0050D0 0%, #50B0F0 60%, rgba(80,176,240,.2) 100%)"></div>
 <div class="step-in" style="position: relative">
 <span style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; background: linear-gradient(135deg, #0050D0, #50B0F0); color: #FFFFFF; font-weight: 800; box-shadow: 0 0 0 8px rgba(80,176,240,.22)">1</span>
@@ -357,12 +359,12 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- PROYECTOS: DESTACADO + DOS -->
 <section id="proyectos" style="background: #FFFFFF">
-<div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
+<div class="sec-y" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
 <div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Proyectos reales</h2>
 <a href="#proyectos" style="font-weight: 700; text-decoration: none">Ver todos los proyectos →</a>
 </div>
-<div class="stagger" style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(260px, auto); gap: 18px">
+<div class="stagger proj-grid" style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(260px, auto); gap: 18px">
 <article class="bento b-wide b-tall reveal" style="position: relative; overflow: hidden; border-radius: 32px; background: linear-gradient(150deg, #F3F8FD 0%, #E3F0FD 55%, #CFE6FB 100%); display: flex; flex-direction: column; min-height: 520px">
 <div style="flex: 1; display: flex; align-items: center; justify-content: center; color: #4F5B66; font-size: 15px; padding: 24px">[Imagen o vídeo del proyecto destacado]</div>
 <div class="glass" style="margin: 0 20px 20px; padding: 24px 26px; border-radius: 24px">
@@ -387,7 +389,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- EQUIPO -->
 <section id="equipo" style="position: relative; overflow: hidden; background: linear-gradient(180deg, #FFFFFF 0%, #F3F8FD 100%)">
-<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 112px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div class="sec-y" style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 112px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
 <div class="reveal" style="flex: 1 1 420px; min-width: 0">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Humanismo y tecnología, <span class="grad-text">en el mismo equipo.</span></h2>
 <p style="margin: 20px 0 0; max-width: 480px; font-size: 19px; color: #4F5B66">Personas con experiencia en comunicación, formación y proyectos de inteligencia artificial.</p>
@@ -402,7 +404,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 </div>
 </div>
 </div>
-<div class="reveal" style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 20px">
+<div class="reveal team" style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 20px">
 <div style="flex: 1 1 240px; min-width: 0">
 <div style="aspect-ratio: 4 / 5; border-radius: 28px 28px 120px 28px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; color: #4F5B66; font-size: 14px">[Foto de Gustavo]</div>
 <h3 style="margin: 18px 0 4px; font-weight: 800; font-size: 21px">Gustavo Beltrán</h3>
@@ -419,7 +421,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- OPINIONES EN CARRUSEL -->
 <section aria-labelledby="testimonios-t" style="background: #F3F8FD">
-<div style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 112px">
+<div class="sec-b" style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 112px">
 <h2 id="testimonios-t" class="reveal" style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Así nos valoran</h2>
 <p style="margin: 10px 0 0; font-size: 15px; color: #4F5B66">Desliza para ver más →</p>
 <div class="carousel" tabindex="0" aria-label="Opiniones, desliza para ver más" style="margin-top: 32px; display: flex; gap: 18px; overflow-x: auto; padding: 4px 4px 20px">
@@ -449,7 +451,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- PREGUNTAS FRECUENTES: DOS COLUMNAS -->
 <section aria-labelledby="faq-t" style="background: #FFFFFF">
-<div class="faq" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div class="faq sec-y" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 48px">
 <div class="reveal" style="flex: 1 1 320px; min-width: 0">
 <h2 id="faq-t" style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Preguntas frecuentes</h2>
 <p style="margin: 18px 0 0; color: #4F5B66">¿No encuentras tu respuesta? <a href="#contacto" style="font-weight: 700">Escríbenos</a>.</p>
@@ -457,23 +459,23 @@ a{color:#0050D0}a:hover{color:#02162D}
 <div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column">
 <details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
 <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Qué podéis automatizar en mi empresa?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
-<p style="margin: 12px 56px 0 0; color: #4F5B66">[Ejemplos reales de automatizaciones que ya habéis hecho]</p>
+<p class="faq-a" style="margin: 12px 56px 0 0; color: #4F5B66">[Ejemplos reales de automatizaciones que ya habéis hecho]</p>
 </details>
 <details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
 <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Hacéis desarrollos a medida o solo formación?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
-<p style="margin: 12px 56px 0 0; color: #4F5B66">Las dos cosas. Desarrollamos y automatizamos, y formamos a vuestro equipo para que saque partido a lo que construimos.</p>
+<p class="faq-a" style="margin: 12px 56px 0 0; color: #4F5B66">Las dos cosas. Desarrollamos y automatizamos, y formamos a vuestro equipo para que saque partido a lo que construimos.</p>
 </details>
 <details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
 <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Necesito conocimientos técnicos?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
-<p style="margin: 12px 56px 0 0; color: #4F5B66">No. Empezamos por lo esencial y avanzamos hacia casos prácticos de tu trabajo.</p>
+<p class="faq-a" style="margin: 12px 56px 0 0; color: #4F5B66">No. Empezamos por lo esencial y avanzamos hacia casos prácticos de tu trabajo.</p>
 </details>
 <details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
 <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Dónde se imparten las formaciones presenciales?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
-<p style="margin: 12px 56px 0 0; color: #4F5B66">En Ávila y en la sede de cada organización. También ofrecemos sesiones online en directo.</p>
+<p class="faq-a" style="margin: 12px 56px 0 0; color: #4F5B66">En Ávila y en la sede de cada organización. También ofrecemos sesiones online en directo.</p>
 </details>
 <details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
 <summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿La formación es bonificable?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
-<p style="margin: 12px 56px 0 0; color: #4F5B66">[Pendiente de confirmar: bonificación por FUNDAE]</p>
+<p class="faq-a" style="margin: 12px 56px 0 0; color: #4F5B66">[Pendiente de confirmar: bonificación por FUNDAE]</p>
 </details>
 </div>
 </div>
@@ -481,8 +483,8 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <!-- CONTACTO -->
 <section id="contacto" style="background: #FFFFFF">
-<div style="max-width: 1240px; margin: 0 auto; padding: 0 24px 96px">
-<div class="reveal" style="position: relative; overflow: hidden; border-radius: 40px; padding: clamp(32px, 5vw, 72px); background: linear-gradient(135deg, #E3F0FD 0%, #F3F8FD 45%, #FFFFFF 100%); display: flex; flex-wrap: wrap; gap: 48px">
+<div class="sec-b" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 96px">
+<div class="reveal contact-card" style="position: relative; overflow: hidden; border-radius: 40px; padding: clamp(32px, 5vw, 72px); background: linear-gradient(135deg, #E3F0FD 0%, #F3F8FD 45%, #FFFFFF 100%); display: flex; flex-wrap: wrap; gap: 48px">
 <div class="blob blob-a" aria-hidden="true" style="width: 520px; height: 520px; right: -160px; top: -200px; background: radial-gradient(circle, rgba(80,176,240,.5) 0%, rgba(80,176,240,0) 70%)"></div>
 <div style="position: relative; flex: 1 1 380px; min-width: 0">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.6vw, 60px); line-height: 1.02; letter-spacing: -0.03em">¿Damos el siguiente paso <span class="grad-text">juntos?</span></h2>
@@ -494,7 +496,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 </div>
 <p style="margin: 24px 0 0; font-size: 15px; color: #4F5B66">Plaza Claudio Sánchez Albornoz, 4 · 05001 Ávila</p>
 </div>
-<form style="position: relative; flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.85); backdrop-filter: blur(14px); box-shadow: 0 24px 60px rgba(2,22,45,.08)">
+<form class="contact-form" style="position: relative; flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.85); backdrop-filter: blur(14px); box-shadow: 0 24px 60px rgba(2,22,45,.08)">
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px">Nombre
 <input type="text" name="nombre" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid #D6E3EF; font: inherit; font-weight: 400; background: #FFFFFF"></label>
 <label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px">Correo electrónico
