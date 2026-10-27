@@ -1,10 +1,10 @@
 {
   "fecha": "2026-10-27",
   "etiqueta": "Primera medición de la nueva web",
-  "indice": 95.8,
+  "indice": 96.3,
   "cobertura": 50,
   "bloques": {
-    "rendimiento": 98.6,
+    "rendimiento": 100,
     "accesibilidad": 100,
     "seo": 87.7,
     "contenido": null,
@@ -12,40 +12,39 @@
     "conversion": null
   },
   "sitio": "https://nueva.humannaia.com",
+  "objeto": "https://nueva.humannaia.com | / | is-crawlable",
   "evolucion": {
     "fecha_base": "2026-10-21",
-    "fecha_anterior": "2026-10-26",
+    "sitio_base": "https://humannaia.com",
     "indice_base": 71.5,
-    "evolucion_vs_base": 34,
-    "evolucion_vs_anterior": 19.7,
-    "avance_hacia_meta": 180,
-    "comparable": true,
-    "bloques_comparados": [
-      "rendimiento",
-      "accesibilidad",
-      "seo"
-    ],
+    "base_comparable": false,
+    "fecha_anterior": null,
+    "evolucion_vs_base": null,
+    "evolucion_vs_anterior": null,
+    "avance_hacia_meta": null,
+    "comparable": false,
+    "bloques_comparados": [],
     "por_bloque": {
       "rendimiento": {
         "base": 54.1,
-        "anterior": 75.3,
-        "actual": 98.6,
-        "vs_base": 82.3,
-        "vs_anterior": 30.9
+        "anterior": null,
+        "actual": 100,
+        "vs_base": null,
+        "vs_anterior": null
       },
       "accesibilidad": {
         "base": 95.1,
-        "anterior": 95.1,
+        "anterior": null,
         "actual": 100,
-        "vs_base": 5.2,
-        "vs_anterior": 5.2
+        "vs_base": null,
+        "vs_anterior": null
       },
       "seo": {
         "base": 71,
-        "anterior": 71,
+        "anterior": null,
         "actual": 87.7,
-        "vs_base": 23.5,
-        "vs_anterior": 23.5
+        "vs_base": null,
+        "vs_anterior": null
       },
       "contenido": {
         "base": null,
@@ -72,17 +71,17 @@
   },
   "lighthouse": {
     "/": {
-      "rendimiento": 98.62828173001284,
+      "rendimiento": 100,
       "accesibilidad": 100,
       "seo_lighthouse": 100,
       "bruto": {
-        "rendimiento": 96,
+        "rendimiento": 98,
         "accesibilidad": 96,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 2724.2110000000002,
-        "cls": 0.0484450007064442,
-        "tbt_ms": 52
+        "lcp_ms": 1896.9569999999999,
+        "cls": 0.04865691246658221,
+        "tbt_ms": 76
       }
     }
   },
