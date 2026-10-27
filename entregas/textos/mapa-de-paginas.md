@@ -1,6 +1,6 @@
 # HumanaIA — arquitectura de contenidos y mapa de páginas
 
-Fecha: 26/10/2026 · Issue #9 · Autor: ChatGPT/Codex · Revisor: Claude.
+Fecha: 27/10/2026 · Issue #9 · Autor: ChatGPT/Codex · Revisor: Claude.
 Estado: propuesta de trabajo. Las ocho áreas siguientes son una propuesta nueva de organización; no se presentan como transcripción de las ocho secciones de HumanaIA 2.0, cuyo original falta. No crear páginas hasta cerrar las decisiones y la revisión.
 
 [PENDIENTE DE CONFIRMAR: propuesta HumanaIA 2.0]
@@ -28,18 +28,30 @@ El informe.md del 26/10/2026 documenta las rutas /, /servicios-humanaia/ y /que-
 
 Las palabras clave son hipótesis editoriales para que Claude contraste con su auditoría SEO; no se les atribuyen volumen ni posicionamiento.
 
+## Intención de búsqueda por página
+
+Propuesta editorial derivada del mapa, pendiente de contraste con la auditoría de Claude/OpenRush. No se atribuyen datos de demanda.
+
+| Página | Intención principal | Límite para evitar solapamiento |
+| --- | --- | --- |
+| Inicio | Conocer la propuesta global de HumanaIA y elegir un recorrido | Resumen de formación y consultoría; no duplicar fichas ni listado detallado |
+| Servicios | Comparar la oferta disponible y decidir qué consultar | Catálogo y alcance; las fichas confirmadas desarrollan cada servicio |
+| FAQ | Resolver dudas antes de contactar o contratar | Respuestas concretas; enlazar al servicio pertinente, sin repetir su texto ni usar «servicios de IA» como objetivo principal |
+
+Las preguntas clave de FAQ se decidirán al verificar la oferta y las dudas reales. Claude validará correspondencia entre intención, palabra clave, título y URL; no crear páginas solo para variantes de una misma consulta.
+
 ## Páginas subordinadas y auxiliares
 
 - Servicios: crear una ficha por línea confirmada bajo /servicios-humanaia/<slug-aprobado>/. [PENDIENTE DE CONFIRMAR: los cinco nombres y slugs]. No fijar slugs a partir de una oferta inventada.
 - Casos: /casos/<slug-autorizado>/ con problema, intervención, límites y evidencia autorizada. Ocultar el área del menú si no hay material publicable.
 - Laboratorio: /laboratorio/<slug-recurso>/ con objetivo, instrucciones, límites y fecha de revisión. Etiquetar los ejemplos como demostraciones; no atribuirles resultados reales.
 - Blog: /blog/ y /blog/<slug-articulo>/, subordinado al área de recursos en la navegación, si existe capacidad editorial. [PENDIENTE DE CONFIRMAR: calendario, autoría y responsable]. No abrir una sección vacía.
-- Aviso legal, privacidad y cookies: rutas exactas a confirmar con el inventario y los textos legales vigentes. Accesibles desde el pie. No redactar datos de titularidad ni prometer cumplimiento sin revisión correspondiente.
+- Aviso legal, privacidad y cookies: propuestas `/aviso-legal/`, `/politica-de-privacidad/` y `/politica-de-cookies/`. [PENDIENTE DE CONFIRMAR: rutas legales existentes, titularidad y textos vigentes]. Accesibles desde el pie cuando se validen; no cambiar rutas existentes sin inventario ni redactar datos de titularidad inventados.
 - Estados de interfaz: confirmación de contacto, errores y página no encontrada con salida a inicio/contacto. No necesitan áreas nuevas del menú.
 
 ## Navegación y recorridos
 
-Cabecera propuesta: Servicios · Qué es HumanaIA · Recursos · Contacto. «Recursos» agrupa Laboratorio, FAQ y Blog solo cuando estén disponibles. Casos se incorpora al existir evidencia autorizada. Diagnóstico puede ser el botón destacado cuando esté probado; mientras tanto el destacado conduce a Contacto.
+Cabecera propuesta: Servicios · Qué es HumanaIA · Recursos · Contacto. «Recursos» es un botón de submenú, sin página ni ruta `/recursos/`; agrupa Laboratorio, FAQ y Blog solo cuando estén disponibles. Claude debe implementarlo como control accesible, operable por teclado y táctil, no como enlace ficticio a `#`. Casos se incorpora al existir evidencia autorizada. Diagnóstico puede ser el botón destacado cuando esté probado; mientras tanto el destacado conduce a Contacto.
 
 Pie propuesto: marca, contacto validado, enlaces legales y acceso a las áreas publicables. No mostrar correo de Ester hasta confirmarlo en #6, ni inventar teléfonos, dirección o perfiles sociales.
 
@@ -83,7 +95,7 @@ Propuesta funcional para validar, todavía sin cuestionario aprobado:
 | --- | --- | --- | --- |
 | A, en paralelo | #9: marca y arquitectura; #20: inventario de nueva web | ChatGPT / Claude respectivamente | Original contrastado, decisiones registradas y factibilidad revisada |
 | B | Tema, constructor, plugins y recursos de marca | Propuesta de Claude; decide persona responsable | Aprobación humana y copia previa para cambios técnicos que lo exijan |
-| C | Texto del inicio y prototipo con cabecera/pie | ChatGPT / Claude | Texto revisado y fusionado por persona; prototipo validado |
+| C | Texto del inicio y prototipo con cabecera/pie | ChatGPT / Claude | Texto revisado por el otro agente y fusionado por el flujo autorizado; aceptación humana del prototipo como entrega material |
 | D | Servicios y contenido de confianza; formularios | ChatGPT / Claude | Oferta y evidencia verificadas, contenidos aprobados y pruebas correctas |
 | E | Diagnóstico y Laboratorio | Preguntas/textos de ChatGPT; código de Claude | Reglas aprobadas y cobertura funcional completa |
 | F | Comprensión, rúbrica, accesibilidad, rendimiento y SEO | Ambos según carril | Misma URL/versión medidas, revisión cruzada cerrada y aprobación humana |
@@ -98,4 +110,4 @@ Propuesta funcional para validar, todavía sin cuestionario aprobado:
 4. Confirmar no indexación y bloqueo de correos salientes durante construcción. Las pruebas de envío requieren destinatarios controlados y autorización antes de habilitar mensajes reales.
 5. Validar rutas del diagnóstico y necesidades del Laboratorio sin instalar ni implementar antes de sus dependencias.
 
-No se ha completado esta revisión ni se han aprobado estas rutas. Ninguna de estas propuestas autoriza fusionar o publicar.
+La revisión de Claude de #21 aprobó la entrega como parcial, no apta para implementar; este ajuste atiende sus sugerencias de Recursos, rutas legales e intención de búsqueda. La arquitectura definitiva sigue pendiente. Las PR ordinarias pueden integrarse tras revisión cruzada conforme al flujo autorizado; la aceptación humana de la entrega material es una puerta distinta. No implementar decisiones dependientes ni publicar por el mero hecho de fusionar un borrador.

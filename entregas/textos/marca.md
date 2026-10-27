@@ -1,6 +1,6 @@
 # HumanaIA — documento maestro de marca
 
-Fecha: 26/10/2026 · Issue #9 · Autor: ChatGPT/Codex · Revisor: Claude.
+Fecha: 27/10/2026 · Issue #9 · Autor: ChatGPT/Codex · Revisor: Claude.
 Estado: borrador de trabajo, pendiente de contraste con la propuesta original HumanaIA 2.0 y de aprobación humana. No es contenido aprobado para WordPress.
 
 [PENDIENTE DE CONFIRMAR: propuesta HumanaIA 2.0]
@@ -83,5 +83,5 @@ Priorizar fotos reales de equipo y actividad con autorización. Las imágenes ge
 1. Recuperar y contrastar la propuesta original; resolver líneas de servicio y CONECTA.
 2. Confirmar posicionamiento, públicos, oferta y recursos de marca.
 3. Claude valida factibilidad, inventario de URL y dependencias de #20 sobre el mapa adjunto.
-4. Actualizar esta misma entrega en la rama de #9, obtener revisión cruzada y aprobación humana; solo la persona responsable fusiona.
+4. Actualizar la entrega con revisión cruzada en una PR de #9. Las PR ordinarias se integran mediante el flujo autorizado; la arquitectura y el posicionamiento definitivos requieren aceptación humana como entrega material antes de implementar lo que dependa de ellos.
 5. Claude implementa después en nueva.humannaia.com. No modificar humannaia.com ni /staging.
