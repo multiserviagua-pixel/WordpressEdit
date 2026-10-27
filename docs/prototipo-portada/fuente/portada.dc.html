@@ -92,6 +92,12 @@ a{color:#0050D0}a:hover{color:#02162D}
 .parallax{animation:para linear both;animation-timeline:scroll(root);animation-range:0px 900px}
 .big-word{animation:spread linear both;animation-timeline:view();animation-range:entry 0% cover 55%}
 }
+.car-card > span:not(.arrow),.car-card > h3,.car-card > div:not(.card-img){position:relative;z-index:1}.car-card .arrow{z-index:2}
+.card-img{position:absolute;left:0;right:0;top:0;height:58%;pointer-events:none}.card-img img{width:100%;height:100%;object-fit:cover;display:block}.card-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(227,240,253,0) 30%,#E3F0FD 100%)}
+.lbl{display:inline-block !important;align-self:flex-start;margin-right:56px;padding:6px 14px !important;border-radius:999px;background:rgba(255,255,255,.88)}
+.arch{position:relative;overflow:hidden}.arch img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sol-thumb{flex:0 0 120px;width:120px;height:60px;object-fit:cover;border-radius:12px;display:block}
+@media (max-width: 640px){.sol-thumb{display:none !important}}
 @media (max-width: 1024px){.proj-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important}.proj-grid .b-wide{grid-column:1 / -1 !important}.proj-grid .b-tall{grid-row:auto !important;min-height:380px !important}.hero-inner{padding-top:64px !important;padding-bottom:88px !important}.hero-visual{width:min(420px,100%) !important}.steps{grid-template-columns:repeat(4,minmax(0,1fr)) !important;gap:32px 20px !important}.team{flex-wrap:nowrap !important}.team > div{flex:1 1 0 !important}.team > div > div:first-child{aspect-ratio:1 / 1 !important}.arch{aspect-ratio:1 / 1 !important;max-width:420px !important}}
 @media (max-width: 640px){.sec-y{padding-top:64px !important;padding-bottom:64px !important}.sec-b{padding-bottom:64px !important}.hero-inner{padding-top:40px !important;padding-bottom:56px !important;gap:24px !important}.hero-visual{width:min(320px,86%) !important}.hero-visual .chip{padding:6px 10px 6px 6px !important;gap:6px !important;border-radius:14px !important}.hero-visual .chip > span:first-child{width:28px !important;height:28px !important;border-radius:10px !important}.hero-visual .chip > span:last-child{font-size:13px !important}.hero-pill{font-size:12px !important;flex-wrap:wrap;row-gap:6px}.proj-grid{grid-template-columns:1fr !important;grid-auto-rows:auto !important}.proj-grid .b-wide{grid-column:auto !important}.proj-grid .b-tall{min-height:340px !important}.proj-grid > article:not(.b-wide){min-height:200px}.car-card{height:360px !important;padding:24px !important}.car-card h3{font-size:22px !important}.car-card .arrow{top:20px !important;right:20px !important}.sol-row{padding:20px 4px !important;gap:6px 14px !important}.sol-row .arrow{display:none !important}.sol-row h3{flex:1 1 0 !important}.sol-row p{flex-basis:100% !important;margin-left:62px !important}.steps{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:32px 18px !important}.draw-line{display:none !important}.team{flex-wrap:nowrap !important;gap:12px !important}.team > div{flex:1 1 0 !important}.team > div:last-child{padding-top:24px !important}.team h3{font-size:18px !important}.team p{font-size:14px !important}.arch{aspect-ratio:1 / 1 !important}.quote-card{max-width:200px !important;bottom:16px !important;padding:16px !important}.faq-a{margin-right:0 !important}.contact-card{border-radius:28px !important}.contact-form{padding:20px !important}.tab-label{padding:0 14px !important;font-size:14px !important}}
 @media (prefers-reduced-motion: reduce){.float-a,.float-b,.float-c,.ring,.marquee-track,.blob-a,.blob-b,.reveal,.reveal-left,.step-in,.step-in > span,.draw-line,.carousel > *,.parallax,.big-word,.load-1,.load-2,.load-3{animation:none !important}.bento:hover,.btn:hover{transform:none}}
@@ -149,9 +155,8 @@ a{color:#0050D0}a:hover{color:#02162D}
 </div>
 <div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
 <div class="parallax hero-visual" style="position: relative; width: min(480px, 100%); aspect-ratio: 1 / 1">
-<svg class="ring" aria-hidden="true" viewBox="0 0 100 100" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="50" cy="50" r="48" fill="none" stroke="#B8D8F6" stroke-width=".4" stroke-dasharray="1.2 2.4"></circle><circle cx="50" cy="2" r="1.6" fill="#50B0F0"></circle><circle cx="98" cy="50" r="1.2" fill="#0050D0"></circle></svg>
-<div aria-hidden="true" style="position: absolute; inset: 11%; border-radius: 50%; background: radial-gradient(circle at 35% 28%, #FFFFFF 0%, #EEF6FE 55%, #D7EAFB 100%); box-shadow: 0 40px 100px rgba(0,80,208,.18), inset 0 0 0 1px rgba(255,255,255,.9)"></div>
-<img src="/_blob/667c8b5259ca9e4b5b62cd2f8209b355" alt="" style="position: absolute; left: 18%; top: 20%; width: 64%; height: auto">
+<div aria-hidden="true" style="position: absolute; left: 16%; top: 16%; right: 0; bottom: 4%; border-radius: 40px; background: linear-gradient(135deg, #BFE0FA 0%, #E3F0FD 100%)"></div>
+<div style="position: absolute; left: 4%; top: 6%; right: 10%; bottom: 14%; border-radius: 40px; overflow: hidden; box-shadow: 0 40px 100px rgba(0,80,208,.22)"><img src="/_blob/4a40b3120f2bb124ad3b47cc6e8d5422" alt="Personas adultas participan en un taller con portátiles mientras una formadora señala una pantalla." style="width: 100%; height: 100%; object-fit: cover; display: block"></div>
 <div class="float-a glass chip" style="position: absolute; left: -4%; top: 12%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #0050D0, #50B0F0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l3-7 3 14 3-7h3"></path></svg></span><span style="font-size: 15px; font-weight: 700">Automatización</span></div>
 <div class="float-b glass chip" style="position: absolute; right: -6%; top: 44%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #02162D, #0050D0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"></path></svg></span><span style="font-size: 15px; font-weight: 700">Desarrollo a medida</span></div>
 <div class="float-c glass chip" style="position: absolute; left: 4%; bottom: 6%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #50B0F0, #A8D8F8); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#02162D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4z"></path><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"></path></svg></span><span style="font-size: 15px; font-weight: 700">Formación</span></div>
@@ -192,26 +197,29 @@ a{color:#0050D0}a:hover{color:#02162D}
 <div class="carousel" tabindex="0" aria-label="Situaciones, desliza para ver más" style="margin: 18px -24px 0; padding: 12px 24px 28px; display: flex; gap: 18px; overflow-x: auto; scroll-padding-left: 24px; -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 88%, transparent 100%); mask-image: linear-gradient(90deg, #000 0%, #000 88%, transparent 100%)">
 
 <a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(560px, 86%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 36px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<div class="card-img" aria-hidden="true"><img src="/_blob/1e7519f7b179110378d85d03e4a4e73d" alt=""></div>
 <span style="position: relative; align-self: flex-start; margin-right: 64px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.75); border: 1px solid #C9DFF4; color: #0050D0; font-size: 13px; font-weight: 700; letter-spacing: 1px">TE PROPONEMOS · CONSULTORÍA</span>
 <h3 style="position: relative; margin: auto 0 0; max-width: 460px; font-weight: 800; font-size: 32px; line-height: 1.12; letter-spacing: -0.02em">«Sabemos que la IA nos ayudaría, pero no por dónde empezar.»</h3>
 <span class="arrow" aria-hidden="true" style="position: absolute; top: 32px; right: 32px; width: 52px; height: 52px; border-radius: 26px; background: #0050D0; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
 </a>
 
 <a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
-<span style="display: block; padding-right: 52px; font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">TE PROPONEMOS · AUTOMATIZACIÓN</span>
+<div class="card-img" aria-hidden="true"><img src="/_blob/0e0f03d5a635f93007bbb253d71b7141" alt=""></div>
+<span class="lbl" style="display: block; padding-right: 52px; font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">TE PROPONEMOS · AUTOMATIZACIÓN</span>
 <h3 style="margin: auto 0 0; font-weight: 800; font-size: 24px; line-height: 1.2">«Perdemos horas en tareas repetitivas.»</h3>
 <span class="arrow" aria-hidden="true" style="position: absolute; top: 24px; right: 24px; width: 42px; height: 42px; border-radius: 21px; background: #FFFFFF; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
 </a>
 
 <a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
-<svg aria-hidden="true" width="120" height="120" viewBox="0 0 120 120" style="position: absolute; right: -14px; top: -14px; opacity: .9"><circle cx="60" cy="60" r="58" fill="none" stroke="#B8D8F6" stroke-dasharray="3 5"></circle><circle cx="60" cy="60" r="36" fill="none" stroke="#50B0F0" stroke-width="1.5"></circle><circle cx="60" cy="60" r="10" fill="#0050D0"></circle></svg>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">TE PROPONEMOS · DESARROLLO</span>
+<div class="card-img" aria-hidden="true"><img src="/_blob/d6e2d90fceb8c00abfaafa48a6ad1291" alt=""></div>
+<span class="lbl" style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">TE PROPONEMOS · DESARROLLO</span>
 <h3 style="margin: auto 0 0; font-weight: 800; font-size: 24px; line-height: 1.2">«Ninguna herramienta encaja con nuestra forma de trabajar.»</h3>
 </a>
 
 <a class="bento car-card" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(460px, 84%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between">
+<div class="card-img" aria-hidden="true"><img src="/_blob/02c629f4b2823da0ff725e42951b5740" alt=""></div>
 <div>
-<span style="display: block; padding-right: 52px; font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">TE PROPONEMOS · FORMACIÓN</span>
+<span class="lbl" style="display: block; padding-right: 52px; font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">TE PROPONEMOS · FORMACIÓN</span>
 </div>
 <div>
 <h3 style="margin: 0 0 20px; font-weight: 800; font-size: 26px; line-height: 1.2">«El equipo necesita aprender a usar la IA con criterio.»</h3>
@@ -237,7 +245,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 <section aria-labelledby="porque-t" style="position: relative; background: linear-gradient(180deg, #FFFFFF 0%, #F3F8FD 100%); overflow: hidden">
 <div class="sec-y" style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
 <div class="reveal" style="flex: 1 1 440px; min-width: 0; position: relative">
-<div class="arch" style="aspect-ratio: 4 / 5; max-width: 460px; border-radius: 200px 200px 32px 32px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 32px; color: #4F5B66; font-size: 16px">[Foto real: el equipo de HumanaIA trabajando con un cliente]</div>
+<div class="arch" style="aspect-ratio: 4 / 5; max-width: 460px; border-radius: 200px 200px 32px 32px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 32px; color: #4F5B66; font-size: 16px"><img src="/_blob/2f769ee963fc1e9e39e1d9d77346f3e5" alt="Docentes prueban herramientas en sus portátiles y comparten impresiones durante una formación."></div>
 <div class="glass float-b quote-card" style="position: absolute; right: 0; bottom: 40px; max-width: 250px; padding: 20px; border-radius: 24px; box-shadow: 0 20px 50px rgba(2,22,45,.12)">
 <p style="margin: 0; font-weight: 800; font-size: 17px; line-height: 1.3">“La IA no es el futuro. Es el presente.”</p>
 <p style="margin: 8px 0 0; font-size: 14px; color: #4F5B66">Equipo HumanaIA</p>
@@ -275,6 +283,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <a class="sol-row reveal-left cat-apl" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
 <span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">01</span>
+<img class="sol-thumb" src="/_blob/1e7519f7b179110378d85d03e4a4e73d" alt="" style="flex: 0 0 120px; width: 120px; height: 60px; object-fit: cover; border-radius: 12px">
 <h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Consultoría aplicada</h3>
 <p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Diagnóstico de procesos, plan de implantación y acompañamiento hasta que funciona.</p>
 <span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -282,6 +291,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <a class="sol-row reveal-left cat-apl" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
 <span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">02</span>
+<img class="sol-thumb" src="/_blob/0e0f03d5a635f93007bbb253d71b7141" alt="" style="flex: 0 0 120px; width: 120px; height: 60px; object-fit: cover; border-radius: 12px">
 <h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Automatización de procesos</h3>
 <p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Flujos y agentes de IA que conectan vuestras herramientas y quitan trabajo repetitivo.</p>
 <span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -289,6 +299,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <a class="sol-row reveal-left cat-apl" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
 <span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">03</span>
+<img class="sol-thumb" src="/_blob/d6e2d90fceb8c00abfaafa48a6ad1291" alt="" style="flex: 0 0 120px; width: 120px; height: 60px; object-fit: cover; border-radius: 12px">
 <h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Desarrollo a medida</h3>
 <p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Soluciones propias con IA e integraciones con los sistemas que ya usáis.</p>
 <span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -296,6 +307,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <a class="sol-row reveal-left cat-form" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
 <span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">04</span>
+<img class="sol-thumb" src="/_blob/6a27ca043ee4e6e299488f5484d78776" alt="" style="flex: 0 0 120px; width: 120px; height: 60px; object-fit: cover; border-radius: 12px">
 <h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Formación para equipos</h3>
 <p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Cursos por departamento: dirección, RRHH, marketing, comercial y administración.</p>
 <span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -303,6 +315,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <a class="sol-row reveal-left cat-form" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
 <span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">05</span>
+<img class="sol-thumb" src="/_blob/089cb9512584d73284599d7f695561c0" alt="" style="flex: 0 0 120px; width: 120px; height: 60px; object-fit: cover; border-radius: 12px">
 <h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Escuela de negocios en IA</h3>
 <p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Programas para directivos y emprendedores que quieren decidir y liderar con IA.</p>
 <span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -310,6 +323,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 
 <a class="sol-row reveal-left cat-form" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
 <span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">06</span>
+<img class="sol-thumb" src="/_blob/928841e2cce9df990502bbae321c0453" alt="" style="flex: 0 0 120px; width: 120px; height: 60px; object-fit: cover; border-radius: 12px">
 <h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Niños, jóvenes y docentes</h3>
 <p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Programas para colegios, familias y profesorado, para entender la IA y usarla bien.</p>
 <span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
@@ -476,6 +490,7 @@ a{color:#0050D0}a:hover{color:#02162D}
 <section id="contacto" style="background: #FFFFFF">
 <div class="sec-b" style="max-width: 1240px; margin: 0 auto; padding: 0 24px 96px">
 <div class="reveal contact-card" style="position: relative; overflow: hidden; border-radius: 40px; padding: clamp(32px, 5vw, 72px); background: linear-gradient(135deg, #E3F0FD 0%, #F3F8FD 45%, #FFFFFF 100%); display: flex; flex-wrap: wrap; gap: 48px">
+<img aria-hidden="true" alt="" src="/_blob/81a073811b08de5c5a8dc64633a269dd" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .16; pointer-events: none">
 <div class="blob blob-a" aria-hidden="true" style="width: 520px; height: 520px; right: -160px; top: -200px; background: radial-gradient(circle, rgba(80,176,240,.5) 0%, rgba(80,176,240,0) 70%)"></div>
 <div style="position: relative; flex: 1 1 380px; min-width: 0">
 <h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.6vw, 60px); line-height: 1.02; letter-spacing: -0.03em">¿Damos el siguiente paso <span class="grad-text">juntos?</span></h2>
