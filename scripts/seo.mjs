@@ -1,6 +1,5 @@
 // Comprobaciones SEO on-page y enlaces rotos de cada URL de config.json.
-// Mide la web real y, si está en config.web_nueva, también la nueva web.
-// Uso: node scripts/seo.mjs   (SITIO=https://... mide solo esa web)
+// Uso: node scripts/seo.mjs   (SITIO=https://... para medir otra web)
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { perfiles, urlCompleta, slug, asegurarCarpeta } from './lib/config.mjs';

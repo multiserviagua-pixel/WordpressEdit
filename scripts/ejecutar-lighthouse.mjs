@@ -1,5 +1,4 @@
 // Ejecuta Lighthouse (móvil) varias veces por URL y guarda la ejecución mediana.
-// Mide la web real y, si está en config.web_nueva, también la nueva web (cada una en su carpeta).
 // Pensado para GitHub Actions, donde `npx` descarga Lighthouse y Chrome ya está instalado.
 // Uso: node scripts/ejecutar-lighthouse.mjs
 import { spawnSync } from 'node:child_process';
@@ -46,14 +45,11 @@ async function medir(config) {
 
 async function main() {
   const lista = await perfiles();
-  let todoFallo = true;
+  let fallo = false;
   for (const config of lista) {
-    const fallo = await medir(config);
-    if (fallo) console.error(`[${config.id}] Lighthouse no pudo medir ninguna página de ${config.sitio}`);
-    // La web real decide el resultado del paso; un fallo de la nueva web no detiene la medición.
-    if (config.id === 'real') todoFallo = fallo;
+    if (await medir(config)) { fallo = true; console.error(`[${config.id}] Lighthouse no pudo medir ninguna página de ${config.sitio}`); }
   }
-  if (todoFallo) process.exit(1);
+  if (fallo) process.exit(1);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

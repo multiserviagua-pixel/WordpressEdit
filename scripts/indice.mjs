@@ -1,6 +1,5 @@
 // Calcula el Índice HumanaIA, lo añade al historial y escribe el informe.
-// Calcula un índice por web: la real (informe.md, resultados/) y la nueva si está en config.web_nueva
-// (resultados/nueva/informe.md, resultados/nueva/). Uso: node scripts/indice.mjs   (ETIQUETA="Cierre Sprint 0")
+// Uso: node scripts/indice.mjs   (ETIQUETA="Cierre Sprint 0" para marcar la medición)
 import { readdir, writeFile, appendFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
@@ -80,15 +79,7 @@ function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
 
 async function main() {
   const lista = await perfiles();
-  for (const config of lista) {
-    try {
-      await calcular(config);
-    } catch (e) {
-      // La web real decide el resultado; un fallo de la nueva web se informa sin parar la medición.
-      if (config.id === 'real') throw e;
-      console.error(`[${config.id}] ${e.message || e}`);
-    }
-  }
+  for (const config of lista) await calcular(config);
 }
 
 async function calcular(config) {

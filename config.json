@@ -1,21 +1,13 @@
 {
-  "sitio": "https://humannaia.com",
-  "urls": [
-    "/",
-    "/servicios-humanaia/",
-    "/que-es-humanaia/"
+  "sitio": "https://nueva.humannaia.com",
+  "nombre": "Nueva web (nueva.humannaia.com)",
+  "omitir_auditorias": [
+    "is-crawlable"
   ],
-  "web_nueva": {
-    "nombre": "Nueva web (nueva.humannaia.com)",
-    "sitio": "https://nueva.humannaia.com",
-    "urls": [
-      "/"
-    ],
-    "omitir_auditorias": [
-      "is-crawlable"
-    ],
-    "nota": "Web en construcción y sin indexar a propósito hasta el lanzamiento: Lighthouse omite la auditoría «is-crawlable». Las notas de contenido, comprensión y conversión de esta web van en datos/manual-nueva.json. Añade aquí cada página del mapa cuando se publique."
-  },
+  "nota": "Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base (21/10/2026) es la de la web actual humannaia.com, para ver cuánto mejora la nueva. Añade aquí cada página publicada.",
+  "urls": [
+    "/"
+  ],
   "pesos": {
     "rendimiento": 20,
     "accesibilidad": 15,
