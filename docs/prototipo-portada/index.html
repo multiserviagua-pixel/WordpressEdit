@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>HumanaIA – Portada</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0050D0}a:hover{color:#02162D}
+.h-nav{display:flex}
+.h-menu{display:none}
+@media (max-width: 1080px){.h-nav{display:none !important}.h-menu{display:block}.h-cta-desk{display:none !important}}
+.h-menu summary,.faq summary{list-style:none;cursor:pointer}
+.h-menu summary::-webkit-details-marker,.faq summary::-webkit-details-marker{display:none}
+.nav-link{position:relative}
+.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:2px;border-radius:2px;background:linear-gradient(90deg,#0050D0,#50B0F0);transform:scaleX(0);transform-origin:left;transition:transform .3s ease}
+.nav-link:hover::after{transform:scaleX(1)}
+.btn{transition:background .25s ease,color .25s ease,transform .25s ease,box-shadow .25s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary:hover,.btn-primary:focus-visible{background:#50B0F0 !important;color:#02162D !important}
+.btn-ghost:hover,.btn-ghost:focus-visible{background:#FFFFFF !important;box-shadow:0 10px 30px rgba(0,80,208,.12)}
+.grad-text{background:linear-gradient(90deg,#0050D0 0%,#2D8BEA 55%,#50B0F0 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.glass{background:rgba(255,255,255,.62);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.8)}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+.float-a{animation:floaty 6s ease-in-out infinite}
+.float-b{animation:floaty 7s ease-in-out infinite .8s}
+.float-c{animation:floaty 8s ease-in-out infinite 1.6s}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1)}33%{transform:translate(40px,-30px) scale(1.08)}66%{transform:translate(-30px,20px) scale(.95)}}
+.blob{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
+.blob-a{animation:drift 18s ease-in-out infinite}
+.blob-b{animation:drift 22s ease-in-out infinite reverse}
+@keyframes spin{to{transform:rotate(360deg)}}
+.ring{animation:spin 50s linear infinite}
+@keyframes marquee{to{transform:translateX(-50%)}}
+.marquee-track{animation:marquee 34s linear infinite}
+.marquee:hover .marquee-track{animation-play-state:paused}
+.bento{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.bento:hover{transform:translateY(-6px);box-shadow:0 24px 60px rgba(2,22,45,.10)}
+.bento .arrow{transition:transform .3s ease}
+.bento:hover .arrow{transform:translate(4px,-4px)}
+.b-wide{grid-column:span 2}
+.b-tall{grid-row:span 2}
+@media (max-width: 900px){.b-wide,.b-tall{grid-column:auto;grid-row:auto}}
+.tab-input{position:absolute;opacity:0;pointer-events:none}
+.tab-label{cursor:pointer;transition:background .25s ease,color .25s ease}
+#tab-todo:checked ~ .tabs label[for=tab-todo],#tab-apl:checked ~ .tabs label[for=tab-apl],#tab-form:checked ~ .tabs label[for=tab-form]{background:#02162D !important;color:#FFFFFF !important}
+#tab-apl:checked ~ .sol-list .cat-form{display:none !important}
+#tab-form:checked ~ .sol-list .cat-apl{display:none !important}
+#tab-todo:focus-visible ~ .tabs label[for=tab-todo],#tab-apl:focus-visible ~ .tabs label[for=tab-apl],#tab-form:focus-visible ~ .tabs label[for=tab-form]{outline:3px solid #50B0F0;outline-offset:2px}
+.sol-row{transition:background .35s ease,padding .35s ease}
+.sol-row:hover{background:linear-gradient(90deg,#E3F0FD 0%,rgba(227,240,253,0) 100%);padding-left:28px !important}
+.sol-row .arrow{transition:transform .3s ease,background .3s ease,color .3s ease}
+.sol-row:hover .arrow{transform:rotate(-45deg);background:#0050D0;color:#FFFFFF}
+.carousel{scroll-snap-type:x mandatory;scrollbar-width:none}
+.carousel::-webkit-scrollbar{display:none}
+.carousel > *{scroll-snap-align:start}
+.faq .plus{transition:transform .3s ease,background .3s ease}
+.faq details[open] .plus{transform:rotate(45deg);background:#0050D0;color:#FFFFFF}
+@keyframes rise{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:none}}
+@supports (animation-timeline: view()){.reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 22%}}
+@keyframes slide-l{from{opacity:0;transform:translateX(-70px)}to{opacity:1;transform:none}}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+@keyframes card-cover{0%{opacity:.4;transform:scale(.88) rotate(-1.5deg)}35%,65%{opacity:1;transform:none}100%{opacity:.5;transform:scale(.9) rotate(1.5deg)}}
+@keyframes para{to{transform:translateY(110px) rotate(-6deg) scale(.94)}}
+@keyframes spread{from{opacity:0;letter-spacing:.12em}to{opacity:1;letter-spacing:-0.05em}}
+@keyframes pop{0%{opacity:0;transform:scale(.4)}70%{transform:scale(1.12)}100%{opacity:1;transform:none}}
+.load-1{animation:rise 1s cubic-bezier(.2,.7,.2,1) both}
+.load-2{animation:rise 1s cubic-bezier(.2,.7,.2,1) .15s both}
+.load-3{animation:rise 1s cubic-bezier(.2,.7,.2,1) .3s both}
+@supports (animation-timeline: view()){
+.reveal-left{animation:slide-l linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+.sol-list > :nth-child(2){animation-range:entry 6% cover 32%}
+.sol-list > :nth-child(3){animation-range:entry 12% cover 36%}
+.sol-list > :nth-child(4){animation-range:entry 18% cover 40%}
+.sol-list > :nth-child(5){animation-range:entry 24% cover 44%}
+.sol-list > :nth-child(6){animation-range:entry 30% cover 48%}
+.stagger > .reveal:nth-child(2){animation-range:entry 10% cover 34%}
+.stagger > .reveal:nth-child(3){animation-range:entry 20% cover 44%}
+.step-in{animation:rise linear both;animation-timeline:view();animation-range:entry 10% cover 30%}
+.step-in:nth-child(3){animation-range:entry 16% cover 36%}
+.step-in:nth-child(4){animation-range:entry 22% cover 42%}
+.step-in:nth-child(5){animation-range:entry 28% cover 48%}
+.step-in > span:first-child{animation:pop linear both;animation-timeline:view();animation-range:entry 20% cover 40%}
+.draw-line{transform-origin:left;animation:draw linear both;animation-timeline:view();animation-range:entry 30% cover 55%}
+.carousel > *{animation:card-cover linear both;animation-timeline:view(inline);animation-range:cover 0% cover 100%}
+.parallax{animation:para linear both;animation-timeline:scroll(root);animation-range:0px 900px}
+.big-word{animation:spread linear both;animation-timeline:view();animation-range:entry 0% cover 55%}
+}
+@media (prefers-reduced-motion: reduce){.float-a,.float-b,.float-c,.ring,.marquee-track,.blob-a,.blob-b,.reveal,.reveal-left,.step-in,.step-in > span,.draw-line,.carousel > *,.parallax,.big-word,.load-1,.load-2,.load-3{animation:none !important}.bento:hover,.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div style="font-family: Manrope, system-ui, sans-serif; color: #02162D; background: #FFFFFF; font-size: 18px; line-height: 1.6; overflow-x: clip">
+
+<!-- CABECERA FLOTANTE -->
+<header style="position: sticky; top: 0; z-index: 20; padding: 14px 16px 0">
+<div class="glass" style="max-width: 1240px; margin: 0 auto; padding: 8px 10px 8px 20px; border-radius: 999px; display: flex; align-items: center; justify-content: space-between; gap: 20px; box-shadow: 0 10px 40px rgba(2,22,45,.08)">
+<a href="#inicio" aria-label="HumanaIA, inicio" style="display: inline-flex; align-items: center; flex: none">
+<img src="../marca/logo-humanaia.webp" alt="HumanaIA" style="height: 52px; width: auto; display: block">
+</a>
+<nav class="h-nav" aria-label="Principal" style="align-items: center; gap: 30px; font-size: 15px; font-weight: 600">
+<a class="nav-link" href="#soluciones" style="text-decoration: none; color: #02162D; padding: 12px 0">Consultoría y automatización</a>
+<a class="nav-link" href="#soluciones" style="text-decoration: none; color: #02162D; padding: 12px 0">Desarrollo a medida</a>
+<a class="nav-link" href="#soluciones" style="text-decoration: none; color: #02162D; padding: 12px 0">Formación</a>
+<a class="nav-link" href="#proyectos" style="text-decoration: none; color: #02162D; padding: 12px 0">Proyectos</a>
+<a class="nav-link" href="#equipo" style="text-decoration: none; color: #02162D; padding: 12px 0">Nosotros</a>
+</nav>
+<div style="display: flex; align-items: center; gap: 10px">
+<a class="btn btn-primary h-cta-desk" href="#contacto" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 26px; border-radius: 999px; background: #0050D0; color: #FFFFFF; text-decoration: none; font-weight: 700; font-size: 15px">Hablemos</a>
+<details class="h-menu" style="position: relative">
+<summary aria-label="Abrir menú" style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; background: #02162D">
+<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h10"></path></svg>
+</summary>
+<div class="glass" style="position: absolute; right: 0; top: 60px; width: 290px; padding: 12px; border-radius: 24px; box-shadow: 0 24px 60px rgba(2,22,45,.16); display: flex; flex-direction: column; background: rgba(255,255,255,.95)">
+<a href="#soluciones" style="text-decoration: none; color: #02162D; font-weight: 600; padding: 12px 14px; border-radius: 12px">Consultoría y automatización</a>
+<a href="#soluciones" style="text-decoration: none; color: #02162D; font-weight: 600; padding: 12px 14px; border-radius: 12px">Desarrollo a medida</a>
+<a href="#soluciones" style="text-decoration: none; color: #02162D; font-weight: 600; padding: 12px 14px; border-radius: 12px">Formación</a>
+<a href="#proyectos" style="text-decoration: none; color: #02162D; font-weight: 600; padding: 12px 14px; border-radius: 12px">Proyectos</a>
+<a href="#equipo" style="text-decoration: none; color: #02162D; font-weight: 600; padding: 12px 14px; border-radius: 12px">Nosotros</a>
+<a class="btn btn-primary" href="#contacto" style="margin-top: 8px; display: flex; align-items: center; justify-content: center; min-height: 48px; border-radius: 999px; background: #0050D0; color: #FFFFFF; text-decoration: none; font-weight: 700">Hablemos</a>
+</div>
+</details>
+</div>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="inicio" style="position: relative; margin-top: -76px; padding-top: 76px; overflow: hidden; background: #FFFFFF">
+<div class="blob blob-a" aria-hidden="true" style="width: 620px; height: 620px; right: -140px; top: -120px; background: radial-gradient(circle, rgba(80,176,240,.55) 0%, rgba(80,176,240,0) 70%)"></div>
+<div class="blob blob-b" aria-hidden="true" style="width: 520px; height: 520px; left: -180px; bottom: -200px; background: radial-gradient(circle, rgba(0,80,208,.22) 0%, rgba(0,80,208,0) 70%)"></div>
+<div class="blob blob-a" aria-hidden="true" style="width: 360px; height: 360px; left: 38%; top: 30%; background: radial-gradient(circle, rgba(227,240,253,.9) 0%, rgba(227,240,253,0) 70%)"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 40px; align-items: center">
+<div style="flex: 999 1 560px; min-width: 0">
+<p class="glass" style="margin: 0 0 26px; display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px 8px 8px; border-radius: 999px; font-size: 14px; font-weight: 600; color: #02162D"><span style="padding: 4px 10px; border-radius: 999px; background: #02162D; color: #FFFFFF; font-size: 12px; font-weight: 700; letter-spacing: 1px">NUEVO</span>Consultoría, automatización, desarrollo y formación</p>
+<h1 class="load-1" style="margin: 0; font-weight: 800; font-size: clamp(44px, 6.4vw, 84px); line-height: 1.0; letter-spacing: -0.035em; color: #02162D">La IA, <span class="grad-text">aplicada</span><br>a tu organización.</h1>
+<p class="load-2" style="margin: 28px 0 0; max-width: 560px; font-size: 20px; color: #4F5B66">Automatizamos procesos, desarrollamos soluciones a medida y formamos a tu equipo para usarlas con criterio.</p>
+<div class="load-3" style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 40px">
+<a class="btn btn-primary" href="#soluciones" style="display: inline-flex; align-items: center; gap: 12px; min-height: 58px; padding: 0 10px 0 30px; border-radius: 999px; background: #0050D0; color: #FFFFFF; text-decoration: none; font-weight: 700; box-shadow: 0 14px 34px rgba(0,80,208,.28)">Descubre nuestras soluciones
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 20px; background: rgba(255,255,255,.2)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"></path></svg></span></a>
+<a class="btn btn-ghost glass" href="#contacto" style="display: inline-flex; align-items: center; min-height: 58px; padding: 0 28px; border-radius: 999px; color: #02162D; text-decoration: none; font-weight: 700">Cuéntanos qué necesitas</a>
+</div>
+</div>
+<div style="flex: 1 1 400px; min-width: 0; display: flex; justify-content: center">
+<div class="parallax" style="position: relative; width: min(480px, 100%); aspect-ratio: 1 / 1">
+<svg class="ring" aria-hidden="true" viewBox="0 0 100 100" style="position: absolute; inset: 0; width: 100%; height: 100%"><circle cx="50" cy="50" r="48" fill="none" stroke="#B8D8F6" stroke-width=".4" stroke-dasharray="1.2 2.4"></circle><circle cx="50" cy="2" r="1.6" fill="#50B0F0"></circle><circle cx="98" cy="50" r="1.2" fill="#0050D0"></circle></svg>
+<div aria-hidden="true" style="position: absolute; inset: 11%; border-radius: 50%; background: radial-gradient(circle at 35% 28%, #FFFFFF 0%, #EEF6FE 55%, #D7EAFB 100%); box-shadow: 0 40px 100px rgba(0,80,208,.18), inset 0 0 0 1px rgba(255,255,255,.9)"></div>
+<img src="../marca/logo-humanaia.webp" alt="" style="position: absolute; left: 18%; top: 20%; width: 64%; height: auto">
+<div class="float-a glass" style="position: absolute; left: -4%; top: 12%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #0050D0, #50B0F0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h4l3-7 3 14 3-7h3"></path></svg></span><span style="font-size: 15px; font-weight: 700">Automatización</span></div>
+<div class="float-b glass" style="position: absolute; right: -6%; top: 44%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #02162D, #0050D0); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4"></path></svg></span><span style="font-size: 15px; font-weight: 700">Desarrollo a medida</span></div>
+<div class="float-c glass" style="position: absolute; left: 4%; bottom: 6%; display: flex; align-items: center; gap: 10px; padding: 10px 16px 10px 10px; border-radius: 18px; box-shadow: 0 16px 40px rgba(2,22,45,.10)"><span style="width: 34px; height: 34px; border-radius: 12px; background: linear-gradient(135deg, #50B0F0, #A8D8F8); display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#02162D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-4 9 4-9 4-9-4z"></path><path d="M7 10v5c0 1.5 2.5 3 5 3s5-1.5 5-3v-5"></path></svg></span><span style="font-size: 15px; font-weight: 700">Formación</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- LOGOS EN MOVIMIENTO -->
+<section aria-labelledby="clientes-t" style="background: #FFFFFF">
+<h2 id="clientes-t" style="margin: 0; padding: 0 24px; text-align: center; font-size: 14px; font-weight: 600; color: #4F5B66">Organizaciones que ya trabajan la IA con nosotros</h2>
+<div class="marquee" style="overflow: hidden; padding: 28px 0 40px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent); mask-image: linear-gradient(90deg, transparent, #000 15%, #000 85%, transparent)">
+<div class="marquee-track" style="display: flex; gap: 64px; width: max-content; align-items: center">
+<span style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span aria-hidden="true" style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span aria-hidden="true" style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span aria-hidden="true" style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span aria-hidden="true" style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span aria-hidden="true" style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+<span aria-hidden="true" style="font-weight: 800; font-size: 22px; color: #A9B8C7">[Logo cliente]</span>
+</div>
+</div>
+</section>
+
+<!-- BENTO: CÓMO PODEMOS AYUDARTE -->
+<section aria-labelledby="ayuda-t" style="background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; padding: 72px 24px 112px">
+<div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px">
+<h2 id="ayuda-t" style="margin: 0; max-width: 640px; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Todo lo que la IA puede hacer por ti, <span class="grad-text">en un solo equipo.</span></h2>
+<p style="margin: 0; max-width: 380px; color: #4F5B66">Empieza por donde lo necesites: un diagnóstico, una automatización concreta o la formación de tu equipo.</p>
+</div>
+<p style="margin: 40px 0 0; display: flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #4F5B66"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#0050D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>Desliza para ver todo lo que hacemos</p>
+<div class="carousel" tabindex="0" aria-label="Lo que hacemos, desliza para ver más" style="margin: 18px -24px 0; padding: 12px 24px 28px; display: flex; gap: 18px; overflow-x: auto; scroll-padding-left: 24px; -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 88%, transparent 100%); mask-image: linear-gradient(90deg, #000 0%, #000 88%, transparent 100%)">
+
+<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(560px, 86%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 36px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<span style="position: relative; align-self: flex-start; margin-right: 64px; padding: 6px 14px; border-radius: 999px; background: rgba(255,255,255,.75); border: 1px solid #C9DFF4; color: #0050D0; font-size: 13px; font-weight: 700; letter-spacing: 1px">01 · CONSULTORÍA APLICADA</span>
+<h3 style="position: relative; margin: auto 0 0; max-width: 460px; font-weight: 800; font-size: 32px; line-height: 1.12; letter-spacing: -0.02em">Detectamos dónde la IA aporta valor real y la ponemos a funcionar.</h3>
+<div style="position: relative; margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 6px 14px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 600">Diagnóstico</span>
+<span style="padding: 6px 14px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 600">Plan de implantación</span>
+<span style="padding: 6px 14px; border-radius: 999px; background: #FFFFFF; font-size: 14px; font-weight: 600">Acompañamiento</span>
+</div>
+<span class="arrow" aria-hidden="true" style="position: absolute; top: 32px; right: 32px; width: 52px; height: 52px; border-radius: 26px; background: #0050D0; color: #FFFFFF; display: inline-flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
+</a>
+
+<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">02 · AUTOMATIZACIÓN</span>
+<h3 style="margin: auto 0 0; font-weight: 800; font-size: 24px; line-height: 1.2">Menos tareas repetitivas, más tiempo para lo importante.</h3>
+<span class="arrow" aria-hidden="true" style="position: absolute; top: 24px; right: 24px; width: 42px; height: 42px; border-radius: 21px; background: #FFFFFF; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
+</a>
+
+<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(380px, 80%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column">
+<svg aria-hidden="true" width="120" height="120" viewBox="0 0 120 120" style="position: absolute; right: -14px; top: -14px; opacity: .9"><circle cx="60" cy="60" r="58" fill="none" stroke="#B8D8F6" stroke-dasharray="3 5"></circle><circle cx="60" cy="60" r="36" fill="none" stroke="#50B0F0" stroke-width="1.5"></circle><circle cx="60" cy="60" r="10" fill="#0050D0"></circle></svg>
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">03 · DESARROLLO A MEDIDA</span>
+<h3 style="margin: auto 0 0; font-weight: 800; font-size: 24px; line-height: 1.2">Soluciones propias cuando ninguna herramienta encaja.</h3>
+</a>
+
+<a class="bento" href="#soluciones" style="position: relative; overflow: hidden; flex: 0 0 min(460px, 84%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); color: #02162D; text-decoration: none; display: flex; flex-direction: column; justify-content: space-between">
+<div>
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">04 · FORMACIÓN</span>
+</div>
+<div>
+<h3 style="margin: 0 0 20px; font-weight: 800; font-size: 26px; line-height: 1.2">Tu equipo, usando la IA con soltura y criterio.</h3>
+<div style="display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 8px 16px; border-radius: 999px; background: #FFFFFF; font-size: 15px; font-weight: 600">Presencial</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: #FFFFFF; font-size: 15px; font-weight: 600">Online en directo</span>
+<span style="padding: 8px 16px; border-radius: 999px; background: #FFFFFF; font-size: 15px; font-weight: 600">A medida</span>
+</div>
+</div>
+<span class="arrow" aria-hidden="true" style="position: absolute; top: 24px; right: 24px; width: 42px; height: 42px; border-radius: 21px; background: #FFFFFF; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"></path></svg></span>
+</a>
+
+<div class="bento" style="flex: 0 0 min(320px, 76%); box-sizing: border-box; height: 440px; border-radius: 32px; padding: 32px; background: linear-gradient(160deg, #CFE6FB 0%, #E3F0FD 45%, #F7FBFF 100%); display: flex; flex-direction: column; justify-content: space-between">
+<p style="margin: 0; font-weight: 800; font-size: 64px; line-height: 1; letter-spacing: -0.03em" class="grad-text">[Nº]</p>
+<p style="margin: 0; color: #4F5B66; font-size: 17px">automatizaciones y desarrollos entregados</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- MANIFIESTO CON FOTO ASIMÉTRICA -->
+<section aria-labelledby="porque-t" style="position: relative; background: linear-gradient(180deg, #FFFFFF 0%, #F3F8FD 100%); overflow: hidden">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 120px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
+<div class="reveal" style="flex: 1 1 440px; min-width: 0; position: relative">
+<div style="aspect-ratio: 4 / 5; max-width: 460px; border-radius: 200px 200px 32px 32px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; text-align: center; padding: 32px; color: #4F5B66; font-size: 16px">[Foto real: el equipo de HumanaIA trabajando con un cliente]</div>
+<div class="glass float-b" style="position: absolute; right: 0; bottom: 40px; max-width: 250px; padding: 20px; border-radius: 24px; box-shadow: 0 20px 50px rgba(2,22,45,.12)">
+<p style="margin: 0; font-weight: 800; font-size: 17px; line-height: 1.3">“La IA no es el futuro. Es el presente.”</p>
+<p style="margin: 8px 0 0; font-size: 14px; color: #4F5B66">Equipo HumanaIA</p>
+</div>
+</div>
+<div class="reveal" style="flex: 1 1 480px; min-width: 0">
+<h2 id="porque-t" style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 58px); line-height: 1.04; letter-spacing: -0.03em">La IA no sustituye el criterio. <span class="grad-text">Lo necesita.</span></h2>
+<p style="margin: 22px 0 0; max-width: 520px; font-size: 19px; color: #4F5B66">No vendemos herramientas ni atajos. Construimos soluciones que funcionan en vuestro día a día y enseñamos a usarlas.</p>
+<div style="margin-top: 36px; display: flex; flex-direction: column">
+<div style="display: flex; gap: 20px; padding: 20px 0; border-top: 1px solid #DCE8F4"><span style="flex: none; font-weight: 800; color: #50B0F0">01</span><span><strong>Aplicación real.</strong> Partimos de vuestros procesos, no de una demostración genérica.</span></div>
+<div style="display: flex; gap: 20px; padding: 20px 0; border-top: 1px solid #DCE8F4"><span style="flex: none; font-weight: 800; color: #50B0F0">02</span><span><strong>Desarrollo y formación juntos.</strong> Lo que construimos, os enseñamos a usarlo y mantenerlo.</span></div>
+<div style="display: flex; gap: 20px; padding: 20px 0; border-top: 1px solid #DCE8F4; border-bottom: 1px solid #DCE8F4"><span style="flex: none; font-weight: 800; color: #50B0F0">03</span><span><strong>IA ética y humana.</strong> La tecnología al servicio de las personas.</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- SOLUCIONES: LISTA EDITORIAL CON FILTRO -->
+<section id="soluciones" style="background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
+<div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Nuestras soluciones</h2>
+<p style="margin: 0; max-width: 360px; color: #4F5B66">Filtra por lo que buscas: aplicar la IA o aprender a usarla.</p>
+</div>
+<div style="margin-top: 40px">
+<input class="tab-input" type="radio" name="sol" id="tab-todo" checked>
+<input class="tab-input" type="radio" name="sol" id="tab-apl">
+<input class="tab-input" type="radio" name="sol" id="tab-form">
+<div class="tabs" style="display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 5px; border-radius: 999px; background: #F3F8FD">
+<label class="tab-label" for="tab-todo" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; font-weight: 700; font-size: 15px; color: #02162D">Todas</label>
+<label class="tab-label" for="tab-apl" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; font-weight: 700; font-size: 15px; color: #02162D">Aplicamos</label>
+<label class="tab-label" for="tab-form" style="display: inline-flex; align-items: center; min-height: 44px; padding: 0 22px; border-radius: 999px; font-weight: 700; font-size: 15px; color: #02162D">Formamos</label>
+</div>
+<div class="sol-list" style="margin-top: 32px; border-top: 1px solid #E3F0FD">
+
+<a class="sol-row reveal-leftcat-apl" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
+<span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">01</span>
+<h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Consultoría aplicada</h3>
+<p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Diagnóstico de procesos, plan de implantación y acompañamiento hasta que funciona.</p>
+<span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+
+<a class="sol-row reveal-leftcat-apl" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
+<span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">02</span>
+<h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Automatización de procesos</h3>
+<p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Flujos y agentes de IA que conectan vuestras herramientas y quitan trabajo repetitivo.</p>
+<span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+
+<a class="sol-row reveal-leftcat-apl" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
+<span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">03</span>
+<h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Desarrollo a medida</h3>
+<p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Soluciones propias con IA e integraciones con los sistemas que ya usáis.</p>
+<span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+
+<a class="sol-row reveal-leftcat-form" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
+<span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">04</span>
+<h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Formación para equipos</h3>
+<p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Cursos por departamento: dirección, RRHH, marketing, comercial y administración.</p>
+<span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+
+<a class="sol-row reveal-leftcat-form" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
+<span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">05</span>
+<h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Escuela de negocios en IA</h3>
+<p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Programas para directivos y emprendedores que quieren decidir y liderar con IA.</p>
+<span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+
+<a class="sol-row reveal-leftcat-form" href="#contacto" style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px; padding: 30px 12px; border-bottom: 1px solid #E3F0FD; text-decoration: none; color: #02162D; border-radius: 4px">
+<span style="flex: 0 0 48px; font-weight: 800; color: #50B0F0">06</span>
+<h3 style="flex: 1 1 280px; margin: 0; font-weight: 800; font-size: clamp(22px, 2.4vw, 30px); letter-spacing: -0.01em">Niños, jóvenes y docentes</h3>
+<p style="flex: 1 1 320px; margin: 0; color: #4F5B66; font-size: 17px">Programas para colegios, familias y profesorado, para entender la IA y usarla bien.</p>
+<span class="arrow" aria-hidden="true" style="flex: none; width: 48px; height: 48px; border-radius: 24px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span>
+</a>
+
+</div>
+</div>
+</div>
+</section>
+
+<!-- CÓMO FUNCIONA: LÍNEA DE TIEMPO -->
+<section aria-labelledby="metodo-t" style="position: relative; overflow: hidden; background: linear-gradient(160deg, #D7EAFB 0%, #E3F0FD 35%, #F3F8FD 70%, #FFFFFF 100%); color: #02162D">
+<div class="blob blob-b" aria-hidden="true" style="width: 600px; height: 600px; right: -200px; top: -220px; background: radial-gradient(circle, rgba(80,176,240,.45) 0%, rgba(80,176,240,0) 70%)"></div>
+<div class="blob blob-a" aria-hidden="true" style="width: 480px; height: 480px; left: -160px; bottom: -240px; background: radial-gradient(circle, rgba(0,80,208,.14) 0%, rgba(0,80,208,0) 70%)"></div>
+<div style="position: relative; max-width: 1240px; margin: 0 auto; padding: 112px 24px">
+<h2 id="metodo-t" class="reveal" style="margin: 0; max-width: 720px; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Así trabajamos, <span class="grad-text">paso a paso.</span></h2>
+<div class="reveal" style="position: relative; margin-top: 64px; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 40px 28px">
+<div class="draw-line" aria-hidden="true" style="position: absolute; left: 0; right: 0; top: 23px; height: 2px; background: linear-gradient(90deg, #0050D0 0%, #50B0F0 60%, rgba(80,176,240,.2) 100%)"></div>
+<div class="step-in" style="position: relative">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; background: linear-gradient(135deg, #0050D0, #50B0F0); color: #FFFFFF; font-weight: 800; box-shadow: 0 0 0 8px rgba(80,176,240,.22)">1</span>
+<h3 style="margin: 24px 0 8px; font-weight: 800; font-size: 22px">Escuchamos</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 17px">Conocemos vuestros procesos, herramientas y punto de partida.</p>
+</div>
+<div class="step-in" style="position: relative">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; background: #FFFFFF; color: #0050D0; font-weight: 800; box-shadow: 0 6px 18px rgba(0,80,208,.14)">2</span>
+<h3 style="margin: 24px 0 8px; font-weight: 800; font-size: 22px">Proponemos</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 17px">Un plan claro: qué automatizar, qué desarrollar y qué formación hace falta.</p>
+</div>
+<div class="step-in" style="position: relative">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; background: #FFFFFF; color: #0050D0; font-weight: 800; box-shadow: 0 6px 18px rgba(0,80,208,.14)">3</span>
+<h3 style="margin: 24px 0 8px; font-weight: 800; font-size: 22px">Construimos</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 17px">Desarrollamos y probamos las soluciones con vuestro equipo.</p>
+</div>
+<div class="step-in" style="position: relative">
+<span style="display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 24px; background: #FFFFFF; color: #0050D0; font-weight: 800; box-shadow: 0 6px 18px rgba(0,80,208,.14)">4</span>
+<h3 style="margin: 24px 0 8px; font-weight: 800; font-size: 22px">Formamos y acompañamos</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 17px">Formamos a quien lo va a usar y seguimos a vuestro lado.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- PROYECTOS: DESTACADO + DOS -->
+<section id="proyectos" style="background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; padding: 112px 24px">
+<div class="reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Proyectos reales</h2>
+<a href="#proyectos" style="font-weight: 700; text-decoration: none">Ver todos los proyectos →</a>
+</div>
+<div class="stagger" style="margin-top: 48px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: minmax(260px, auto); gap: 18px">
+<article class="bento b-wide b-tall reveal" style="position: relative; overflow: hidden; border-radius: 32px; background: linear-gradient(150deg, #F3F8FD 0%, #E3F0FD 55%, #CFE6FB 100%); display: flex; flex-direction: column; min-height: 520px">
+<div style="flex: 1; display: flex; align-items: center; justify-content: center; color: #4F5B66; font-size: 15px; padding: 24px">[Imagen o vídeo del proyecto destacado]</div>
+<div class="glass" style="margin: 0 20px 20px; padding: 24px 26px; border-radius: 24px">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0050D0">AUTOMATIZACIÓN</span>
+<h3 style="margin: 8px 0 6px; font-weight: 800; font-size: 26px">[Cliente o sector]</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 16px">[Problema] → [Qué se automatizó] → [Resultado medible]</p>
+</div>
+</article>
+<article class="bento reveal" style="border-radius: 32px; padding: 28px; background: linear-gradient(150deg, #CFE6FB 0%, #A9D6F7 55%, #7CC0F2 100%); display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #0B3A8F">DESARROLLO A MEDIDA</span>
+<h3 style="margin: auto 0 6px; font-weight: 800; font-size: 22px">[Cliente o sector]</h3>
+<p style="margin: 0; color: #1E3550; font-size: 16px">[Problema] → [Qué se desarrolló] → [Resultado]</p>
+</article>
+<article class="bento reveal" style="border-radius: 32px; padding: 28px; background: linear-gradient(150deg, #2D8BEA 0%, #0B6BDB 45%, #0050D0 100%); color: #FFFFFF; display: flex; flex-direction: column">
+<span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; color: #E3F0FD">FORMACIÓN</span>
+<h3 style="margin: auto 0 6px; font-weight: 800; font-size: 22px">[Cliente o sector]</h3>
+<p style="margin: 0; color: #E3F0FD; font-size: 16px">[Reto] → [Formación impartida] → [Resultado]</p>
+</article>
+</div>
+</div>
+</section>
+
+<!-- EQUIPO -->
+<section id="equipo" style="position: relative; overflow: hidden; background: linear-gradient(180deg, #FFFFFF 0%, #F3F8FD 100%)">
+<div style="max-width: 1240px; margin: 0 auto; padding: 96px 24px 112px; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+<div class="reveal" style="flex: 1 1 420px; min-width: 0">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Humanismo y tecnología, <span class="grad-text">en el mismo equipo.</span></h2>
+<p style="margin: 20px 0 0; max-width: 480px; font-size: 19px; color: #4F5B66">Personas con experiencia en comunicación, formación y proyectos de inteligencia artificial.</p>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 14px">
+<div class="glass" style="padding: 18px 22px; border-radius: 22px; box-shadow: 0 10px 30px rgba(2,22,45,.06)">
+<p style="margin: 0; font-weight: 800; font-size: 34px; line-height: 1" class="grad-text">[Nº]</p>
+<p style="margin: 6px 0 0; font-size: 15px; color: #4F5B66">personas formadas</p>
+</div>
+<div class="glass" style="padding: 18px 22px; border-radius: 22px; box-shadow: 0 10px 30px rgba(2,22,45,.06)">
+<p style="margin: 0; font-weight: 800; font-size: 34px; line-height: 1" class="grad-text">[Nº]</p>
+<p style="margin: 6px 0 0; font-size: 15px; color: #4F5B66">organizaciones</p>
+</div>
+</div>
+</div>
+<div class="reveal" style="flex: 1 1 520px; min-width: 0; display: flex; flex-wrap: wrap; gap: 20px">
+<div style="flex: 1 1 240px; min-width: 0">
+<div style="aspect-ratio: 4 / 5; border-radius: 28px 28px 120px 28px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; color: #4F5B66; font-size: 14px">[Foto de Gustavo]</div>
+<h3 style="margin: 18px 0 4px; font-weight: 800; font-size: 21px">Gustavo Beltrán</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 15px">Dirección de proyectos de IA. Elegido por Forbes entre los 100 más creativos de España 2023. Fundador de KIOAI y Watsomapp.</p>
+</div>
+<div style="flex: 1 1 240px; min-width: 0; padding-top: 48px">
+<div style="aspect-ratio: 4 / 5; border-radius: 120px 28px 28px 28px; background: linear-gradient(160deg, #E3F0FD 0%, #FFFFFF 100%); box-shadow: inset 0 0 0 1px #D6E7F8; display: flex; align-items: center; justify-content: center; color: #4F5B66; font-size: 14px">[Foto de Ester]</div>
+<h3 style="margin: 18px 0 4px; font-weight: 800; font-size: 21px">Ester Bueno Palacios</h3>
+<p style="margin: 0; color: #4F5B66; font-size: 15px">Experta en comunicación y oratoria. Directora de Alma Máter y CEO de Búho Estudio de Comunicación.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- OPINIONES EN CARRUSEL -->
+<section aria-labelledby="testimonios-t" style="background: #F3F8FD">
+<div style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 112px">
+<h2 id="testimonios-t" class="reveal" style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Así nos valoran</h2>
+<p style="margin: 10px 0 0; font-size: 15px; color: #4F5B66">Desliza para ver más →</p>
+<div class="carousel" tabindex="0" aria-label="Opiniones, desliza para ver más" style="margin-top: 32px; display: flex; gap: 18px; overflow-x: auto; padding: 4px 4px 20px">
+<figure style="margin: 0; flex: 0 0 min(420px, 86%); padding: 34px; border-radius: 32px; background: #FFFFFF; box-shadow: 0 12px 40px rgba(2,22,45,.06)">
+<p aria-hidden="true" style="margin: 0; font-size: 72px; line-height: .6; font-weight: 800" class="grad-text">“</p>
+<blockquote style="margin: 18px 0 0; font-size: 20px; font-weight: 600; line-height: 1.45">[Opinión real de un cliente de automatización]</blockquote>
+<figcaption style="margin-top: 22px; font-size: 15px; color: #4F5B66"><strong style="color: #02162D">[Nombre]</strong> · [Cargo, organización]</figcaption>
+</figure>
+<figure style="margin: 0; flex: 0 0 min(420px, 86%); padding: 34px; border-radius: 32px; background: #FFFFFF; box-shadow: 0 12px 40px rgba(2,22,45,.06)">
+<p aria-hidden="true" style="margin: 0; font-size: 72px; line-height: .6; font-weight: 800" class="grad-text">“</p>
+<blockquote style="margin: 18px 0 0; font-size: 20px; font-weight: 600; line-height: 1.45">[Opinión real de un alumno de formación]</blockquote>
+<figcaption style="margin-top: 22px; font-size: 15px; color: #4F5B66"><strong style="color: #02162D">[Nombre]</strong> · [Cargo, organización]</figcaption>
+</figure>
+<figure style="margin: 0; flex: 0 0 min(420px, 86%); padding: 34px; border-radius: 32px; background: #FFFFFF; box-shadow: 0 12px 40px rgba(2,22,45,.06)">
+<p aria-hidden="true" style="margin: 0; font-size: 72px; line-height: .6; font-weight: 800" class="grad-text">“</p>
+<blockquote style="margin: 18px 0 0; font-size: 20px; font-weight: 600; line-height: 1.45">[Opinión real de un desarrollo a medida]</blockquote>
+<figcaption style="margin-top: 22px; font-size: 15px; color: #4F5B66"><strong style="color: #02162D">[Nombre]</strong> · [Cargo, organización]</figcaption>
+</figure>
+<figure style="margin: 0; flex: 0 0 min(420px, 86%); padding: 34px; border-radius: 32px; background: #FFFFFF; box-shadow: 0 12px 40px rgba(2,22,45,.06)">
+<p aria-hidden="true" style="margin: 0; font-size: 72px; line-height: .6; font-weight: 800" class="grad-text">“</p>
+<blockquote style="margin: 18px 0 0; font-size: 20px; font-weight: 600; line-height: 1.45">[Opinión real de un centro educativo]</blockquote>
+<figcaption style="margin-top: 22px; font-size: 15px; color: #4F5B66"><strong style="color: #02162D">[Nombre]</strong> · [Centro]</figcaption>
+</figure>
+</div>
+</div>
+</section>
+
+<!-- PREGUNTAS FRECUENTES: DOS COLUMNAS -->
+<section aria-labelledby="faq-t" style="background: #FFFFFF">
+<div class="faq" style="max-width: 1240px; margin: 0 auto; padding: 112px 24px; display: flex; flex-wrap: wrap; gap: 48px">
+<div class="reveal" style="flex: 1 1 320px; min-width: 0">
+<h2 id="faq-t" style="margin: 0; font-weight: 800; font-size: clamp(34px, 4.4vw, 56px); line-height: 1.05; letter-spacing: -0.03em">Preguntas frecuentes</h2>
+<p style="margin: 18px 0 0; color: #4F5B66">¿No encuentras tu respuesta? <a href="#contacto" style="font-weight: 700">Escríbenos</a>.</p>
+</div>
+<div style="flex: 2 1 520px; min-width: 0; display: flex; flex-direction: column">
+<details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Qué podéis automatizar en mi empresa?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 12px 56px 0 0; color: #4F5B66">[Ejemplos reales de automatizaciones que ya habéis hecho]</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Hacéis desarrollos a medida o solo formación?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 12px 56px 0 0; color: #4F5B66">Las dos cosas. Desarrollamos y automatizamos, y formamos a vuestro equipo para que saque partido a lo que construimos.</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Necesito conocimientos técnicos?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 12px 56px 0 0; color: #4F5B66">No. Empezamos por lo esencial y avanzamos hacia casos prácticos de tu trabajo.</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿Dónde se imparten las formaciones presenciales?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 12px 56px 0 0; color: #4F5B66">En Ávila y en la sede de cada organización. También ofrecemos sesiones online en directo.</p>
+</details>
+<details style="padding: 24px 0; border-bottom: 1px solid #E3F0FD">
+<summary style="display: flex; justify-content: space-between; align-items: center; gap: 16px; font-weight: 700; font-size: 19px">¿La formación es bonificable?<span class="plus" aria-hidden="true" style="flex: none; width: 40px; height: 40px; border-radius: 20px; background: #F3F8FD; color: #0050D0; display: inline-flex; align-items: center; justify-content: center; font-size: 24px; line-height: 1">+</span></summary>
+<p style="margin: 12px 56px 0 0; color: #4F5B66">[Pendiente de confirmar: bonificación por FUNDAE]</p>
+</details>
+</div>
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" style="background: #FFFFFF">
+<div style="max-width: 1240px; margin: 0 auto; padding: 0 24px 96px">
+<div class="reveal" style="position: relative; overflow: hidden; border-radius: 40px; padding: clamp(32px, 5vw, 72px); background: linear-gradient(135deg, #E3F0FD 0%, #F3F8FD 45%, #FFFFFF 100%); display: flex; flex-wrap: wrap; gap: 48px">
+<div class="blob blob-a" aria-hidden="true" style="width: 520px; height: 520px; right: -160px; top: -200px; background: radial-gradient(circle, rgba(80,176,240,.5) 0%, rgba(80,176,240,0) 70%)"></div>
+<div style="position: relative; flex: 1 1 380px; min-width: 0">
+<h2 style="margin: 0; font-weight: 800; font-size: clamp(36px, 4.6vw, 60px); line-height: 1.02; letter-spacing: -0.03em">¿Damos el siguiente paso <span class="grad-text">juntos?</span></h2>
+<p style="margin: 20px 0 0; font-size: 19px; color: #4F5B66">Cuéntanos qué necesitas y te respondemos personalmente.</p>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; gap: 10px">
+<a class="btn btn-ghost glass" href="tel:+34676019117" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 18px; border-radius: 999px; color: #02162D; text-decoration: none; font-weight: 600; font-size: 16px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0050D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"></path></svg>+34 676 019 117</a>
+<a class="btn btn-ghost glass" href="mailto:info@humannaia.com" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 18px; border-radius: 999px; color: #02162D; text-decoration: none; font-weight: 600; font-size: 16px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0050D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="M3 7l9 6 9-6"></path></svg>info@humannaia.com</a>
+<a class="btn btn-ghost glass" href="https://wa.me/34676019117" style="display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 18px; border-radius: 999px; color: #02162D; text-decoration: none; font-weight: 600; font-size: 16px"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0050D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5z"></path></svg>WhatsApp</a>
+</div>
+<p style="margin: 24px 0 0; font-size: 15px; color: #4F5B66">Plaza Claudio Sánchez Albornoz, 4 · 05001 Ávila</p>
+</div>
+<form style="position: relative; flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 14px; padding: 30px; border-radius: 28px; background: rgba(255,255,255,.85); backdrop-filter: blur(14px); box-shadow: 0 24px 60px rgba(2,22,45,.08)">
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px">Nombre
+<input type="text" name="nombre" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid #D6E3EF; font: inherit; font-weight: 400; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px">Correo electrónico
+<input type="email" name="email" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 1px solid #D6E3EF; font: inherit; font-weight: 400; background: #FFFFFF"></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px">Necesito…
+<select name="servicio" style="min-height: 50px; padding: 0 14px; border-radius: 14px; border: 1px solid #D6E3EF; font: inherit; font-weight: 400; background: #FFFFFF">
+<option>Consultoría aplicada</option>
+<option>Automatizar procesos</option>
+<option>Un desarrollo a medida</option>
+<option>Formación</option>
+</select></label>
+<label style="display: flex; flex-direction: column; gap: 6px; font-weight: 700; font-size: 15px">Mensaje
+<textarea name="mensaje" rows="4" style="padding: 14px 16px; border-radius: 14px; border: 1px solid #D6E3EF; font: inherit; font-weight: 400; background: #FFFFFF"></textarea></label>
+<button class="btn btn-primary" type="button" style="min-height: 54px; border: 0; border-radius: 999px; background: #0050D0; color: #FFFFFF; font: inherit; font-weight: 700; cursor: pointer; box-shadow: 0 14px 34px rgba(0,80,208,.24)">Enviar mensaje</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- PIE -->
+<footer style="background: #FFFFFF; color: #4F5B66; font-size: 16px">
+<div style="max-width: 1240px; margin: 0 auto; padding: 24px 24px 0">
+<p class="big-word" aria-hidden="true" style="margin: 0; white-space: nowrap; font-weight: 800; font-size: clamp(64px, 14vw, 200px); line-height: .9; letter-spacing: -0.05em; background: linear-gradient(180deg, #E3F0FD 0%, #FFFFFF 100%); -webkit-background-clip: text; background-clip: text; color: transparent">HumanaIA</p>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 32px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; border-top: 1px solid #E3F0FD">
+<div>
+<img src="../marca/logo-humanaia.webp" alt="HumanaIA" style="height: 72px; width: auto; display: block">
+<p style="margin: 12px 0 0; font-size: 15px">Consultoría, automatización, desarrollo y formación en inteligencia artificial.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0 0 4px; font-weight: 800; color: #02162D">Servicios</p>
+<a href="#soluciones" style="color: #4F5B66; text-decoration: none">Consultoría aplicada</a>
+<a href="#soluciones" style="color: #4F5B66; text-decoration: none">Automatización</a>
+<a href="#soluciones" style="color: #4F5B66; text-decoration: none">Desarrollo a medida</a>
+<a href="#soluciones" style="color: #4F5B66; text-decoration: none">Formación</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0 0 4px; font-weight: 800; color: #02162D">HumanaIA</p>
+<a href="#equipo" style="color: #4F5B66; text-decoration: none">Nosotros</a>
+<a href="#proyectos" style="color: #4F5B66; text-decoration: none">Proyectos</a>
+<a href="#contacto" style="color: #4F5B66; text-decoration: none">Contacto</a>
+<a href="https://www.instagram.com/humannaia" style="color: #4F5B66; text-decoration: none">Instagram</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0 0 4px; font-weight: 800; color: #02162D">Legal</p>
+<a href="#inicio" style="color: #4F5B66; text-decoration: none">Aviso legal</a>
+<a href="#inicio" style="color: #4F5B66; text-decoration: none">Política de privacidad</a>
+<a href="#inicio" style="color: #4F5B66; text-decoration: none">Política de cookies</a>
+</div>
+</div>
+<div style="max-width: 1240px; margin: 0 auto; padding: 20px 24px 36px; font-size: 14px">© 2026 HumanaIA · Ávila</div>
+</footer>
+
+</div>
+</body>
+</html>
