@@ -1,6 +1,6 @@
 # Plan de orquestación Claude + ChatGPT · HumanaIA
 
-_Actualizado: 26/10/2026 · Versión editable: documento "Plan de orquestación Claude + ChatGPT · HumanaIA 2.0" en el proyecto de Claude._
+_Actualizado: 27/10/2026 · Versión editable: documento "Plan de orquestación Claude + ChatGPT · HumanaIA 2.0" en el proyecto de Claude._
 
 ## Resumen
 
@@ -12,22 +12,30 @@ Tres principios:
 - **Nada llega a producción sin doble revisión.** El agente autor entrega, el otro revisa con una lista de control y la persona responsable aprueba.
 - **Se mide antes y después.** El Sprint 0 fija la línea base; cada sprint repite la misma batería de pruebas y calcula el % de evolución.
 
-## Estado a 26/10/2026
+## Estado a 27/10/2026
 
-El Sprint 0 está en marcha: nueva web creada en nueva.humannaia.com (sustituye a la copia humannaia.com/staging), línea base medida (índice 71,5 sobre la parte técnica) y GitHub funcionando como centro de trabajo. Falta conectar Codex y tres decisiones de la persona responsable.
+Vamos por delante del calendario. Están cerrados el Sprint 0 (proteger y medir) y las puertas de los Sprints 1 y 2: la persona responsable aceptó el 27/10 la marca y arquitectura, el paquete de imágenes y el prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com). Lo siguiente es el Sprint 3: el contenido y el desarrollo de las páginas del mapa.
 
 | Área | Estado | Dónde |
 | --- | --- | --- |
-| Marca | Nombre comercial decidido: **HumanaIA** (dominio y emails siguen en humannaia.com) | — |
-| Nueva web | WordPress propio en el subdominio nueva.humannaia.com (Axarnet), con su base de datos y no indexable; ahí se construye la web hasta el lanzamiento. La copia humannaia.com/staging queda abandonada | Conector WordpressNueva |
+| Marca | **HumanaIA** (dominio y emails siguen en humannaia.com); marca y mapa de páginas aceptados | #9, `entregas/textos/` |
+| Nueva web | WordPress propio en nueva.humannaia.com, no indexable, con tema de bloques Twenty Twenty-Five. La portada es la página de inicio, dividida en secciones con nombre; la cabecera y el pie son partes de plantilla y el CSS es global (guía: `docs/editar-la-web.md`). Fotos reales del equipo e imagen del logotipo para compartir el enlace | #20 |
+| Páginas legales | Aviso legal (LSSI-CE), Política de privacidad (RGPD/LOPDGDD) y Política de cookies (LSSI art. 22.2, guía AEPD) publicadas y enlazadas en el pie. Faltan el NIF, los datos registrales, el plazo de conservación y el proveedor de correo; texto provisional hasta revisión | /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/ |
+| Formulario de contacto | Contact Form 7 con casilla de privacidad, información básica de protección de datos y antispam (honeypot). Todavía no está en ninguna página; los correos salientes siguen bloqueados | #20 |
 | Web real | humannaia.com, intacta hasta el lanzamiento | — |
-| Centro de trabajo | GitHub con carriles, plantillas y comprobación automática de carril (PR #1 y #2 unidas) | Este repositorio |
-| Medición | Nocturna en GitHub Actions; línea base 71,5/100 con el 50 % del peso medido (rendimiento 54, accesibilidad 95, SEO 71) | [`informe.md`](../informe.md) |
-| Ciclo automático de Claude | Tarea programada "Turno HumanaIA web" eliminada; pendiente de recrear con el conector WordpressNueva | [Bitácora #11](https://github.com/multiserviagua-pixel/WordpressEdit/issues/11) |
-| Correcciones en la copia antigua | Hechas en humannaia.com/staging (abandonada); se rehacen en la nueva web cuando proceda | [Issue #10](https://github.com/multiserviagua-pixel/WordpressEdit/issues/10) |
-| Codex (ChatGPT) | Pendiente de conectar al repositorio; tiene asignadas las tareas #3, #4 y #9 | [`AGENTS.md`](../AGENTS.md) |
+| Centro de trabajo | GitHub con carriles, unión automática entre agentes y registro de aceptaciones | Este repositorio |
+| Medición | Pasa a medir la nueva web (PR #36); la línea base sigue siendo la de la web actual (71,5). Último índice de la web actual: 74,1 con el 50 % del peso medido | [`informe.md`](../informe.md) |
+| Codex (ChatGPT) | Trabaja en el repositorio como `Alex00111001`: revisa y aprueba PR. Pendientes la rúbrica (#3) y el test de comprensión (#4) | [`AGENTS.md`](../AGENTS.md) |
 
-**Decisiones pendientes de la persona responsable:** si la nueva web parte de cero o de una copia de la actual; plugins y tema de la nueva web; banner (#8); confirmar el email de Ester y compartir fotos reales (#6); copia de seguridad de la web real (#5).
+**Pendiente de la persona responsable:**
+- copia de seguridad de la web real (#5);
+- NIF y datos registrales de Humanaia S.L. para las páginas legales;
+- destino remoto (p. ej., Google Drive) para las copias de UpdraftPlus de la nueva web.
+
+**Decidido el 27/10:**
+- email de Ester: contacto@humannaia.com (#6);
+- plugins: los mejores gratuitos (ver «Plugins de WordPress»);
+- el banner de #8 queda sin objeto, porque la copia antigua está abandonada.
 
 ## Reparto de roles
 
@@ -176,17 +184,20 @@ Ya están en marcha Easy MCP AI en la nueva web (WordpressNueva), GitHub con Act
 
 ### Plugins de WordPress
 
-| Plugin | Acción | Motivo |
+Decisión de la persona responsable (27/10/2026): usar los mejores plugins gratuitos. Estado en la nueva web:
+
+| Necesidad | Plugin (gratuito) | Estado |
 | --- | --- | --- |
-| WP Staging | Ya no se usa | La copia humannaia.com/staging queda abandonada; la nueva web vive en nueva.humannaia.com |
-| UpdraftPlus o copia del hosting (Axarnet) | Pendiente | Copia completa de la web real (#5) y copias periódicas de la nueva web |
-| Converter for Media | Instalado y activo en la nueva web (26/10) | WebP/AVIF y compresión |
-| WP Super Cache | Instalado e inactivo en la nueva web (servidor Apache); se activa antes del lanzamiento | Caché; el inicio actual tarda 15 s en móvil |
-| Slider Revolution | Retirar al rehacer el inicio | Peso y un solo uso |
-| WPForms | Desactivar (pendiente de confirmar) | Está oculto; el formulario visible es Contact Form 7, que se mantiene |
-| AI Engine | Desactivar (pendiente de confirmar) | Sin clave de API ni uso |
-| Elementor | No se usa en la nueva web (decisión del 26/10: tema de bloques) | Se retira con la web actual en el lanzamiento |
-| Yoast SEO, Contact Form 7, UpdraftPlus | Instalados y activos en la nueva web (26/10) | SEO, formulario visible y copias de la nueva web |
+| SEO, metadatos, schema y redes | The SEO Framework | Activo. Sustituye a Yoast, que queda inactivo y se puede eliminar |
+| Formularios | Contact Form 7 + CF7 Apps (honeypot antispam) | Activos |
+| Imágenes WebP | Converter for Media | Activo |
+| Copias de seguridad | UpdraftPlus | Activo. Programado: base de datos a diario y archivos cada semana, en el propio servidor. Falta un destino remoto |
+| Correo saliente | WP Mail SMTP | Activo, con «No enviar» activado hasta el lanzamiento |
+| Seguridad del acceso | Limit Login Attempts Reloaded | Activo |
+| Certificado SSL | WP Encryption (Let's Encrypt) | Activo |
+| Caché | WP Super Cache | Inactivo; se activa antes del lanzamiento |
+| Analítica y consentimiento | Site Kit (GA4) + panel de cookies (Complianz) | Antes del lanzamiento: con analítica hay que pedir consentimiento previo y actualizar la Política de cookies |
+| Retirados | Slider Revolution, WPForms, AI Engine, Elementor | No se usan en la nueva web; se van con la web actual en el lanzamiento |
 
 ### Skills y capacidades
 
@@ -226,11 +237,11 @@ El riesgo principal ya está acotado: todo el trabajo va a la nueva web (nueva.h
 - [x] Claude: ciclo automático de turnos y bitácora (#11)
 - [x] Persona responsable: nombre comercial único (HumanaIA)
 - [ ] Persona responsable: copia de seguridad de la web real (#5)
-- [ ] Persona responsable: confirmar email de Ester y compartir fotos reales (#6)
-- [ ] Persona responsable: decidir papelera de borradores, WPForms y AI Engine, y banner (#8)
-- [ ] Persona responsable: conectar Codex al repositorio
+- [x] Persona responsable: email de Ester (contacto@humannaia.com) y fotos del equipo (#6)
+- [x] Persona responsable: plugins gratuitos; WPForms, AI Engine y banner (#8) sin objeto en la nueva web
+- [x] Persona responsable: conectar Codex al repositorio (revisa como `Alex00111001`)
 - [ ] ChatGPT/Codex: puntuar el inicio con la rúbrica (#3) y test de comprensión (#4)
-- [ ] ChatGPT/Codex: documento maestro de marca y mapa de páginas (#9, Sprint 1)
+- [x] ChatGPT/Codex: documento maestro de marca y mapa de páginas (#9, aceptado el 27/10)
 
 ## Fuentes
 
