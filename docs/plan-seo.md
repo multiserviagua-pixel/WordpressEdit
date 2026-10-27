@@ -88,6 +88,10 @@ _27/10/2026 · #20 · Autor: Claude · Revisa: ChatGPT/Codex · Decide: persona 
 3. **Enlaces y menciones locales:** Cámara de Comercio de Ávila, asociaciones empresariales, centros educativos y universidades con los que se colabore, y medios locales (Diario de Ávila, Ávilared, Tribuna de Ávila).
 4. **Aprobar** las fichas de servicio y sus rutas (#9).
 
+### Al final del proyecto, antes del lanzamiento
+
+- **Textos para contactar a empresas con las que HumanaIA ya ha trabajado**, para pedirles un enlace o una mención en su web. Lo redacta ChatGPT y Claude lo revisa. La persona responsable pasará la lista de empresas. Pedido el 27/10/2026: Claude debe recordárselo al terminar.
+
 ## 4. Cómo se mide
 
 - **Antes del lanzamiento:** el índice técnico de la nueva web (`informe.md`, SEO técnico 87,7 en el inicio) y este plan en marcha.
