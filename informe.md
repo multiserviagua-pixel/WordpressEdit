@@ -1,16 +1,16 @@
-# Índice Humana IA · 2026-10-26
+# Índice HumanaIA · 2026-10-27
 
-**Índice: 80 / 100** · meta 85 · medido el 50 % del peso total
+**Índice: 74.1 / 100** · meta 85 · medido el 50 % del peso total
 
-- Evolución desde la base (2026-10-21): **+11.9 %**
-- Evolución desde la medición anterior (2026-10-25): **+9.9 %**
-- Avance hacia la meta: **63 %**
+- Evolución desde la base (2026-10-21): **+3.6 %**
+- Evolución desde la medición anterior (2026-10-26): **-7.4 %**
+- Avance hacia la meta: **19.3 %**
 
 ## Bloques
 
 | Bloque | Peso | Base | Anterior | Actual | vs base | vs anterior |
 | --- | --- | --- | --- | --- | --- | --- |
-| Rendimiento | 20 % | 54.1 | 57.4 | 75.3 | +39.2 % | +31.2 % |
+| Rendimiento | 20 % | 54.1 | 75.3 | 60.7 | +12.2 % | -19.4 % |
 | Accesibilidad | 15 % | 95.1 | 95.1 | 95.1 | 0 % | 0 % |
 | SEO técnico | 15 % | 71 | 71 | 71 | 0 % | 0 % |
 | Contenido | 20 % | — | — | — | — | — |
@@ -23,9 +23,9 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 | Página | Rendimiento | Accesibilidad | SEO | Buenas prácticas | LCP | CLS | TBT | Checklist SEO |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | 58 | 91 | 77 | 75 | 15.37 s | 0 | 132 ms | 51.3 |
-| /servicios-humanaia/ | 61 | 89 | 92 | 71 | 7.54 s | 0.054 | 94 ms | 56.3 |
-| /que-es-humanaia/ | 74 | 91 | 92 | 75 | 4.03 s | 0.054 | 148 ms | 43.8 |
+| / | 46 | 91 | 77 | 75 | 15.46 s | 0 | 520 ms | 51.3 |
+| /servicios-humanaia/ | 54 | 89 | 92 | 71 | 7.64 s | 0.054 | 323 ms | 56.3 |
+| /que-es-humanaia/ | 62 | 91 | 92 | 75 | 3.87 s | 0.054 | 517 ms | 43.8 |
 
 ## Qué corregir (checklist SEO)
 
@@ -53,6 +53,7 @@ Enlaces internos comprobados: 7 · rotos: 1
 
 | Fecha | Índice | Cobertura | Etiqueta |
 | --- | --- | --- | --- |
+| 2026-10-27 | 74.1 | 50 % |  |
 | 2026-10-26 | 80 | 50 % |  |
 | 2026-10-25 | 72.8 | 50 % |  |
 | 2026-10-24 | 74.4 | 50 % |  |
