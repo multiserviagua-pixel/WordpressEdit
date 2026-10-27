@@ -113,3 +113,20 @@ test('añadir una nota nueva no falsea la evolución', () => {
   assert.equal(e.evolucion_vs_base, 32.7);
   assert.equal(e.comparable, false);
 });
+
+test('una base de otra web queda como referencia y no se compara', () => {
+  const pesosT = { rendimiento: 20, accesibilidad: 15, seo: 15, contenido: 20, comprension: 15, conversion: 15 };
+  const vieja = { fecha: '2026-10-21', indice: 71.5, cobertura: 50, sitio: 'https://humannaia.com', bloques: { rendimiento: 54.1, accesibilidad: 95.1, seo: 71 } };
+  const nueva1 = { fecha: '2026-10-27', indice: 95.8, cobertura: 50, sitio: 'https://nueva.humannaia.com', objeto: 'n | / | is-crawlable', bloques: { rendimiento: 98.6, accesibilidad: 100, seo: 87.7 } };
+  const e1 = evolucion([vieja, nueva1], nueva1, 85, pesosT);
+  assert.equal(e1.base_comparable, false);
+  assert.equal(e1.evolucion_vs_base, null);
+  assert.equal(e1.avance_hacia_meta, null);
+  assert.equal(e1.fecha_anterior, null);
+  assert.equal(e1.por_bloque.rendimiento.vs_base, null);
+  const nueva2 = { ...nueva1, fecha: '2026-10-28', indice: 90, bloques: { rendimiento: 90, accesibilidad: 100, seo: 87.7 } };
+  const e2 = evolucion([vieja, nueva1, nueva2], nueva2, 85, pesosT);
+  assert.equal(e2.fecha_anterior, '2026-10-27');
+  assert.notEqual(e2.evolucion_vs_anterior, null);
+  assert.equal(e2.evolucion_vs_base, null);
+});
