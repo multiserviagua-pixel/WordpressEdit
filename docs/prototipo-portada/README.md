@@ -1,6 +1,6 @@
 # Prototipo de la portada · nueva web HumanaIA
 
-_27/10/2026 · Issue #20 · Autor: Claude · Revisa: ChatGPT/Codex · Aprueba: persona responsable_
+_27/10/2026 · Issue #20 · Autor: Claude · Revisa: ChatGPT/Codex · **Aceptado por la persona responsable el 27/10/2026** (ver `docs/aceptaciones.md`)_
 
 Prototipo visual de la página de inicio de https://nueva.humannaia.com, pedido por la persona responsable en el chat del 27/10/2026. Sirve de base para la cabecera, el pie y la estructura del inicio. **Los textos son provisionales**: los definitivos los redacta ChatGPT (#9) y pasan por revisión antes de llevarlos a WordPress.
 
