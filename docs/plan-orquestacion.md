@@ -14,7 +14,10 @@ Tres principios:
 
 ## Estado a 27/10/2026
 
-Vamos por delante del calendario. Están cerrados el Sprint 0 (proteger y medir) y las puertas de los Sprints 1 y 2: la persona responsable aceptó el 27/10 la marca y arquitectura, el paquete de imágenes y el prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com). Lo siguiente es el Sprint 3: el contenido y el desarrollo de las páginas del mapa.
+Vamos por delante del calendario.
+
+- **Sprint 0:** su puerta (índice base publicado) está registrada, pero el sprint no está cerrado del todo: siguen pendientes tareas de su checklist, como la copia de la web real (#5) y la parte real del test de comprensión (#4).
+- **Entregas materiales aceptadas el 27/10:** la persona responsable aceptó la marca y arquitectura, el paquete de imágenes y el prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com). Lo siguiente es el Sprint 3: el contenido y el desarrollo de las páginas del mapa.
 
 | Área | Estado | Dónde |
 | --- | --- | --- |
@@ -24,8 +27,10 @@ Vamos por delante del calendario. Están cerrados el Sprint 0 (proteger y medir)
 | Formulario de contacto | Contact Form 7 con casilla de privacidad, información básica de protección de datos y antispam (honeypot). Todavía no está en ninguna página; los correos salientes siguen bloqueados | #20 |
 | Web real | humannaia.com, intacta hasta el lanzamiento | — |
 | Centro de trabajo | GitHub con carriles, unión automática entre agentes y registro de aceptaciones | Este repositorio |
-| Medición | Pasa a medir la nueva web (PR #36); la línea base sigue siendo la de la web actual (71,5). Último índice de la web actual: 74,1 con el 50 % del peso medido | [`informe.md`](../informe.md) |
-| Codex (ChatGPT) | Trabaja en el repositorio como `Alex00111001`: revisa y aprueba PR. Pendientes la rúbrica (#3) y el test de comprensión (#4) | [`AGENTS.md`](../AGENTS.md) |
+| Medición | El cambio a la nueva web (PR #36) está pendiente de que se apruebe su corrección. La línea base del 21/10 midió la web actual y otras páginas: queda como referencia histórica, no comparable | [`informe.md`](../informe.md) |
+| Contenido del inicio | Texto y SEO editorial entregados y unidos (#40, para #38): título «Consultoría IA, automatización y formación \| HumanaIA». Falta trasladarlos a WordPress | `entregas/textos/inicio.md` |
+| Rúbrica y comprensión | Rúbrica de contenido unida (#41): 71/100, provisional. Test de comprensión unido (#42): 15/15 con cinco perfiles simulados, sin participantes ni cronometraje reales. #3 y #4 siguen abiertos. Las tres pruebas con personas reales se dejan para el final, por decisión de la persona responsable | `revisiones/` |
+| Codex (ChatGPT) | Trabaja en el repositorio como `Alex00111001`: revisa, aprueba y entrega PR | [`AGENTS.md`](../AGENTS.md) |
 
 **Pendiente de la persona responsable:**
 - copia de seguridad de la web real (#5);
@@ -34,7 +39,7 @@ Vamos por delante del calendario. Están cerrados el Sprint 0 (proteger y medir)
 
 **Decidido el 27/10:**
 - se trabaja solo sobre la nueva web hasta que esté completa. La web actual queda fuera de los cambios y de las conversaciones hasta que la nueva la sustituya (bitácora #11);
-- email de Ester: contacto@humannaia.com (#6);
+- una única dirección de email en toda la web, contacto@humannaia.com, y en contacto los teléfonos de Ester (+34 676 019 117) y Gustavo (+34 635 500 952) (#6, PR #39 unida);
 - plugins: los mejores gratuitos (ver «Plugins de WordPress»);
 - el banner de #8 queda sin objeto, porque la copia antigua está abandonada.
 
@@ -241,7 +246,7 @@ El riesgo principal ya está acotado: todo el trabajo va a la nueva web (nueva.h
 - [x] Persona responsable: email de Ester (contacto@humannaia.com) y fotos del equipo (#6)
 - [x] Persona responsable: plugins gratuitos; WPForms, AI Engine y banner (#8) sin objeto en la nueva web
 - [x] Persona responsable: conectar Codex al repositorio (revisa como `Alex00111001`)
-- [ ] ChatGPT/Codex: puntuar el inicio con la rúbrica (#3) y test de comprensión (#4)
+- [ ] ChatGPT/Codex: puntuar el inicio con la rúbrica (#3: 71/100 provisional, unida en #41) y test de comprensión (#4: 15/15 simulado, unido en #42; faltan 3 personas reales, al final)
 - [x] ChatGPT/Codex: documento maestro de marca y mapa de páginas (#9, aceptado el 27/10)
 
 ## Fuentes
