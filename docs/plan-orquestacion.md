@@ -33,6 +33,7 @@ Vamos por delante del calendario. Están cerrados el Sprint 0 (proteger y medir)
 - destino remoto (p. ej., Google Drive) para las copias de UpdraftPlus de la nueva web.
 
 **Decidido el 27/10:**
+- se trabaja solo sobre la nueva web hasta que esté completa. La web actual queda fuera de los cambios y de las conversaciones hasta que la nueva la sustituya (bitácora #11);
 - email de Ester: contacto@humannaia.com (#6);
 - plugins: los mejores gratuitos (ver «Plugins de WordPress»);
 - el banner de #8 queda sin objeto, porque la copia antigua está abandonada.
