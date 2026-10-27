@@ -57,7 +57,7 @@ La coordinación pasa por GitHub (este repositorio) y por el registro de auditor
 3. **Comprobación automática de carril.** Si una rama de ChatGPT toca código o una de Claude toca textos o imágenes de ChatGPT, la pull request falla.
 4. **ChatGPT entrega en GitHub, no en WordPress.** Textos en `entregas/textos/`, imágenes en `entregas/imagenes/`; Claude los lleva a la nueva web cuando la pull request está unida.
 5. **Solo la nueva web se modifica.** Toda escritura va a nueva.humannaia.com; la web real queda intacta hasta el lanzamiento.
-6. **Aprobación entre agentes.** Una PR se une sola cuando el otro agente la aprueba con una revisión formal sobre el último commit, Carril está en verde y no tiene `pausa` ni `decide-persona` (decisión de la persona responsable, 26/10/2026, #27). Tras dos rondas sin acuerdo se marca `decide-persona` y decide ella.
+6. **Aprobación entre agentes.** Una PR ordinaria se une sola cuando la identidad autorizada del otro agente la aprueba con una revisión formal sobre el último commit, Carril está en verde y no tiene `pausa` ni `decide-persona` (decisión de la persona responsable, 26/10/2026, #27). Identidades: Claude publica como `multiserviagua-pixel` y ChatGPT/Codex como `Alex00111001`; la aprobación de cualquier otra cuenta, o de una rama de un fork, no une nada. Las PR que modifican `.github/workflows/` las une la persona responsable. Tras dos rondas sin acuerdo se marca `decide-persona` y decide ella. Unir una PR no es aceptar una entrega material (ver «Fusión y aceptación»).
 7. **Nada destructivo en automático.** Borrar, cambiar plugins o ajustes de seguridad queda como `decide-persona`.
 8. **Pausa y trazabilidad.** La etiqueta `pausa` detiene a los agentes; cada turno deja resumen en la bitácora #11 y los cambios en WordPress se anotan en su issue (página, ID, cambio).
 9. **Material en bruto en Drive.** Fotos originales y archivos grandes se comparten por Drive; lo que va a la web pasa por GitHub.
@@ -71,7 +71,16 @@ La persona responsable no sigue el día a día: los agentes se aprueban entre el
 3. **Algo que solo ella puede dar o decidir:** issues `decide-persona`, fotos reales, autorizaciones de casos o datos, desacuerdo tras dos rondas.
 4. **Un incidente:** la nueva web caída, un problema de seguridad o algo que afecte a la web real.
 
-Lo demás (revisiones, correcciones, relevos, avisos repetidos) queda solo en la bitácora #11.
+Lo demás (revisiones, correcciones, relevos, avisos repetidos) queda solo en la bitácora #11. Un aviso no es una aceptación: si lo avisado es una entrega material, el trabajo que depende de ella espera a que la persona responsable la acepte.
+
+## Fusión y aceptación
+
+Unir una PR a `main` y aceptar una entrega material son puertas distintas:
+
+1. **PR ordinaria** (borradores, correcciones, documentación, código revisado): basta la revisión cruzada y la unión automática. Unirla no aprueba la arquitectura, el posicionamiento, un prototipo ni el lanzamiento.
+2. **Entrega material** (posicionamiento y arquitectura del Sprint 1, prototipo del Sprint 2, cada puerta de sprint): necesita la **aceptación expresa de la persona responsable**, anotada por ella en el issue de la tarea, antes de ejecutar trabajo que dependa de ella. Claude no lleva a WordPress una página o estructura que dependa de una entrega material sin esa aceptación.
+3. **PR que ejecuta una decisión material todavía pendiente:** se marca `decide-persona` y la unión automática no la une.
+4. **Lanzamiento y migración** de nueva.humannaia.com a humannaia.com: siempre con aprobación expresa de la persona responsable; nunca en automático.
 
 ## Revisión cruzada
 

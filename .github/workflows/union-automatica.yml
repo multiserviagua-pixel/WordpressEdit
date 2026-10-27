@@ -2,13 +2,22 @@ name: Unión automática
 
 # Une una pull request cuando el OTRO agente la aprueba (decisión de la
 # persona responsable, 26/10/2026, issue #27). Condiciones, todas obligatorias:
-#   - rama claude/* o chatgpt/* (las demás las une la persona responsable);
-#   - la última revisión de cada revisor que no es el autor está sobre el
-#     último commit, y al menos una es APPROVED y ninguna CHANGES_REQUESTED;
-#   - la comprobación «Carril» del último commit terminó en verde;
+#   - rama claude/* o chatgpt/* del propio repositorio (no de un fork), abierta
+#     por la identidad de ese carril (las demás las une la persona responsable);
+#   - aprobación APPROVED sobre el último commit de la identidad AUTORIZADA del
+#     otro carril (tabla CARRILES); la de cualquier otra cuenta no cuenta;
+#   - ninguna revisión CHANGES_REQUESTED vigente (de cualquier revisor);
+#   - el workflow «Carril» (.github/workflows/carril.yml de este repositorio)
+#     terminó en verde sobre el último commit;
 #   - no tiene las etiquetas `pausa` ni `decide-persona`, y no hay ningún
 #     issue abierto con la etiqueta `pausa`;
-#   - no es borrador.
+#   - no es borrador y no modifica .github/workflows/ (el GITHUB_TOKEN no puede
+#     unir cambios de workflows: esas PR las une la persona responsable).
+#
+# Puesta en marcha: workflow_run solo se dispara con este archivo en `main`, y
+# esta misma PR (#28) modifica workflows, así que la une la persona responsable.
+# Una fusión NO es aceptación de una entrega material: ver
+# docs/plan-orquestacion.md, «Fusión y aceptación».
 on:
   pull_request_review:
     types: [submitted]
@@ -19,7 +28,7 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  checks: read
+  actions: read
   issues: read
 
 concurrency:
@@ -34,11 +43,19 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo;
+            const REPO = `${owner}/${repo}`;
+            // Identidad de cada carril en GitHub: autor de sus PR y único
+            // aprobador válido de las PR del otro carril.
+            const CARRILES = {
+              'claude/':  { autor: 'multiserviagua-pixel', aprobador: 'Alex00111001' },
+              'chatgpt/': { autor: 'Alex00111001', aprobador: 'multiserviagua-pixel' },
+            };
             let numeros = [];
             if (context.eventName === 'pull_request_review') {
               numeros = [context.payload.pull_request.number];
             } else {
               const run = context.payload.workflow_run;
+              if (run.path !== '.github/workflows/carril.yml' || run.repository.full_name !== REPO) { core.info('No es el Carril de este repositorio.'); return; }
               if (run.conclusion !== 'success') { core.info('Carril no está en verde.'); return; }
               numeros = (run.pull_requests || []).map(p => p.number);
             }
@@ -50,7 +67,11 @@ jobs:
               const nota = m => core.info(`#${numero}: ${m}`);
               if (pr.state !== 'open') { nota('no está abierta.'); continue; }
               if (pr.draft) { nota('es borrador.'); continue; }
-              if (!/^(claude|chatgpt)\//.test(pr.head.ref)) { nota('rama sin carril: la une la persona responsable.'); continue; }
+              const prefijo = Object.keys(CARRILES).find(p => pr.head.ref.startsWith(p));
+              if (!prefijo) { nota('rama sin carril: la une la persona responsable.'); continue; }
+              const carrilPr = CARRILES[prefijo];
+              if (!pr.head.repo || pr.head.repo.full_name !== REPO) { nota('la rama no es de este repositorio.'); continue; }
+              if (pr.user.login !== carrilPr.autor) { nota(`autor ${pr.user.login} no es la identidad del carril ${prefijo}.`); continue; }
               const etiquetas = pr.labels.map(l => l.name);
               if (etiquetas.includes('pausa') || etiquetas.includes('decide-persona')) { nota(`etiqueta ${etiquetas.join(', ')}.`); continue; }
 
@@ -63,12 +84,15 @@ jobs:
               }
               const vigentes = [...ultima.values()];
               if (vigentes.some(r => r.state === 'CHANGES_REQUESTED')) { nota('tiene «Cambios pedidos» sin resolver.'); continue; }
-              const aprobada = vigentes.some(r => r.state === 'APPROVED' && r.commit_id === pr.head.sha);
-              if (!aprobada) { nota('sin aprobación del otro agente sobre el último commit.'); continue; }
+              const aprobada = vigentes.some(r => r.state === 'APPROVED' && r.user.login === carrilPr.aprobador && r.commit_id === pr.head.sha);
+              if (!aprobada) { nota(`sin aprobación de ${carrilPr.aprobador} sobre el último commit.`); continue; }
 
-              const { data: checks } = await github.rest.checks.listForRef({ owner, repo, ref: pr.head.sha, per_page: 100 });
-              const carril = checks.check_runs.filter(c => c.name === 'comprobar');
-              if (!carril.length || carril.some(c => c.conclusion !== 'success')) { nota('Carril no está en verde en el último commit.'); continue; }
+              const archivos = await github.paginate(github.rest.pulls.listFiles, { owner, repo, pull_number: numero, per_page: 100 });
+              if (archivos.some(f => f.filename.startsWith('.github/workflows/'))) { nota('modifica workflows: la une la persona responsable.'); continue; }
+
+              const { data: ejecuciones } = await github.rest.actions.listWorkflowRuns({ owner, repo, workflow_id: 'carril.yml', head_sha: pr.head.sha, per_page: 20 });
+              const carril = ejecuciones.workflow_runs.filter(w => w.path === '.github/workflows/carril.yml' && w.repository.full_name === REPO);
+              if (!carril.length || carril[0].status !== 'completed' || carril[0].conclusion !== 'success') { nota('Carril no está en verde en el último commit.'); continue; }
 
               await github.rest.pulls.merge({ owner, repo, pull_number: numero, merge_method: 'squash', sha: pr.head.sha });
               await github.rest.issues.createComment({ owner, repo, issue_number: numero,
