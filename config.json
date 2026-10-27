@@ -4,7 +4,7 @@
   "omitir_auditorias": [
     "is-crawlable"
   ],
-  "nota": "Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base (21/10/2026) es la de la web actual humannaia.com, para ver cuánto mejora la nueva. Añade aquí cada página publicada.",
+  "nota": "Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base del 21/10/2026 midió otra web (humannaia.com) y otras páginas: queda como referencia histórica y no se compara. Añade aquí cada página publicada.",
   "urls": [
     "/"
   ],

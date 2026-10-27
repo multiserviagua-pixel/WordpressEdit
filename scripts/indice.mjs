@@ -32,7 +32,12 @@ function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
   if (config.nota) l.push(`> ${config.nota}`, '');
   if (actual.etiqueta) l.push(`**${actual.etiqueta}**`, '');
   l.push(`**Índice: ${f(actual.indice)} / 100** · meta ${config.objetivos.indice_meta} · medido el ${actual.cobertura} % del peso total`, '');
-  if (historial.length > 1) {
+  if (!evo.base_comparable) {
+    l.push(`- Línea base (${evo.fecha_base}, ${evo.sitio_base}): ${f(evo.indice_base)}. **Referencia histórica, no comparable:** se midió otra web, con otras páginas y sin omitir auditorías. No se calculan evolución ni avance hacia la meta frente a ella.`);
+    l.push(evo.fecha_anterior
+      ? `- Evolución desde la medición anterior comparable (${evo.fecha_anterior}): **${signo(evo.evolucion_vs_anterior)}**`
+      : '- Primera medición de esta web y estas páginas: todavía no hay una medición anterior comparable.');
+  } else if (historial.length > 1) {
     l.push(`- Evolución desde la base (${evo.fecha_base}): **${signo(evo.evolucion_vs_base)}**`);
     l.push(`- Evolución desde la medición anterior (${f(evo.fecha_anterior)}): **${signo(evo.evolucion_vs_anterior)}**`);
     l.push(`- Avance hacia la meta: **${f(evo.avance_hacia_meta, ' %')}**`);
@@ -40,7 +45,7 @@ function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
   } else {
     l.push('Primera medición: queda guardada como **línea base**.');
   }
-  l.push('', '## Bloques', '', '| Bloque | Peso | Base | Anterior | Actual | vs base | vs anterior |', '| --- | --- | --- | --- | --- | --- | --- |');
+  l.push('', '## Bloques', '', `| Bloque | Peso | ${evo.base_comparable ? 'Base' : 'Referencia histórica (no comparable)'} | Anterior | Actual | vs base | vs anterior |`, '| --- | --- | --- | --- | --- | --- | --- |');
   for (const [b, peso] of Object.entries(config.pesos)) {
     const e = evo.por_bloque[b];
     l.push(`| ${NOMBRES[b]} | ${peso} % | ${f(e.base)} | ${f(e.anterior)} | ${f(e.actual)} | ${signo(e.vs_base)} | ${signo(e.vs_anterior)} |`);
@@ -93,11 +98,13 @@ async function calcular(config) {
   const { indice: valor, cobertura } = indice(notas, config.pesos);
   if (valor === null) throw new Error('No hay ningún bloque medido: revisa Lighthouse y el chequeo SEO.');
 
-  const actual = { fecha: fechaHoy(), etiqueta: process.env.ETIQUETA || null, indice: valor, cobertura, bloques: notas, sitio: config.sitio };
+  const objeto = [config.sitio, config.urls.join(','), (config.omitir_auditorias || []).join(',')].join(' | ');
+  const actual = { fecha: fechaHoy(), etiqueta: process.env.ETIQUETA || null, indice: valor, cobertura, bloques: notas, sitio: config.sitio, objeto };
   await asegurarCarpeta(RESULTADOS);
   const rutaHistorial = path.join(RESULTADOS, 'historial.json');
-  // Una sola medición por día: si se repite, se sustituye.
-  const historial = (await leerJSON(rutaHistorial, [])).filter((h) => h.fecha !== actual.fecha);
+  // Una sola medición por día y objeto: si se repite, se sustituye; la de otra web ese día se conserva.
+  const mismo = (h) => (h.objeto ? h.objeto === actual.objeto : h.sitio === actual.sitio);
+  const historial = (await leerJSON(rutaHistorial, [])).filter((h) => !(h.fecha === actual.fecha && mismo(h)));
   historial.push(actual);
   historial.sort((a, b) => a.fecha.localeCompare(b.fecha));
   const evo = evolucion(historial, actual, config.objetivos.indice_meta, config.pesos);
