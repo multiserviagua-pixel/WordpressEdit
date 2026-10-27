@@ -1,8 +1,9 @@
 // Comprobaciones SEO on-page y enlaces rotos de cada URL de config.json.
-// Uso: node scripts/seo.mjs   (SITIO=https://nueva.humannaia.com para la nueva web)
+// Mide la web real y, si está en config.web_nueva, también la nueva web.
+// Uso: node scripts/seo.mjs   (SITIO=https://... mide solo esa web)
 import { writeFile } from 'node:fs/promises';
 import path from 'node:path';
-import { cargarConfig, urlCompleta, slug, TMP, asegurarCarpeta } from './lib/config.mjs';
+import { perfiles, urlCompleta, slug, asegurarCarpeta } from './lib/config.mjs';
 import { analizarPagina } from './lib/html.mjs';
 import { puntuarSEO } from './lib/calculo.mjs';
 
@@ -40,7 +41,10 @@ function enlacesInternos(enlaces, base, origen) {
 }
 
 async function main() {
-  const config = await cargarConfig();
+  for (const config of await perfiles()) await medir(config);
+}
+
+async function medir(config) {
   const origen = new URL(config.sitio).origin;
   const paginas = [];
   const todosLosEnlaces = new Set();
@@ -71,12 +75,12 @@ async function main() {
   }
 
   const salida = { sitio: config.sitio, paginas, enlaces_comprobados: lista.length, enlaces_rotos: rotos };
-  await asegurarCarpeta(TMP);
-  await writeFile(path.join(TMP, 'seo.json'), JSON.stringify(salida, null, 2));
+  await asegurarCarpeta(config.tmp);
+  await writeFile(path.join(config.tmp, 'seo.json'), JSON.stringify(salida, null, 2));
   for (const p of paginas) {
-    console.log(`SEO ${slug(p.ruta).padEnd(22)} ${p.puntuacion?.nota ?? 'error'}`);
+    console.log(`[${config.id}] SEO ${slug(p.ruta).padEnd(22)} ${p.puntuacion?.nota ?? 'error'}`);
   }
-  console.log(`Enlaces comprobados: ${lista.length}, rotos: ${rotos.length}`);
+  console.log(`[${config.id}] Enlaces comprobados: ${lista.length}, rotos: ${rotos.length}`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

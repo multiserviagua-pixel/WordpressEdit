@@ -23,6 +23,29 @@ export async function cargarConfig() {
   return config;
 }
 
+/**
+ * Webs que se miden en cada ejecución. Siempre la real (raíz de `resultados/`, `informe.md`);
+ * además, la nueva web de `config.web_nueva` en `resultados/nueva/`, con su propio historial.
+ * Si se fija SITIO, solo se mide esa URL como antes.
+ */
+export async function perfiles() {
+  const base = await cargarConfig();
+  const lista = [{
+    ...base, id: 'real', nombre: base.nombre || base.sitio, omitir_auditorias: [],
+    tmp: TMP, resultados: RESULTADOS, informe: path.join(RAIZ, 'informe.md'), manual: path.join(RAIZ, 'datos', 'manual.json'),
+  }];
+  const n = base.web_nueva;
+  if (!process.env.SITIO && n?.sitio && n.urls?.length) {
+    lista.push({
+      ...base, id: 'nueva', nombre: n.nombre || n.sitio, sitio: n.sitio.replace(/\/+$/, ''), urls: n.urls,
+      omitir_auditorias: n.omitir_auditorias || [], nota: n.nota || null,
+      tmp: path.join(TMP, 'nueva'), resultados: path.join(RESULTADOS, 'nueva'),
+      informe: path.join(RESULTADOS, 'nueva', 'informe.md'), manual: path.join(RAIZ, 'datos', 'manual-nueva.json'),
+    });
+  }
+  return lista;
+}
+
 export function urlCompleta(config, ruta) {
   return new URL(ruta, config.sitio + '/').href;
 }

@@ -1,6 +1,6 @@
 # Medición del Índice HumanaIA
 
-Mide cada noche humannaia.com y calcula el **Índice HumanaIA (0–100)** y su **% de evolución**, según el plan de orquestación Claude + ChatGPT. Los resultados se guardan en este repositorio, así que el historial queda versionado.
+Mide cada noche humannaia.com y, desde el 27/10/2026, también la nueva web (nueva.humannaia.com), y calcula el **Índice HumanaIA (0–100)** y su **% de evolución**, según el plan de orquestación Claude + ChatGPT. Los resultados se guardan en este repositorio, así que el historial queda versionado.
 
 ## Qué mide
 
@@ -17,6 +17,16 @@ Cada nota se normaliza a 0–100 frente a su objetivo (`config.json`). El índic
 
 - **% evolución** = (actual − base) / base × 100, frente a la primera medición y frente a la anterior. Solo compara bloques medidos en ambas fechas, para que añadir una nota nueva no falsee el resultado.
 - **% avance hacia la meta** = (actual − base) / (meta − base) × 100.
+
+## Dos webs, dos historiales
+
+- **Web real (humannaia.com):** `informe.md` y `resultados/`, con la línea base del 21/10/2026.
+- **Nueva web (nueva.humannaia.com):** `resultados/nueva/informe.md` y `resultados/nueva/`, con su propia línea base. Se configura en `config.json` → `web_nueva`.
+  - **Páginas medidas:** van en `urls`; se añade cada página del mapa al publicarla.
+  - **Sin indexar:** está en `noindex` a propósito hasta el lanzamiento, así que Lighthouse omite la auditoría `is-crawlable`.
+  - **Notas manuales:** van en `datos/manual-nueva.json`.
+
+Comparar la nueva web con la línea base de la real dice cuánto mejora la web nueva respecto a la actual.
 
 ## Cómo se usa
 

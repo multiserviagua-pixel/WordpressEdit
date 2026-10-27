@@ -5,6 +5,17 @@
     "/servicios-humanaia/",
     "/que-es-humanaia/"
   ],
+  "web_nueva": {
+    "nombre": "Nueva web (nueva.humannaia.com)",
+    "sitio": "https://nueva.humannaia.com",
+    "urls": [
+      "/"
+    ],
+    "omitir_auditorias": [
+      "is-crawlable"
+    ],
+    "nota": "Web en construcción y sin indexar a propósito hasta el lanzamiento: Lighthouse omite la auditoría «is-crawlable». Las notas de contenido, comprensión y conversión de esta web van en datos/manual-nueva.json. Añade aquí cada página del mapa cuando se publique."
+  },
   "pesos": {
     "rendimiento": 20,
     "accesibilidad": 15,

@@ -1,9 +1,10 @@
 // Calcula el Índice HumanaIA, lo añade al historial y escribe el informe.
-// Uso: node scripts/indice.mjs   (ETIQUETA="Cierre Sprint 0" para marcar la medición)
+// Calcula un índice por web: la real (informe.md, resultados/) y la nueva si está en config.web_nueva
+// (resultados/nueva/informe.md, resultados/nueva/). Uso: node scripts/indice.mjs   (ETIQUETA="Cierre Sprint 0")
 import { readdir, writeFile, appendFile } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
-import { cargarConfig, leerJSON, slug, fechaHoy, TMP, RESULTADOS, RAIZ, asegurarCarpeta } from './lib/config.mjs';
+import { perfiles, leerJSON, slug, fechaHoy, asegurarCarpeta } from './lib/config.mjs';
 import { notasLighthouse, bloques, indice, evolucion, redondear } from './lib/calculo.mjs';
 
 const NOMBRES = {
@@ -14,7 +15,7 @@ const f = (n, sufijo = '') => (n === null || n === undefined ? '—' : `${n}${su
 const signo = (n) => (n === null || n === undefined ? '—' : `${n > 0 ? '+' : ''}${n} %`);
 
 async function leerLighthouse(config) {
-  const carpeta = path.join(TMP, 'lighthouse');
+  const carpeta = path.join(config.tmp, 'lighthouse');
   const porRuta = {};
   if (!existsSync(carpeta)) return porRuta;
   const archivos = new Set(await readdir(carpeta));
@@ -28,6 +29,8 @@ async function leerLighthouse(config) {
 function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
   const l = [];
   l.push(`# Índice HumanaIA · ${actual.fecha}`, '');
+  l.push(`Web medida: ${config.sitio}`, '');
+  if (config.nota) l.push(`> ${config.nota}`, '');
   if (actual.etiqueta) l.push(`**${actual.etiqueta}**`, '');
   l.push(`**Índice: ${f(actual.indice)} / 100** · meta ${config.objetivos.indice_meta} · medido el ${actual.cobertura} % del peso total`, '');
   if (historial.length > 1) {
@@ -76,10 +79,23 @@ function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
 }
 
 async function main() {
-  const config = await cargarConfig();
+  const lista = await perfiles();
+  for (const config of lista) {
+    try {
+      await calcular(config);
+    } catch (e) {
+      // La web real decide el resultado; un fallo de la nueva web se informa sin parar la medición.
+      if (config.id === 'real') throw e;
+      console.error(`[${config.id}] ${e.message || e}`);
+    }
+  }
+}
+
+async function calcular(config) {
+  const RESULTADOS = config.resultados;
   const lighthouse = await leerLighthouse(config);
-  const seo = await leerJSON(path.join(TMP, 'seo.json'), null);
-  const manual = await leerJSON(path.join(RAIZ, 'datos', 'manual.json'), {});
+  const seo = await leerJSON(path.join(config.tmp, 'seo.json'), null);
+  const manual = await leerJSON(config.manual, {});
 
   const crudos = bloques({ lighthouse: Object.values(lighthouse), seo, manual });
   const notas = Object.fromEntries(Object.entries(crudos).map(([k, v]) => [k, redondear(v)]));
@@ -101,10 +117,10 @@ async function main() {
     .concat(historial.map((h) => [h.fecha, h.indice, h.cobertura, ...Object.keys(config.pesos).map((b) => h.bloques[b] ?? ''), `"${(h.etiqueta || '').replace(/"/g, "'")}"`].join(',')));
   await writeFile(path.join(RESULTADOS, 'historial.csv'), csv.join('\n') + '\n');
   const texto = informe({ config, actual, evo, historial, lighthouse, seo, manual });
-  await writeFile(path.join(RAIZ, 'informe.md'), texto);
+  await writeFile(config.informe, texto);
   if (process.env.GITHUB_STEP_SUMMARY) await appendFile(process.env.GITHUB_STEP_SUMMARY, texto);
 
-  console.log(`Índice ${valor} (cobertura ${cobertura} %) · vs base ${signo(evo.evolucion_vs_base)} · vs anterior ${signo(evo.evolucion_vs_anterior)}`);
+  console.log(`[${config.id}] Índice ${valor} (cobertura ${cobertura} %) · vs base ${signo(evo.evolucion_vs_base)} · vs anterior ${signo(evo.evolucion_vs_anterior)}`);
 }
 
 main().catch((e) => { console.error(e.message || e); process.exit(1); });
