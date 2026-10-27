@@ -103,5 +103,21 @@
       "conversion": null
     },
     "sitio": "https://humannaia.com"
+  },
+  {
+    "fecha": "2026-10-27",
+    "etiqueta": "Primera medición de la nueva web",
+    "indice": 96.3,
+    "cobertura": 50,
+    "bloques": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo": 87.7,
+      "contenido": null,
+      "comprension": null,
+      "conversion": null
+    },
+    "sitio": "https://nueva.humannaia.com",
+    "objeto": "https://nueva.humannaia.com | / | is-crawlable"
   }
 ]

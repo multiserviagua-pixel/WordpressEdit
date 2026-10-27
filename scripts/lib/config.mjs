@@ -23,6 +23,21 @@ export async function cargarConfig() {
   return config;
 }
 
+/**
+ * Web que se mide, con sus carpetas: `informe.md` y `resultados/`.
+ * `omitir_auditorias` (p. ej. "is-crawlable" mientras la web está en noindex) solo se aplica
+ * a la web de config.json; si se fija SITIO para medir otra, no se omite nada.
+ */
+export async function perfiles() {
+  const base = await cargarConfig();
+  return [{
+    ...base, id: 'web', nombre: base.nombre || base.sitio,
+    omitir_auditorias: process.env.SITIO ? [] : (base.omitir_auditorias || []),
+    nota: process.env.SITIO ? null : (base.nota || null),
+    tmp: TMP, resultados: RESULTADOS, informe: path.join(RAIZ, 'informe.md'), manual: path.join(RAIZ, 'datos', 'manual.json'),
+  }];
+}
+
 export function urlCompleta(config, ruta) {
   return new URL(ruta, config.sitio + '/').href;
 }

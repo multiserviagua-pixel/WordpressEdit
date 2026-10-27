@@ -117,12 +117,20 @@ export function indicesComparables(a, b, pesos) {
   return { a: indice(a.bloques, comunes).indice, b: indice(b.bloques, comunes).indice, bloques: Object.keys(comunes) };
 }
 
-/** Compara la medición actual con la base (primera) y con la anterior del historial. */
+/** Huella de lo que se midió: web, páginas y auditorías omitidas. Las mediciones antiguas solo tienen `sitio`. */
+const mismoObjeto = (a, b) => (a?.objeto && b?.objeto ? a.objeto === b.objeto : (a?.sitio ?? null) === (b?.sitio ?? null));
+
+/**
+ * Compara la medición actual con la base (primera del historial) y con la anterior comparable.
+ * Si la base midió otra web u otras páginas, queda como referencia histórica: no se calculan
+ * evolución ni avance hacia la meta frente a ella. La anterior es la última del mismo objeto.
+ */
 export function evolucion(historial, actual, meta, pesos) {
   const previas = historial.filter((h) => h.fecha !== actual.fecha);
   const base = previas[0] || actual;
-  const anterior = previas.at(-1) || null;
-  const frenteBase = indicesComparables(actual, base, pesos);
+  const baseComparable = mismoObjeto(base, actual);
+  const anterior = previas.filter((h) => mismoObjeto(h, actual)).at(-1) || null;
+  const frenteBase = baseComparable ? indicesComparables(actual, base, pesos) : { a: null, b: null, bloques: [] };
   const frenteAnterior = anterior ? indicesComparables(actual, anterior, pesos) : null;
   const porBloque = {};
   for (const b of Object.keys(actual.bloques)) {
@@ -130,20 +138,22 @@ export function evolucion(historial, actual, meta, pesos) {
       base: base.bloques?.[b] ?? null,
       anterior: anterior?.bloques?.[b] ?? null,
       actual: actual.bloques[b],
-      vs_base: variacion(actual.bloques[b], base.bloques?.[b]),
+      vs_base: baseComparable ? variacion(actual.bloques[b], base.bloques?.[b]) : null,
       vs_anterior: anterior ? variacion(actual.bloques[b], anterior.bloques?.[b]) : null,
     };
   }
   return {
     fecha_base: base.fecha,
-    fecha_anterior: anterior?.fecha ?? null,
+    sitio_base: base.sitio ?? null,
     indice_base: base.indice,
+    base_comparable: baseComparable,
+    fecha_anterior: anterior?.fecha ?? null,
     evolucion_vs_base: variacion(frenteBase.a, frenteBase.b),
     evolucion_vs_anterior: frenteAnterior ? variacion(frenteAnterior.a, frenteAnterior.b) : null,
-    // El avance hacia la meta usa el índice completo: es el que debe llegar a la meta.
-    avance_hacia_meta: avance(actual.indice, base.indice, meta),
+    // El avance hacia la meta usa el índice completo y solo frente a una base del mismo objeto.
+    avance_hacia_meta: baseComparable ? avance(actual.indice, base.indice, meta) : null,
     // Si cambió qué bloques se miden, la evolución usa solo los comunes.
-    comparable: base.cobertura === actual.cobertura,
+    comparable: baseComparable && base.cobertura === actual.cobertura,
     bloques_comparados: frenteBase.bloques,
     por_bloque: porBloque,
   };
