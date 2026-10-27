@@ -1,0 +1,72 @@
+[
+  {
+    "file": "portada/01-portada.webp",
+    "width": 1448,
+    "height": 1086,
+    "bytes": 167540,
+    "quality": 90
+  },
+  {
+    "file": "formacion-ia/02-formacion-ia.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 176748,
+    "quality": 90
+  },
+  {
+    "file": "consultoria-estrategica/03-consultoria-estrategica.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 172896,
+    "quality": 90
+  },
+  {
+    "file": "ninos-jovenes/04-ninos-jovenes.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 188170,
+    "quality": 88
+  },
+  {
+    "file": "planificacion-cursos/05-planificacion-cursos.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 198932,
+    "quality": 84
+  },
+  {
+    "file": "generacion-programas/06-generacion-programas.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 173228,
+    "quality": 90
+  },
+  {
+    "file": "escuela-negocios/07-escuela-negocios.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 184558,
+    "quality": 88
+  },
+  {
+    "file": "docentes/08-docentes.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 168522,
+    "quality": 90
+  },
+  {
+    "file": "instituciones/09-instituciones.webp",
+    "width": 1774,
+    "height": 887,
+    "bytes": 185322,
+    "quality": 88
+  },
+  {
+    "file": "contacto/10-contacto.webp",
+    "width": 1664,
+    "height": 936,
+    "bytes": 42596,
+    "quality": 90
+  }
+]

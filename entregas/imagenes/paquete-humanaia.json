@@ -1,0 +1,95 @@
+{
+  "style": "Use case: photorealistic-natural. Paquete coherente para web HumanaIA, formación y consultoría en IA humanista española. Fotografía realista documental natural y luminosa, nada posado ni estética de banco de imágenes. Personas ficticias de edades y orígenes diversos en España actual, momentos espontáneos creíbles. Tecnología discreta. Tonos cálidos de piel y madera con toques azul marino #0B2340, azul #0F6CBD, celeste #8FD1F5. Luz natural suave, texturas reales, anatomía y manos correctas. Composición limpia con espacio libre a un lado para superponer texto. Sin texto, sin letras o números legibles en pantallas o papel, sin logos, marcas, marcas de agua, famosos, robots, cerebros brillantes, hologramas ni código flotante. Una sola fotografía completa, nunca collage. Alta resolución. ",
+  "items": [
+    {
+      "name": "01-portada",
+      "ratio": [
+        4,
+        3
+      ],
+      "scene": "Un pequeño grupo de adultos de distintas edades en un taller presencial, alrededor de una mesa con portátiles. Una formadora explica señalando una pantalla, el grupo atiende con interés y alguien sonríe. Ambiente cercano y participativo.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-b50eb9f8-8c81-4f9d-a953-8ac66acc8d6d.png"
+    },
+    {
+      "name": "02-formacion-ia",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Un equipo de trabajo en una sala de formación luminosa siguiendo una sesión práctica, cada persona con su portátil.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-0dd2ec17-b201-429e-94a2-d311c334e13f.png"
+    },
+    {
+      "name": "03-consultoria-estrategica",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Dos o tres profesionales en una reunión de trabajo revisando juntos un plan en una tableta y en papel, sobre una mesa de madera.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-05e289c2-f9a1-4e90-bfd0-37515e9d432d.png"
+    },
+    {
+      "name": "04-ninos-jovenes",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Un grupo de adolescentes de 13 a 16 años en un aula trabajando en equipo con tabletas, curiosos y concentrados, con una profesora acompañándolos. Imagen respetuosa y apropiada para público educativo.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-6f017a6d-fcf6-4807-9919-87a1d1f214c7.png"
+    },
+    {
+      "name": "05-planificacion-cursos",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Una mesa vista desde arriba con un cuaderno, notas adhesivas, un calendario de papel y un portátil, preparando un itinerario formativo. Sin texto legible.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-5a0d8747-b165-4e19-833b-f0899d3abc01.png"
+    },
+    {
+      "name": "06-generacion-programas",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Una persona creando materiales formativos en un estudio pequeño y luminoso, con un micrófono y un portátil.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-63553ff2-1b95-45d8-a294-2d046d04139e.png"
+    },
+    {
+      "name": "07-escuela-negocios",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Directivos y emprendedores en una sesión tipo seminario, con una persona presentando ante un grupo reducido en una sala elegante y sobria.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-3db4cec6-8336-4200-a23b-788e23c03a19.png"
+    },
+    {
+      "name": "08-docentes",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Un grupo de profesores y profesoras en una formación dentro de un centro educativo, probando herramientas en sus portátiles y comentándolas entre ellos.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-f3153d7a-62d3-4301-a79c-f7f782138c94.png"
+    },
+    {
+      "name": "09-instituciones",
+      "ratio": [
+        2,
+        1
+      ],
+      "scene": "Una sesión de trabajo en una sala municipal o de una asociación, con personas de distintas edades participando en un taller.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-b02c34d9-24d7-4648-ae04-a2814d2dc417.png"
+    },
+    {
+      "name": "10-contacto",
+      "ratio": [
+        16,
+        9
+      ],
+      "scene": "Detalle desenfocado de una conversación entre dos personas tomando café junto a un portátil, en tonos azul marino oscuros, fondo para texto blanco encima. Mantener todo desenfocado, con amplio espacio tranquilo y oscuro para texto.",
+      "path": "C:\\Users\\HumanaIA\\.codex\\generated_images\\01a17c84-a254-7e31-bb22-60964876598b\\exec-4131ef70-4e3e-41f1-afff-eca7ed3d0d91.png"
+    }
+  ]
+}
