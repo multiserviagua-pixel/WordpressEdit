@@ -17,9 +17,12 @@ jobs:
       - name: Archivos fuera del carril
         env:
           RAMA: ${{ github.head_ref }}
-          BASE: ${{ github.event.pull_request.base.sha }}
+          BASE_REF: ${{ github.base_ref }}
         run: |
-          cambios=$(git diff --name-only "$BASE"...HEAD)
+          # Se compara con la rama base tal como está ahora (no con el commit base guardado al abrir
+          # la PR): así no se cuelan como «fuera del carril» los cambios de otras PR ya unidas.
+          git fetch --no-tags origin "+refs/heads/$BASE_REF:refs/remotes/origin/$BASE_REF"
+          cambios=$(git diff --name-only "origin/$BASE_REF"...HEAD)
           echo "Archivos modificados:"; echo "$cambios"
           case "$RAMA" in
             chatgpt/*)
