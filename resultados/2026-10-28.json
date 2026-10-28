@@ -1,0 +1,141 @@
+{
+  "fecha": "2026-10-28",
+  "etiqueta": null,
+  "indice": 95.4,
+  "cobertura": 50,
+  "bloques": {
+    "rendimiento": 100,
+    "accesibilidad": 100,
+    "seo": 84.5,
+    "contenido": null,
+    "comprension": null,
+    "conversion": null
+  },
+  "sitio": "https://nueva.humannaia.com",
+  "objeto": "https://nueva.humannaia.com | / | is-crawlable",
+  "evolucion": {
+    "fecha_base": "2026-10-21",
+    "sitio_base": "https://humannaia.com",
+    "indice_base": 71.5,
+    "base_comparable": false,
+    "fecha_anterior": "2026-10-27",
+    "evolucion_vs_base": null,
+    "evolucion_vs_anterior": -0.9,
+    "avance_hacia_meta": null,
+    "comparable": false,
+    "bloques_comparados": [],
+    "por_bloque": {
+      "rendimiento": {
+        "base": 54.1,
+        "anterior": 100,
+        "actual": 100,
+        "vs_base": null,
+        "vs_anterior": 0
+      },
+      "accesibilidad": {
+        "base": 95.1,
+        "anterior": 100,
+        "actual": 100,
+        "vs_base": null,
+        "vs_anterior": 0
+      },
+      "seo": {
+        "base": 71,
+        "anterior": 87.7,
+        "actual": 84.5,
+        "vs_base": null,
+        "vs_anterior": -3.6
+      },
+      "contenido": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "comprension": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "conversion": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      }
+    }
+  },
+  "lighthouse": {
+    "/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 93.6842105263158,
+      "bruto": {
+        "rendimiento": 90,
+        "accesibilidad": 96,
+        "seo": 89,
+        "buenas_practicas": 100,
+        "lcp_ms": 1612.79,
+        "cls": 0.04876837254821325,
+        "tbt_ms": 80
+      }
+    }
+  },
+  "seo": {
+    "sitio": "https://nueva.humannaia.com",
+    "paginas": [
+      {
+        "ruta": "/",
+        "url": "https://nueva.humannaia.com/",
+        "estado": 200,
+        "titulo": "HumanaIA",
+        "descripcion": "HumanaIAConsultoría, automatización, desarrollo y formación Automatizamos procesos, desarrollamos soluciones a medida y formamos a tu equipo para usarlas con…",
+        "h1": 1,
+        "imagenes": 17,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 11,
+        "canonical": "https://nueva.humannaia.com/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/compartir-humanaia.jpg",
+        "idioma": "es",
+        "json_ld": 1,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 75.3,
+          "fallos": [
+            "Título de 8 caracteres (ideal 30–65)",
+            "11 de 17 imágenes sin texto alternativo"
+          ]
+        }
+      }
+    ],
+    "enlaces_comprobados": 4,
+    "enlaces_rotos": []
+  },
+  "manual": {
+    "contenido": {
+      "nota": null,
+      "autor": "ChatGPT",
+      "revisado_por": "Claude",
+      "fecha": null,
+      "notas": "Rúbrica de datos/rubrica.md, 10 criterios x 10 puntos sobre las páginas de config.json."
+    },
+    "comprension": {
+      "nota": null,
+      "autor": "ChatGPT",
+      "revisado_por": "Claude",
+      "fecha": null,
+      "notas": "Test de 60 segundos: 5 perfiles simulados + personas reales. % de respuestas correctas."
+    },
+    "conversion": {
+      "nota": null,
+      "autor": "Claude",
+      "revisado_por": "Persona responsable",
+      "fecha": null,
+      "notas": "Se activa con 4 semanas de datos de GA4 (Site Kit): conversiones frente al objetivo acordado."
+    }
+  }
+}

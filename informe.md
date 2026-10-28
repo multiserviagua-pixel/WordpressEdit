@@ -1,23 +1,21 @@
-# Índice HumanaIA · 2026-10-27
+# Índice HumanaIA · 2026-10-28
 
 Web medida: https://nueva.humannaia.com
 
 > Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base del 21/10/2026 midió otra web (humannaia.com) y otras páginas: queda como referencia histórica y no se compara. Añade aquí cada página publicada.
 
-**Primera medición de la nueva web**
-
-**Índice: 96.3 / 100** · meta 85 · medido el 50 % del peso total
+**Índice: 95.4 / 100** · meta 85 · medido el 50 % del peso total
 
 - Línea base (2026-10-21, https://humannaia.com): 71.5. **Referencia histórica, no comparable:** se midió otra web, con otras páginas y sin omitir auditorías. No se calculan evolución ni avance hacia la meta frente a ella.
-- Primera medición de esta web y estas páginas: todavía no hay una medición anterior comparable.
+- Evolución desde la medición anterior comparable (2026-10-27): **-0.9 %**
 
 ## Bloques
 
 | Bloque | Peso | Referencia histórica (no comparable) | Anterior | Actual | vs base | vs anterior |
 | --- | --- | --- | --- | --- | --- | --- |
-| Rendimiento | 20 % | 54.1 | — | 100 | — | — |
-| Accesibilidad | 15 % | 95.1 | — | 100 | — | — |
-| SEO técnico | 15 % | 71 | — | 87.7 | — | — |
+| Rendimiento | 20 % | 54.1 | 100 | 100 | — | 0 % |
+| Accesibilidad | 15 % | 95.1 | 100 | 100 | — | 0 % |
+| SEO técnico | 15 % | 71 | 87.7 | 84.5 | — | -3.6 % |
 | Contenido | 20 % | — | — | — | — | — |
 | Comprensión | 15 % | — | — | — | — | — |
 | Conversión | 15 % | — | — | — | — | — |
@@ -28,7 +26,7 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 | Página | Rendimiento | Accesibilidad | SEO | Buenas prácticas | LCP | CLS | TBT | Checklist SEO |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | 98 | 96 | 100 | 100 | 1.9 s | 0.049 | 76 ms | 75.3 |
+| / | 90 | 96 | 89 | 100 | 1.61 s | 0.049 | 80 ms | 75.3 |
 
 ## Qué corregir (checklist SEO)
 
@@ -42,6 +40,7 @@ Enlaces internos comprobados: 4 · rotos: 0
 
 | Fecha | Índice | Cobertura | Etiqueta |
 | --- | --- | --- | --- |
+| 2026-10-28 | 95.4 | 50 % |  |
 | 2026-10-27 | 96.3 | 50 % | Primera medición de la nueva web |
 | 2026-10-27 | 74.1 | 50 % |  |
 | 2026-10-26 | 80 | 50 % |  |
