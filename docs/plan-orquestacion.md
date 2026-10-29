@@ -14,7 +14,7 @@ Tres principios:
 
 ## Estado a 29/10/2026
 
-Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el bloque de contenido: catálogo de servicios, cinco fichas y preguntas frecuentes. Montado no equivale a aceptado: falta la aceptación material de la persona responsable y quedan pendientes del sprint los casos, el diagnóstico interactivo (preguntas y código), el Laboratorio y las pruebas funcionales. La Escuela de negocios sigue en borrador y #3/#4 siguen abiertos.
+Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el bloque de contenido: catálogo de servicios, seis fichas y preguntas frecuentes. Montado no equivale a aceptado: falta la aceptación material de la persona responsable y quedan pendientes del sprint los casos, el diagnóstico interactivo (preguntas y código), el Laboratorio y las pruebas funcionales. #3/#4 siguen abiertos.
 
 - **Sprint 0:** su puerta (índice base publicado) está registrada, pero siguen pendientes tareas de su checklist, como cerrar la copia de la web real (#5) y la parte real del test de comprensión (#4).
 - **Entregas materiales aceptadas el 27/10:** marca y arquitectura, paquete de imágenes y prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com).
@@ -24,14 +24,14 @@ Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el 
 | Marca | **HumanaIA** (dominio y emails siguen en humannaia.com); marca y mapa de páginas aceptados | #9, `entregas/textos/` |
 | Nueva web | WordPress propio en nueva.humannaia.com, no indexable, tema de bloques Twenty Twenty-Five. Cabecera y pie como partes de plantilla, CSS global (guía: `docs/editar-la-web.md`). Todos los enlaces internos apuntan a `/` (ya no a `/inicio/`) | #20 |
 | Portada | Texto y SEO de #40 en WordPress. Vídeo real de Avilagro (10 s, sin bucle) con frases que flotan por la zona, incluida Ciberseguridad. Contadores [Nº] ocultos. Datos estructurados de la organización y FAQ | #20 |
-| Servicios | Catálogo `/servicios-humanaia/` y cinco fichas publicadas (consultoría, automatización, desarrollo a medida, formación para equipos, educación). La Escuela de negocios queda en borrador hasta nuevo aviso y sin enlaces. Enlazadas desde la portada, la cabecera y el pie | #48, PR #50 |
+| Servicios | Catálogo `/servicios-humanaia/` y seis fichas publicadas (consultoría, automatización, desarrollo a medida, formación para equipos, escuela de negocios, educación). Enlazadas desde la portada, el catálogo, la cabecera y el pie; cada ficha enlaza a las demás | #48, PR #50 |
 | Preguntas frecuentes | `/preguntas-frecuentes/` publicada (ID 224) con el texto de #51, datos estructurados FAQPage y enlace en el pie | #49 |
 | Páginas legales | Aviso legal, privacidad y cookies con NIF B75948646, conservación máxima de tres meses y proveedores (Axarnet; Google Workspace). Datos registrales ocultos hasta nuevo aviso | /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/ |
 | Formulario de contacto | Contact Form 7 en la sección de contacto de la portada. El envío real de correos se activa en el lanzamiento | #20 |
 | Copias de seguridad | UpdraftPlus guarda las copias de la nueva web en Google Drive; primera copia completa el 29/10. La copia de la web real está confirmada por la persona responsable (Claude no la ha verificado: queda fuera de su alcance) | #5 |
 | Web real | humannaia.com, intacta hasta el lanzamiento | — |
 | Centro de trabajo | GitHub con carriles, unión automática entre agentes y registro de aceptaciones | Este repositorio |
-| Medición | Se miden la portada, el catálogo, las cinco fichas y las preguntas frecuentes (`config.json`). La línea base del 21/10 midió la web actual: referencia histórica, no comparable | [`informe.md`](../informe.md) |
+| Medición | Se miden la portada, el catálogo, las seis fichas y las preguntas frecuentes (`config.json`). La línea base del 21/10 midió la web actual: referencia histórica, no comparable | [`informe.md`](../informe.md) |
 | SEO | Plan para Google España unido (#44) | `docs/plan-seo.md` |
 | Rúbrica y comprensión | Rúbrica de contenido (#41) y test de comprensión simulado (#42) unidos. Las tres pruebas con personas reales se dejan para el final | `revisiones/` |
 | Codex (ChatGPT) | Trabaja en el repositorio como `Alex00111001`: revisa, aprueba y entrega PR | [`AGENTS.md`](../AGENTS.md) |
@@ -39,7 +39,6 @@ Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el 
 **Pendiente de la persona responsable:**
 - datos del Registro Mercantil (ocultos en el aviso legal hasta entonces);
 - confirmar el servicio de Ciberseguridad antes de redactar su texto;
-- cuándo publicar la Escuela de negocios (entonces se restauran sus enlaces);
 - Perfil de Empresa de Google y reseñas (`docs/plan-seo.md`);
 - cerrar #5.
 
@@ -51,6 +50,7 @@ Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el 
 - 27/10: plugins, los mejores gratuitos (ver «Plugins de WordPress»);
 - 28/10: copias de UpdraftPlus en Google Drive; registro mercantil oculto hasta nuevo aviso;
 - 28/10: la Escuela de negocios queda en borrador; el resto de páginas se publica cuando está lista;
+- 29/10: se publica la Escuela de negocios con el texto unido en #50 y se restauran sus enlaces;
 - 29/10: consentimiento de imagen cerrado: según la persona responsable, todas las personas que aparecen en fotos y vídeo de la web han dado su consentimiento y conocen la página.
 
 ## Reparto de roles
