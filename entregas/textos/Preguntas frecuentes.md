@@ -41,15 +41,11 @@ La formación para equipos contempla ambas modalidades. La ubicación, el calend
 
 Sí. Además de formación para equipos y escuela de negocios, hay espacios para niños y jóvenes y propuestas para profesorado y familias. El público y los requisitos se confirman en cada actividad.
 
-### ¿Ofrecéis formación bonificable por FUNDAE?
-
-No. HumanaIA no ofrece formación bonificable por FUNDAE.
-
 ## Plantear un proyecto
 
 ### ¿Podéis trabajar con las herramientas que ya usamos?
 
-La oferta incluye integraciones adaptadas a los sistemas existentes. Su viabilidad se confirma conociendo las herramientas y el proceso; no se garantiza compatibilidad antes de revisarlos.
+La oferta incluye integraciones adaptadas a los sistemas existentes. Revisamos tus herramientas y el proceso para confirmar qué integración encaja con la necesidad.
 
 ### ¿Cuánto cuesta y cuánto tarda un proyecto?
 
@@ -100,3 +96,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: preguntas frecuentes HumanaIA. Objetivo de marca y utilidad, sin volumen atribuido; preguntas editoriales basadas en oferta, no en entrevistas realizadas. Título: 54 caracteres; meta: 158; H1 único. Ruta del mapa #9; confirmar inventario actual antes de montar. El campo url_copia indica destino editorial, no una página ya existente. Issue #49.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
