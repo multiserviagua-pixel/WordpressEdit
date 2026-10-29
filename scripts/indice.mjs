@@ -70,6 +70,7 @@ function informe({ config, actual, evo, historial, lighthouse, seo, manual }) {
       const fallos = p.puntuacion?.fallos || [];
       l.push(fallos.length ? `**${p.ruta}**` : `**${p.ruta}** — sin fallos`);
       fallos.forEach((x) => l.push(`- ${x}`));
+      (p.puntuacion?.avisos || []).forEach((x) => l.push(`- Aviso: ${x}`));
       l.push('');
     }
     l.push(`Enlaces internos comprobados: ${seo.enlaces_comprobados} · rotos: ${seo.enlaces_rotos.length}`);

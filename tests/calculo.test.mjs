@@ -29,12 +29,13 @@ test('el análisis HTML ignora comentarios, scripts y estilos', async () => {
 test('la checklist SEO puntúa y explica cada fallo', async () => {
   const html = await readFile(new URL('./fixtures/pagina.html', import.meta.url), 'utf8');
   const p = { ...analizarPagina(html), estado: 200, enlaces_rotos: ['https://humannaia.com/about'] };
-  const { nota, fallos } = puntuarSEO(p, reglas);
-  // título 38 car. (15) + 1/3 imágenes con alt (5) + canonical (10) + og (10) + json-ld (10) + idioma (5)
-  assert.equal(nota, 55);
+  const { nota, fallos, avisos } = puntuarSEO(p, reglas);
+  // título 38 car. (15) + 2/3 imágenes con alt, la decorativa cuenta (10) + canonical (10) + og (10) + json-ld (10) + idioma (5)
+  assert.equal(nota, 60);
   assert.ok(fallos.includes('Sin meta descripción'));
   assert.ok(fallos.includes('0 encabezados H1 (debe haber 1)'));
-  assert.ok(fallos.some((x) => x.includes('2 de 3 imágenes')));
+  assert.ok(fallos.includes('1 de 3 imágenes sin atributo alt'));
+  assert.ok(avisos.some((x) => x.startsWith('1 de 3 imágenes marcadas como decorativas')));
   assert.ok(fallos.includes('1 enlaces internos rotos'));
 });
 

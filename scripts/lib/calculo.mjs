@@ -31,15 +31,19 @@ export function puntuarSEO(p, reglas) {
   const ld = (p.descripcion || '').length;
   sumar(ld >= reglas.descripcion_min && ld <= reglas.descripcion_max, 15, ld ? `Meta descripción de ${ld} caracteres (ideal ${reglas.descripcion_min}–${reglas.descripcion_max})` : 'Sin meta descripción');
   sumar(p.h1 === 1, 15, `${p.h1} encabezados H1 (debe haber 1)`);
-  const conAlt = p.imagenes ? (p.imagenes - p.imagenes_sin_alt - p.imagenes_alt_vacio) / p.imagenes : 1;
+  // alt="" es correcto en imágenes decorativas o redundantes con el texto (WCAG, técnica H67):
+  // solo cuenta como fallo la imagen sin atributo alt. Las de alt vacío quedan como aviso para revisarlas.
+  const avisos = [];
+  const conAlt = p.imagenes ? (p.imagenes - p.imagenes_sin_alt) / p.imagenes : 1;
   nota += 15 * conAlt;
-  if (conAlt < 1) fallos.push(`${p.imagenes_sin_alt + p.imagenes_alt_vacio} de ${p.imagenes} imágenes sin texto alternativo`);
+  if (conAlt < 1) fallos.push(`${p.imagenes_sin_alt} de ${p.imagenes} imágenes sin atributo alt`);
+  if (p.imagenes_alt_vacio) avisos.push(`${p.imagenes_alt_vacio} de ${p.imagenes} imágenes marcadas como decorativas (alt vacío): comprobar que lo son`);
   sumar(Boolean(p.canonical), 10, 'Sin URL canónica');
   sumar(Boolean(p.og_image), 10, 'Sin imagen para redes (og:image)');
   sumar(p.json_ld > 0, 10, 'Sin datos estructurados (JSON-LD)');
   sumar(Boolean(p.idioma), 5, 'Sin atributo de idioma');
   sumar(!p.enlaces_rotos?.length, 5, `${p.enlaces_rotos?.length} enlaces internos rotos`);
-  return { nota: redondear(nota), fallos };
+  return { nota: redondear(nota), fallos, avisos };
 }
 
 /** Bloques técnicos de una página a partir de su informe de Lighthouse. */
