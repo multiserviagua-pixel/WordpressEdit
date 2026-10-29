@@ -23,7 +23,7 @@ Revisamos el proceso y las herramientas que intervienen para definir qué partes
 
 ## Qué se incluye y qué se concreta aparte
 
-El proyecto se define alrededor de los procesos acordados. Las herramientas implicadas, las integraciones y cualquier desarrollo adicional se concretan para cada caso. No damos por automatizable cualquier tarea ni prometemos un ahorro antes de conocerla.
+El proyecto se define alrededor de los procesos acordados. Las herramientas implicadas, las integraciones y cualquier desarrollo adicional se concretan para cada caso. Cada proyecto empieza por conocer el proceso; así planteamos la automatización a partir de una necesidad concreta.
 
 ## Formato y proceso
 
@@ -41,7 +41,7 @@ No se parte de esa exigencia. Analizamos las herramientas existentes y las conex
 
 ### ¿La automatización elimina la supervisión humana?
 
-No debe darse por hecho. El trabajo se plantea con las personas que lo utilizan; el papel del equipo y las revisiones se concretan al definir el alcance.
+La diseñamos con las personas que la utilizarán. Definimos con el equipo qué tareas automatizar y en qué puntos mantener su revisión.
 
 ## Cuéntanos cómo trabajáis
 
@@ -74,3 +74,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: automatización de procesos con IA. 210/mes atribuidos a Claude/OpenRush. Título: 53 caracteres; meta: 156; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
