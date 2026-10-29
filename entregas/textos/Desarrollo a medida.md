@@ -23,7 +23,7 @@ Partimos del problema, las herramientas existentes y las personas que utilizará
 
 ## Alcance y límites
 
-Las funciones, integraciones y condiciones del proyecto deben definirse antes de construirlo. No se presume compatibilidad con cualquier sistema ni se incluyen funciones que no se hayan acordado.
+Las funciones, integraciones y condiciones del proyecto deben definirse antes de construirlo. Revisamos tus sistemas para confirmar las integraciones viables y acordamos las funciones que necesita el proyecto.
 
 ## Formato y proceso
 
@@ -74,3 +74,9 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: desarrollo de inteligencia artificial a medida. Se elige la consulta descriptiva por fidelidad al servicio, sin volumen atribuido. «agentes de ia para empresas» (70/mes según Claude) es más estrecha y no representa toda la oferta. Título: 57 caracteres; meta: 159; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
+
+Palabra clave: se mantiene «desarrollo de inteligencia artificial a medida» por corresponder al conjunto del servicio publicado. «agentes de IA para empresas» es una posible solución más concreta y no se usa para atribuir al servicio un alcance nuevo. No se dispone de volumen verificado del término elegido; la elección responde a fidelidad comercial, sin promesa de tráfico. La especialización en agentes podrá tener contenido propio cuando su alcance esté confirmado, previa propuesta en chat.
