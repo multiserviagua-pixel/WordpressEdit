@@ -33,7 +33,7 @@ Dinos si consultas como docente, centro o familia y qué te gustaría trabajar. 
 
 ### ¿Todas las actividades son para la misma edad?
 
-No debe darse por hecho. El público y los requisitos de cada actividad se confirman antes de participar.
+Cada actividad se dirige a un público concreto. Te indicamos a quién va dirigida y qué requisitos tiene antes de participar.
 
 ### ¿Hay propuestas para docentes?
 
@@ -74,3 +74,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: inteligencia artificial para docentes. 50/mes atribuidos a Claude/OpenRush; entrada editorial sin reducir todo el servicio a docentes. Título: 58 caracteres; meta: 158; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
