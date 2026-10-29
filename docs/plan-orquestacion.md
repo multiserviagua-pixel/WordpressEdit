@@ -14,7 +14,7 @@ Tres principios:
 
 ## Estado a 29/10/2026
 
-Vamos por delante del calendario. El Sprint 3 (contenido y páginas del mapa) está casi completo en la nueva web.
+Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el bloque de contenido: catálogo de servicios, cinco fichas y preguntas frecuentes. Montado no equivale a aceptado: falta la aceptación material de la persona responsable y quedan pendientes del sprint los casos, el diagnóstico interactivo (preguntas y código), el Laboratorio y las pruebas funcionales. La Escuela de negocios sigue en borrador y #3/#4 siguen abiertos.
 
 - **Sprint 0:** su puerta (índice base publicado) está registrada, pero siguen pendientes tareas de su checklist, como cerrar la copia de la web real (#5) y la parte real del test de comprensión (#4).
 - **Entregas materiales aceptadas el 27/10:** marca y arquitectura, paquete de imágenes y prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com).
@@ -28,7 +28,7 @@ Vamos por delante del calendario. El Sprint 3 (contenido y páginas del mapa) es
 | Preguntas frecuentes | `/preguntas-frecuentes/` publicada (ID 224) con el texto de #51, datos estructurados FAQPage y enlace en el pie | #49 |
 | Páginas legales | Aviso legal, privacidad y cookies con NIF B75948646, conservación máxima de tres meses y proveedores (Axarnet; Google Workspace). Datos registrales ocultos hasta nuevo aviso | /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/ |
 | Formulario de contacto | Contact Form 7 en la sección de contacto de la portada. El envío real de correos se activa en el lanzamiento | #20 |
-| Copias de seguridad | UpdraftPlus guarda las copias de la nueva web en Google Drive; primera copia completa el 29/10. La web real también está respaldada | #5 |
+| Copias de seguridad | UpdraftPlus guarda las copias de la nueva web en Google Drive; primera copia completa el 29/10. La copia de la web real está confirmada por la persona responsable (Claude no la ha verificado: queda fuera de su alcance) | #5 |
 | Web real | humannaia.com, intacta hasta el lanzamiento | — |
 | Centro de trabajo | GitHub con carriles, unión automática entre agentes y registro de aceptaciones | Este repositorio |
 | Medición | Se miden la portada, el catálogo, las cinco fichas y las preguntas frecuentes (`config.json`). La línea base del 21/10 midió la web actual: referencia histórica, no comparable | [`informe.md`](../informe.md) |
@@ -42,7 +42,7 @@ Vamos por delante del calendario. El Sprint 3 (contenido y páginas del mapa) es
 - cuándo publicar la Escuela de negocios (entonces se restauran sus enlaces);
 - consentimiento de imagen de las personas que aparecen en fotos y vídeo;
 - Perfil de Empresa de Google y reseñas (`docs/plan-seo.md`);
-- borrar la rama temporal `claude/20-medios-temporales` y cerrar #5.
+- cerrar #5.
 
 **Para el final del proyecto:** tres pruebas de comprensión con personas reales y textos de contacto para empresas con las que ya se ha trabajado (la persona responsable pasará la lista).
 
