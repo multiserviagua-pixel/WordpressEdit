@@ -135,5 +135,21 @@
     },
     "sitio": "https://nueva.humannaia.com",
     "objeto": "https://nueva.humannaia.com | / | is-crawlable"
+  },
+  {
+    "fecha": "2026-10-29",
+    "etiqueta": null,
+    "indice": 96.3,
+    "cobertura": 50,
+    "bloques": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo": 87.7,
+      "contenido": null,
+      "comprension": null,
+      "conversion": null
+    },
+    "sitio": "https://nueva.humannaia.com",
+    "objeto": "https://nueva.humannaia.com | / | is-crawlable"
   }
 ]
