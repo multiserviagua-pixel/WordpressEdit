@@ -23,7 +23,7 @@ La propuesta se enfoca en la aplicación de la inteligencia artificial a las dec
 
 ## Formato y condiciones
 
-Consulta el programa que encaje con tu necesidad para conocer su contenido, modalidad y condiciones. No se presupone una convocatoria, duración o titulación común a toda la oferta.
+Consulta el programa que encaje con tu necesidad para conocer su contenido, modalidad y condiciones. Cada propuesta detalla su convocatoria, duración y condiciones para que puedas valorar si encaja contigo.
 
 ## Cómo empezar
 
@@ -41,7 +41,7 @@ Consulta las propuestas disponibles con HumanaIA. Las fechas y condiciones se co
 
 ### ¿Se obtiene una titulación?
 
-No se debe dar por supuesta una titulación o acreditación. Consulta las condiciones del programa concreto antes de inscribirte.
+Consulta las condiciones del programa que te interese para conocer qué documentación o acreditación ofrece, si corresponde.
 
 ## Hablemos de lo que necesitas aprender
 
@@ -74,3 +74,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: escuela de negocios en IA. Término descriptivo, sin volumen investigado ni promesa de demanda. Título: 55 caracteres; meta: 157; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
