@@ -12,36 +12,46 @@ Tres principios:
 - **Nada llega a producción sin doble revisión.** El agente autor entrega, el otro revisa con una lista de control y la persona responsable aprueba.
 - **Se mide antes y después.** El Sprint 0 fija la línea base; cada sprint repite la misma batería de pruebas y calcula el % de evolución.
 
-## Estado a 27/10/2026
+## Estado a 29/10/2026
 
-Vamos por delante del calendario.
+Vamos por delante del calendario. El Sprint 3 (contenido y páginas del mapa) está casi completo en la nueva web.
 
-- **Sprint 0:** su puerta (índice base publicado) está registrada, pero el sprint no está cerrado del todo: siguen pendientes tareas de su checklist, como la copia de la web real (#5) y la parte real del test de comprensión (#4).
-- **Entregas materiales aceptadas el 27/10:** la persona responsable aceptó la marca y arquitectura, el paquete de imágenes y el prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com). Lo siguiente es el Sprint 3: el contenido y el desarrollo de las páginas del mapa.
+- **Sprint 0:** su puerta (índice base publicado) está registrada, pero siguen pendientes tareas de su checklist, como cerrar la copia de la web real (#5) y la parte real del test de comprensión (#4).
+- **Entregas materiales aceptadas el 27/10:** marca y arquitectura, paquete de imágenes y prototipo de la portada (`docs/aceptaciones.md`). El foco es solo la nueva web (nueva.humannaia.com).
 
 | Área | Estado | Dónde |
 | --- | --- | --- |
 | Marca | **HumanaIA** (dominio y emails siguen en humannaia.com); marca y mapa de páginas aceptados | #9, `entregas/textos/` |
-| Nueva web | WordPress propio en nueva.humannaia.com, no indexable, con tema de bloques Twenty Twenty-Five. La portada es la página de inicio, dividida en secciones con nombre; la cabecera y el pie son partes de plantilla y el CSS es global (guía: `docs/editar-la-web.md`). Fotos reales del equipo e imagen del logotipo para compartir el enlace | #20 |
-| Páginas legales | Aviso legal (LSSI-CE), Política de privacidad (RGPD/LOPDGDD) y Política de cookies (LSSI art. 22.2, guía AEPD) publicadas y enlazadas en el pie. Faltan el NIF, los datos registrales, el plazo de conservación y el proveedor de correo; texto provisional hasta revisión | /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/ |
-| Formulario de contacto | Contact Form 7 con casilla de privacidad, información básica de protección de datos y antispam (honeypot). Todavía no está en ninguna página; los correos salientes siguen bloqueados | #20 |
+| Nueva web | WordPress propio en nueva.humannaia.com, no indexable, tema de bloques Twenty Twenty-Five. Cabecera y pie como partes de plantilla, CSS global (guía: `docs/editar-la-web.md`). Todos los enlaces internos apuntan a `/` (ya no a `/inicio/`) | #20 |
+| Portada | Texto y SEO de #40 en WordPress. Vídeo real de Avilagro (10 s, sin bucle) con frases que flotan por la zona, incluida Ciberseguridad. Contadores [Nº] ocultos. Datos estructurados de la organización y FAQ | #20 |
+| Servicios | Catálogo `/servicios-humanaia/` y cinco fichas publicadas (consultoría, automatización, desarrollo a medida, formación para equipos, educación). La Escuela de negocios queda en borrador hasta nuevo aviso y sin enlaces. Enlazadas desde la portada, la cabecera y el pie | #48, PR #50 |
+| Preguntas frecuentes | `/preguntas-frecuentes/` publicada (ID 224) con el texto de #51, datos estructurados FAQPage y enlace en el pie | #49 |
+| Páginas legales | Aviso legal, privacidad y cookies con NIF B75948646, conservación máxima de tres meses y proveedores (Axarnet; Google Workspace). Datos registrales ocultos hasta nuevo aviso | /aviso-legal/, /politica-de-privacidad/, /politica-de-cookies/ |
+| Formulario de contacto | Contact Form 7 en la sección de contacto de la portada. El envío real de correos se activa en el lanzamiento | #20 |
+| Copias de seguridad | UpdraftPlus guarda las copias de la nueva web en Google Drive; primera copia completa el 29/10. La web real también está respaldada | #5 |
 | Web real | humannaia.com, intacta hasta el lanzamiento | — |
 | Centro de trabajo | GitHub con carriles, unión automática entre agentes y registro de aceptaciones | Este repositorio |
-| Medición | El cambio a la nueva web (PR #36) está pendiente de que se apruebe su corrección. La línea base del 21/10 midió la web actual y otras páginas: queda como referencia histórica, no comparable | [`informe.md`](../informe.md) |
-| Contenido del inicio | Texto y SEO editorial entregados y unidos (#40, para #38): título «Consultoría IA, automatización y formación \| HumanaIA». Falta trasladarlos a WordPress | `entregas/textos/inicio.md` |
-| Rúbrica y comprensión | Rúbrica de contenido unida (#41): 71/100, provisional. Test de comprensión unido (#42): 15/15 con cinco perfiles simulados, sin participantes ni cronometraje reales. #3 y #4 siguen abiertos. Las tres pruebas con personas reales se dejan para el final, por decisión de la persona responsable | `revisiones/` |
+| Medición | Se miden la portada, el catálogo, las cinco fichas y las preguntas frecuentes (`config.json`). La línea base del 21/10 midió la web actual: referencia histórica, no comparable | [`informe.md`](../informe.md) |
+| SEO | Plan para Google España unido (#44) | `docs/plan-seo.md` |
+| Rúbrica y comprensión | Rúbrica de contenido (#41) y test de comprensión simulado (#42) unidos. Las tres pruebas con personas reales se dejan para el final | `revisiones/` |
 | Codex (ChatGPT) | Trabaja en el repositorio como `Alex00111001`: revisa, aprueba y entrega PR | [`AGENTS.md`](../AGENTS.md) |
 
 **Pendiente de la persona responsable:**
-- copia de seguridad de la web real (#5);
-- NIF y datos registrales de Humanaia S.L. para las páginas legales;
-- destino remoto (p. ej., Google Drive) para las copias de UpdraftPlus de la nueva web.
+- datos del Registro Mercantil (ocultos en el aviso legal hasta entonces);
+- confirmar el servicio de Ciberseguridad antes de redactar su texto;
+- cuándo publicar la Escuela de negocios (entonces se restauran sus enlaces);
+- consentimiento de imagen de las personas que aparecen en fotos y vídeo;
+- Perfil de Empresa de Google y reseñas (`docs/plan-seo.md`);
+- borrar la rama temporal `claude/20-medios-temporales` y cerrar #5.
 
-**Decidido el 27/10:**
-- se trabaja solo sobre la nueva web hasta que esté completa. La web actual queda fuera de los cambios y de las conversaciones hasta que la nueva la sustituya (bitácora #11);
-- una única dirección de email en toda la web, contacto@humannaia.com, y en contacto los teléfonos de Ester (+34 676 019 117) y Gustavo (+34 635 500 952) (#6, PR #39 unida);
-- plugins: los mejores gratuitos (ver «Plugins de WordPress»);
-- el banner de #8 queda sin objeto, porque la copia antigua está abandonada.
+**Para el final del proyecto:** tres pruebas de comprensión con personas reales y textos de contacto para empresas con las que ya se ha trabajado (la persona responsable pasará la lista).
+
+**Decidido:**
+- 27/10: se trabaja solo sobre la nueva web hasta que esté completa; la web actual queda fuera de los cambios (bitácora #11);
+- 27/10: una única dirección de email, contacto@humannaia.com, y los teléfonos de Ester (+34 676 019 117) y Gustavo (+34 635 500 952) (#6, PR #39);
+- 27/10: plugins, los mejores gratuitos (ver «Plugins de WordPress»);
+- 28/10: copias de UpdraftPlus en Google Drive; registro mercantil oculto hasta nuevo aviso;
+- 28/10: la Escuela de negocios queda en borrador; el resto de páginas se publica cuando está lista.
 
 ## Reparto de roles
 
