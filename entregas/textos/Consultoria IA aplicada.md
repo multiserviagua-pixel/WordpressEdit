@@ -47,7 +47,7 @@ No. Puedes empezar explicando qué quieres resolver y cómo trabajáis. La elecc
 
 ### ¿La consultoría incluye desarrollar una solución?
 
-El desarrollo puede formar parte del trabajo posterior, pero su alcance debe definirse expresamente. No se da por incluido por contratar consultoría.
+El desarrollo puede formar parte del trabajo posterior, y concretamos su alcance contigo. Lo concretamos contigo al definir el proyecto.
 
 ### ¿Puedo combinar consultoría y formación?
 
@@ -88,3 +88,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: consultoría IA. 320/mes atribuidos a Claude/OpenRush. Título: 52 caracteres; meta: 158; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
