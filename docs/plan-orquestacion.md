@@ -40,7 +40,6 @@ Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el 
 - datos del Registro Mercantil (ocultos en el aviso legal hasta entonces);
 - confirmar el servicio de Ciberseguridad antes de redactar su texto;
 - cuándo publicar la Escuela de negocios (entonces se restauran sus enlaces);
-- consentimiento de imagen de las personas que aparecen en fotos y vídeo;
 - Perfil de Empresa de Google y reseñas (`docs/plan-seo.md`);
 - cerrar #5.
 
@@ -51,7 +50,8 @@ Vamos por delante del calendario. Del Sprint 3 está montado en la nueva web el 
 - 27/10: una única dirección de email, contacto@humannaia.com, y los teléfonos de Ester (+34 676 019 117) y Gustavo (+34 635 500 952) (#6, PR #39);
 - 27/10: plugins, los mejores gratuitos (ver «Plugins de WordPress»);
 - 28/10: copias de UpdraftPlus en Google Drive; registro mercantil oculto hasta nuevo aviso;
-- 28/10: la Escuela de negocios queda en borrador; el resto de páginas se publica cuando está lista.
+- 28/10: la Escuela de negocios queda en borrador; el resto de páginas se publica cuando está lista;
+- 29/10: consentimiento de imagen cerrado: según la persona responsable, todas las personas que aparecen en fotos y vídeo de la web han dado su consentimiento y conocen la página.
 
 ## Reparto de roles
 
