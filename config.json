@@ -4,9 +4,17 @@
   "omitir_auditorias": [
     "is-crawlable"
   ],
-  "nota": "Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base del 21/10/2026 midió otra web (humannaia.com) y otras páginas: queda como referencia histórica y no se compara. Añade aquí cada página publicada.",
+  "nota": "Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base del 21/10/2026 midió otra web (humannaia.com) y otras páginas: queda como referencia histórica y no se compara. Añade aquí cada página publicada. Las páginas legales no se miden: no son páginas de captación y su título corto es intencionado.",
   "urls": [
-    "/"
+    "/",
+    "/servicios-humanaia/",
+    "/servicios-humanaia/consultoria-ia/",
+    "/servicios-humanaia/automatizacion-procesos-ia/",
+    "/servicios-humanaia/desarrollo-ia-a-medida/",
+    "/servicios-humanaia/formacion-ia-empresas/",
+    "/servicios-humanaia/escuela-negocios-ia/",
+    "/servicios-humanaia/ia-educacion-docentes/",
+    "/preguntas-frecuentes/"
   ],
   "pesos": {
     "rendimiento": 20,
