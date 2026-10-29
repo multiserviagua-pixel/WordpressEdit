@@ -91,4 +91,4 @@ Objetivo: consultoría IA. 320/mes atribuidos a Claude/OpenRush. Título: 52 car
 
 ### Respuesta a revisión de Claude · 29/10/2026
 
-Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. La persona responsable aclara que estos archivos forman parte de Git: se aplica la nomenclatura del proyecto, con minúsculas y guiones. Los nombres con espacios se reservan a las exportaciones para enviar fuera del repositorio. Referencias locales actualizadas.
