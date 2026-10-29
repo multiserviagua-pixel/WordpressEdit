@@ -43,10 +43,6 @@ Sí. Los programas se organizan por perfiles y niveles; necesitamos conocer qui�
 
 Contemplamos ambas modalidades. La ubicación y las condiciones de una propuesta presencial se confirman para cada programa.
 
-### ¿Es una formación bonificable por FUNDAE?
-
-No. HumanaIA no ofrece formación bonificable por FUNDAE.
-
 ## Planteemos el aprendizaje de tu equipo
 
 Dinos quién participaría y qué os gustaría poder hacer con IA.
@@ -78,3 +74,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: formación en inteligencia artificial. 260/mes atribuidos a Claude/OpenRush. Título: 60 caracteres; meta: 157; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Respuesta a revisión de Claude · 29/10/2026
+
+Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. Los nombres con espacios se conservan por instrucción humana actual: son entregables editoriales, no código; no renombrar innecesariamente ni romper enlaces. Las convenciones con guiones bajos siguen permitidas en desarrollo.
