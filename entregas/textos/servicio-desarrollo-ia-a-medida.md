@@ -1,82 +1,127 @@
 ---
-pagina: "Desarrollo a medida"
+pagina: "Desarrollo de aplicaciones web"
 url_copia: "https://nueva.humannaia.com/servicios-humanaia/desarrollo-ia-a-medida/"
-palabra_clave: "desarrollo de inteligencia artificial a medida"
-titulo_seo: "Desarrollo de inteligencia artificial a medida | HumanaIA"
-meta_descripcion: "Desarrollo de inteligencia artificial a medida e integraciones adaptadas a tus sistemas. Explica qué necesitas y define el alcance de tu proyecto con HumanaIA."
+palabra_clave: "desarrollo de aplicaciones web a medida"
+titulo_seo: "Desarrollo de aplicaciones web a medida | HumanaIA"
+meta_descripcion: "Creamos aplicaciones web a medida para gestionar tu empresa, conectar herramientas y ofrecer servicios digitales. Cuéntanos tu idea y la definimos contigo."
 estado: en revisión
 ---
 
-# Desarrollo de inteligencia artificial a medida
+# Desarrollo de aplicaciones web a medida
 
-Cuando una herramienta no encaja con vuestra forma de trabajar, HumanaIA plantea soluciones con inteligencia artificial e integraciones adaptadas a los sistemas que ya utilizáis.
+Tu idea puede convertirse en una herramienta que tu equipo o tus clientes utilicen desde el navegador. En HumanaIA desarrollamos aplicaciones web a medida para gestionar información, organizar el trabajo y ofrecer servicios digitales.
 
-[Háblanos de tu proyecto](https://nueva.humannaia.com/#contacto)
+Desde una herramienta interna hasta una plataforma para clientes, empezamos por entender qué necesitas y diseñamos contigo una solución con funciones y prioridades claras.
 
-## Para quién es
+[Cuéntanos tu idea](https://nueva.humannaia.com/#contacto)
 
-Para organizaciones que necesitan resolver una necesidad concreta y quieren valorar un desarrollo adaptado a su contexto.
+## Una aplicación para tu forma de trabajar
 
-## Qué trabajamos
+Para empresas, profesionales y organizaciones que necesitan una herramienta propia, quieren poner en marcha un servicio digital o encuentran límites en las soluciones que utilizan.
 
-Partimos del problema, las herramientas existentes y las personas que utilizarán la solución. El desarrollo se plantea para ese contexto y se acompaña de pruebas con el equipo.
+Puedes venir con una idea inicial, un proceso que hoy gestionas entre hojas de cálculo y correos o una aplicación que necesitas mejorar. No hace falta llegar con una especificación técnica.
 
-## Alcance y límites
+## Qué podemos desarrollar contigo
 
-Las funciones, integraciones y condiciones del proyecto deben definirse antes de construirlo. Revisamos tus sistemas para confirmar las integraciones viables y acordamos las funciones que necesita el proyecto.
+Estas son posibilidades para definir tu proyecto, según tus necesidades y su viabilidad.
 
-## Formato y proceso
+### Herramientas de gestión y trabajo interno
 
-Escuchamos la necesidad, definimos una propuesta y desarrollamos y probamos la solución. La formación y el acompañamiento se plantean según las personas que vayan a incorporarla a su trabajo. La forma de colaborar se acuerda para cada proyecto.
+Aplicaciones para organizar tareas, solicitudes, expedientes, inventarios o documentación. Un espacio donde consultar información y seguir el trabajo con los accesos que necesite cada persona.
 
-## Preguntas sobre desarrollo
+### Portales para clientes y colaboradores
 
-### ¿Trabajáis con los sistemas que ya usamos?
+Áreas privadas para compartir documentos, recibir solicitudes, consultar estados o dar seguimiento a un servicio.
 
-El servicio contempla integraciones adaptadas a los sistemas existentes. Primero necesitamos conocerlos para confirmar qué integración es viable.
+### Reservas, inscripciones y solicitudes
 
-### ¿Un desarrollo a medida es lo mismo que una automatización?
+Aplicaciones para recoger información, gestionar citas o inscripciones y acompañar a las personas a lo largo de un proceso.
 
-No necesariamente. Una automatización conecta y organiza tareas; un desarrollo puede responder a una necesidad más específica. Ambas opciones pueden combinarse si el proyecto lo requiere.
+### Paneles de control y seguimiento
 
-### ¿Qué necesito para plantear una idea?
+Vistas que reúnen los datos relevantes de una actividad para consultar indicadores, filtrar información y preparar informes.
 
-Explica quién utilizaría la solución, qué problema resolvería y con qué herramientas debería trabajar. No necesitas definir toda la solución técnica en el primer contacto.
+### Plataformas y nuevos servicios digitales
 
-## De la necesidad al proyecto
+Aplicaciones para poner a prueba una idea de negocio, ofrecer un servicio online o conectar a distintos tipos de usuarios. Definimos una primera versión útil y qué funciones podrán añadirse después.
 
-Cuéntanos qué no resuelven las herramientas que utilizas hoy.
+### Conexiones entre herramientas
 
-[Consultar un desarrollo a medida](https://nueva.humannaia.com/#contacto)
+Integraciones para intercambiar información y reducir pasos manuales entre la aplicación y otros sistemas, cuando estos permitan la conexión.
+
+## Con inteligencia artificial cuando aporte valor
+
+La aplicación puede incluir búsqueda de información, clasificación de documentos, asistentes o agentes si ayudan a resolver una necesidad concreta. La inteligencia artificial es una posibilidad dentro del proyecto: el punto de partida es lo que la aplicación debe permitir hacer.
+
+Si tu necesidad principal es conectar tareas de herramientas que ya utilizas, también podemos valorar el servicio de [automatización de procesos](https://nueva.humannaia.com/servicios-humanaia/automatizacion-procesos-ia/).
+
+## De la idea a una primera versión útil
+
+### 1. Entendemos el uso
+
+Quién utilizará la aplicación, qué necesita hacer y cómo se trabaja hoy. Revisamos también la información y las herramientas con las que deberá relacionarse.
+
+### 2. Definimos funciones y prioridades
+
+Acordamos los recorridos principales, las funciones de la primera versión y las integraciones que haya que valorar. Con ese alcance se concretan la propuesta, el plazo y las condiciones.
+
+### 3. Desarrollamos y probamos
+
+Construimos la aplicación y comprobamos los recorridos acordados. El equipo puede revisar cómo responde a su trabajo y detectar ajustes antes de dar por terminada la versión.
+
+### 4. Preparamos la puesta en marcha
+
+Definimos contigo el acceso, el alojamiento, el uso y las necesidades de soporte o evolución. Las condiciones de cada uno de estos elementos se acuerdan en el proyecto.
+
+## Preguntas sobre aplicaciones web
+
+### ¿Necesito tener la idea completamente definida?
+
+Puedes empezar explicando qué quieres resolver y quién utilizará la aplicación. Te ayudamos a ordenar las necesidades y a distinguir lo esencial de lo que puede esperar.
+
+### ¿Se puede utilizar desde el móvil?
+
+El uso en móvil se contempla al definir el diseño y los recorridos. Una aplicación web se utiliza desde el navegador; si necesitas funciones del dispositivo, uso sin conexión o una aplicación instalable, lo valoramos antes de concretar la solución.
+
+### ¿Podéis conectarla con nuestras herramientas?
+
+Revisamos las herramientas, sus posibilidades de integración y los permisos necesarios. Con esa información confirmamos qué conexiones son viables y cuáles entran en el alcance.
+
+### ¿Debe incluir inteligencia artificial?
+
+Puede funcionar sin ella. Incorporamos IA cuando tiene una utilidad concreta para las personas que van a usar la aplicación.
+
+### ¿Qué ocurre con el mantenimiento y las nuevas funciones?
+
+Definimos las necesidades de mantenimiento, soporte y evolución al plantear el proyecto. La propuesta debe recoger qué se incluye y cómo se atenderán los cambios posteriores.
+
+## Hablemos de lo que quieres construir
+
+Cuéntanos quién usará la aplicación, qué debería poder hacer y qué herramientas utilizas hoy. A partir de ahí podemos dar forma al proyecto.
+
+[Hablar sobre mi aplicación web](https://nueva.humannaia.com/#contacto)
 
 ## Notas internas — no publicar
 
-Autorización humana en este chat, 29/10/2026: reactivar páginas interiores y «adelante». Fuente de oferta: entregas/textos/inicio.md, PR #40. La ausencia de FUNDAE está registrada en #9. No se atribuyen prestaciones de terceros a HumanaIA.
+### Fuente y alcance de la reescritura
 
-[PENDIENTE DE CONFIRMAR: propuesta HumanaIA 2.0]. Las seis ofertas proceden de la portada; no reconstruyen las cinco líneas originales, CONECTA ni su arquitectura. Ciberseguridad no se desarrolla sin confirmar si es servicio independiente y qué incluye.
+Encargo humano directo del 30/10/2026: sustituir completamente el enfoque de desarrollo de IA por desarrollo de aplicaciones web en general y entregar la redacción en GitHub. Issue #57, continuación editorial de #48. El alcance general se concreta mediante ejemplos de funciones posibles, no mediante proyectos realizados, prestaciones contratadas o afirmación de que cualquier idea es viable.
 
-[PENDIENTE DE CONFIRMAR: condiciones comerciales y formato concreto de cada oferta]. No fijar precios, plazos, convocatorias, edades, certificaciones, cobertura geográfica ni herramientas incluidas. Claude contrasta la descripción con la oferta real antes de montar.
+No se inventan clientes, resultados, cifras, tecnologías, precios, plazos ni condiciones de propiedad o soporte. Las categorías son posibilidades para delimitar el proyecto, sujetas a revisión técnica de Claude. No se promete aplicación nativa, funcionamiento offline, disponibilidad permanente ni mantenimiento incluido. No atribuir estas posibilidades a casos de la sección Proyectos reales.
 
-### Análisis SEO editorial común
+[PENDIENTE DE CONFIRMAR: propuesta HumanaIA 2.0]. Esta revisión no reconstruye sus cinco líneas, CONECTA ni arquitectura original.
 
-La portada presenta la marca; el catálogo compara servicios; las fichas desarrollan una necesidad específica y la FAQ general responde dudas transversales. No duplicar íntegramente fichas en el catálogo ni todas sus FAQ en la portada.
+### SEO editorial
 
-Contraste cualitativo de búsquedas web del 29/10: [HMS](https://hmsoluciones.es/servicios/ia-para-empresas/) y [Ethirio](https://ethirio.com/) muestran páginas de oferta de consultoría, automatización y formación; la [FAQ de UPM](https://iaeducacion.etsisi.upm.es/preguntas-frecuentes/) distingue públicos, modalidad y condiciones. Se contrasta intención y tipo de duda, sin copiar ofertas, datos, resultados o acreditaciones. No se afirma investigación local ni captura de «La gente también pregunta».
+Intención: una organización que busca desarrollar una aplicación web propia. Consulta descriptiva principal: desarrollo de aplicaciones web a medida. Título: 50 caracteres; descripción: 155; un único H1. No hay investigación de demanda nueva ni volumen verificado de esta consulta. Los datos anteriores sobre agentes de IA no se trasladan a esta intención. No hay garantía de posicionamiento.
 
-Las estimaciones de demanda proceden de Claude/OpenRush, España y español, 27/10/2026, en #9 y docs/plan-seo.md; no son consulta independiente propia. Competencia publicitaria no equivale a dificultad orgánica. [Google Search Central](https://developers.google.com/search/docs/appearance/title-link) recomienda títulos descriptivos y puede generar otros textos. Los rangos de longitud del repositorio son control editorial, no garantías de Google.
+### Montaje y coherencia entre páginas
 
-### Montaje y límites
+Se conserva el nombre técnico del archivo y la URL vigente para evitar renombrar o migrar sin coordinación. La URL actual contiene desarrollo-ia-a-medida; Claude debe proponer la decisión técnica sobre una ruta descriptiva y sus enlaces antes de cambiarla, sin crear dos páginas equivalentes.
 
-Metadatos y notas internas se excluyen del cuerpo publicado. CTA al contacto actual de la portada para no depender de páginas aún no verificadas. Claude confirma página, ID y enlaces, utiliza diseño existente y configura campos en el plugin activo; no cambia plugins. No se promete resultado enriquecido con FAQPage. No usar logos como prueba de resultados ni añadir testimonios.
+Etiqueta pública nueva: Desarrollo de aplicaciones web.
+Resumen reutilizable en catálogo o tarjeta de servicio: Aplicaciones web a medida para tu equipo y tus clientes: herramientas de gestión, portales y servicios digitales, con integraciones e IA cuando aporten valor.
 
-La integración de esta entrega ordinaria no acepta la página terminada. Claude prepara el montaje y la evidencia para revisión de la entrega material. Solo nueva.humannaia.com; nunca humannaia.com ni /staging. Mantener noindex durante todo el desarrollo hasta aprobación humana expresa de lanzamiento.
+Antes del montaje, revisar las referencias en portada, catálogo, FAQ y enlaces de fichas relacionadas que aún definan este servicio exclusivamente como desarrollo de IA. El resumen anterior pertenece a esta entrega; no sustituir textos de casos reales ni inventar proyectos para ilustrarlo.
 
-### Comprobación específica de esta entrega
-
-Objetivo: desarrollo de inteligencia artificial a medida. Se elige la consulta descriptiva por fidelidad al servicio, sin volumen atribuido. «agentes de ia para empresas» (70/mes según Claude) es más estrecha y no representa toda la oferta. Título: 57 caracteres; meta: 159; H1 único. Ruta candidata de #48 pendiente de aprobación humana; esta entrega no decide slug ni navegación. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
-
-### Respuesta a revisión de Claude · 29/10/2026
-
-Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. La persona responsable aclara que estos archivos forman parte de Git: se aplica la nomenclatura del proyecto, con minúsculas y guiones. Los nombres con espacios se reservan a las exportaciones para enviar fuera del repositorio. Referencias locales actualizadas.
-
-Palabra clave: se mantiene «desarrollo de inteligencia artificial a medida» por corresponder al conjunto del servicio publicado. «agentes de IA para empresas» es una posible solución más concreta y no se usa para atribuir al servicio un alcance nuevo. No se dispone de volumen verificado del término elegido; la elección responde a fidelidad comercial, sin promesa de tráfico. La especialización en agentes podrá tener contenido propio cuando su alcance esté confirmado, previa propuesta en chat.
+Claude revisa viabilidad de las categorías y lleva solo cuerpo publicable y metadatos a nueva.humannaia.com tras revisión/unión, registrando los cambios. No publicar frontmatter ni estas notas. No cambiar plugins ni activar correos. Mantener noindex durante el desarrollo y hasta aprobación humana expresa de lanzamiento. ChatGPT no modifica WordPress. No tocar humannaia.com ni /staging.
