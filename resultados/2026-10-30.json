@@ -1,0 +1,421 @@
+{
+  "fecha": "2026-10-30",
+  "etiqueta": null,
+  "indice": 100,
+  "cobertura": 50,
+  "bloques": {
+    "rendimiento": 100,
+    "accesibilidad": 100,
+    "seo": 100,
+    "contenido": null,
+    "comprension": null,
+    "conversion": null
+  },
+  "sitio": "https://nueva.humannaia.com",
+  "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-ia-a-medida/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable",
+  "evolucion": {
+    "fecha_base": "2026-10-21",
+    "sitio_base": "https://humannaia.com",
+    "indice_base": 71.5,
+    "base_comparable": false,
+    "fecha_anterior": null,
+    "evolucion_vs_base": null,
+    "evolucion_vs_anterior": null,
+    "avance_hacia_meta": null,
+    "comparable": false,
+    "bloques_comparados": [],
+    "por_bloque": {
+      "rendimiento": {
+        "base": 54.1,
+        "anterior": null,
+        "actual": 100,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "accesibilidad": {
+        "base": 95.1,
+        "anterior": null,
+        "actual": 100,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "seo": {
+        "base": 71,
+        "anterior": null,
+        "actual": 100,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "contenido": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "comprension": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      },
+      "conversion": {
+        "base": null,
+        "anterior": null,
+        "actual": null,
+        "vs_base": null,
+        "vs_anterior": null
+      }
+    }
+  },
+  "lighthouse": {
+    "/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 97,
+        "accesibilidad": 96,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 2172.756,
+        "cls": 0.0492019538424824,
+        "tbt_ms": 67
+      }
+    },
+    "/servicios-humanaia/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 1441.021,
+        "cls": 0.06915538708784837,
+        "tbt_ms": 0
+      }
+    },
+    "/servicios-humanaia/consultoria-ia/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 100,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 1358.779,
+        "cls": 0.02079384146354311,
+        "tbt_ms": 0
+      }
+    },
+    "/servicios-humanaia/automatizacion-procesos-ia/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 992.512,
+        "cls": 0.06913040362087879,
+        "tbt_ms": 0.5
+      }
+    },
+    "/servicios-humanaia/desarrollo-ia-a-medida/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 991.031,
+        "cls": 0.06797525735887022,
+        "tbt_ms": 11
+      }
+    },
+    "/servicios-humanaia/formacion-ia-empresas/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 989.973,
+        "cls": 0.06809755439724284,
+        "tbt_ms": 0
+      }
+    },
+    "/servicios-humanaia/escuela-negocios-ia/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 100,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 1436.054,
+        "cls": 0.02167630544574665,
+        "tbt_ms": 0
+      }
+    },
+    "/servicios-humanaia/ia-educacion-docentes/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 1921.692,
+        "cls": 0.03653711186357615,
+        "tbt_ms": 0
+      }
+    },
+    "/preguntas-frecuentes/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 1919.1219999999998,
+        "cls": 0.02420429635326436,
+        "tbt_ms": 14
+      }
+    }
+  },
+  "seo": {
+    "sitio": "https://nueva.humannaia.com",
+    "paginas": [
+      {
+        "ruta": "/",
+        "url": "https://nueva.humannaia.com/",
+        "estado": 200,
+        "titulo": "Consultoría IA, automatización y formación | HumanaIA",
+        "descripcion": "Aplicamos la inteligencia artificial a tu organización con consultoría, automatización, desarrollo a medida y formación práctica. Conoce HumanaIA.",
+        "h1": 1,
+        "imagenes": 33,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 19,
+        "canonical": "https://nueva.humannaia.com/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/compartir-humanaia.jpg",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": [
+            "19 de 33 imágenes marcadas como decorativas (alt vacío): comprobar que lo son"
+          ]
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/",
+        "estado": 200,
+        "titulo": "Servicios de inteligencia artificial aplicada | HumanaIA",
+        "descripcion": "Explora los servicios de inteligencia artificial de HumanaIA: consultoría, automatización, desarrollo a medida y formación. Encuentra por dónde empezar.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 1,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/consultoria-ia/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/consultoria-ia/",
+        "estado": 200,
+        "titulo": "Consultoría IA aplicada a tu organización | HumanaIA",
+        "descripcion": "Consultoría IA para identificar necesidades, priorizar oportunidades y definir cómo aplicar la inteligencia artificial en tu organización. Habla con HumanaIA.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/consultoria-ia/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/automatizacion-procesos-ia/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/automatizacion-procesos-ia/",
+        "estado": 200,
+        "titulo": "Automatización de procesos con IA aplicada | HumanaIA",
+        "descripcion": "Automatización de procesos con IA para conectar herramientas y reducir tareas repetitivas. Cuéntanos cómo trabaja tu equipo y valora el encaje con HumanaIA.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/automatizacion-procesos-ia/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/desarrollo-ia-a-medida/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/desarrollo-ia-a-medida/",
+        "estado": 200,
+        "titulo": "Desarrollo de inteligencia artificial a medida | HumanaIA",
+        "descripcion": "Desarrollo de inteligencia artificial a medida e integraciones adaptadas a tus sistemas. Explica qué necesitas y define el alcance de tu proyecto con HumanaIA.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/desarrollo-ia-a-medida/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/formacion-ia-empresas/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/formacion-ia-empresas/",
+        "estado": 200,
+        "titulo": "Formación en inteligencia artificial para equipos | HumanaIA",
+        "descripcion": "Formación en inteligencia artificial para equipos, por perfiles y niveles, presencial u online. Cuéntanos qué necesitáis aprender y cómo trabajáis. HumanaIA.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/formacion-ia-empresas/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/escuela-negocios-ia/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/escuela-negocios-ia/",
+        "estado": 200,
+        "titulo": "Escuela de negocios en IA para profesionales | HumanaIA",
+        "descripcion": "Escuela de negocios en IA para profesionales, emprendedores y directivos que quieren incorporar la inteligencia artificial a sus decisiones. Conoce HumanaIA.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/escuela-negocios-ia/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/servicios-humanaia/ia-educacion-docentes/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/ia-educacion-docentes/",
+        "estado": 200,
+        "titulo": "Inteligencia artificial para docentes y jóvenes | HumanaIA",
+        "descripcion": "Inteligencia artificial para docentes, niños y jóvenes: aprendizaje con curiosidad y pensamiento crítico. Consulta las propuestas para tu centro con HumanaIA.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/ia-educacion-docentes/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      },
+      {
+        "ruta": "/preguntas-frecuentes/",
+        "url": "https://nueva.humannaia.com/preguntas-frecuentes/",
+        "estado": 200,
+        "titulo": "Preguntas frecuentes sobre los servicios IA | HumanaIA",
+        "descripcion": "Resuelve tus dudas sobre consultoría, automatización, desarrollo y formación en IA de HumanaIA. Conoce cómo empezar y qué información compartir con el equipo.",
+        "h1": 1,
+        "imagenes": 2,
+        "imagenes_sin_alt": 0,
+        "imagenes_alt_vacio": 0,
+        "canonical": "https://nueva.humannaia.com/preguntas-frecuentes/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
+        "idioma": "es",
+        "json_ld": 2,
+        "enlaces_rotos": [],
+        "puntuacion": {
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
+        }
+      }
+    ],
+    "enlaces_comprobados": 12,
+    "enlaces_rotos": []
+  },
+  "manual": {
+    "contenido": {
+      "nota": null,
+      "autor": "ChatGPT",
+      "revisado_por": "Claude",
+      "fecha": null,
+      "notas": "Rúbrica de datos/rubrica.md, 10 criterios x 10 puntos sobre las páginas de config.json."
+    },
+    "comprension": {
+      "nota": null,
+      "autor": "ChatGPT",
+      "revisado_por": "Claude",
+      "fecha": null,
+      "notas": "Test de 60 segundos: 5 perfiles simulados + personas reales. % de respuestas correctas."
+    },
+    "conversion": {
+      "nota": null,
+      "autor": "Claude",
+      "revisado_por": "Persona responsable",
+      "fecha": null,
+      "notas": "Se activa con 4 semanas de datos de GA4 (Site Kit): conversiones frente al objetivo acordado."
+    }
+  }
+}
