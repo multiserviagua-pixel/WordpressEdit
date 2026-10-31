@@ -9,7 +9,7 @@ estado: en revisión
 
 # Aplicaciones móviles, software y webs a medida
 
-Una aplicación para tus clientes, un programa para tu equipo o una web para tu negocio. En HumanaIA desarrollamos soluciones digitales a medida, desde la idea inicial hasta una versión que puedas utilizar.
+Una aplicación para tus clientes, un programa para tu equipo o una web para tu negocio. En HumanaIA nos encargamos del desarrollo de software a medida, aplicaciones móviles y webs, desde la idea inicial hasta una versión que puedas utilizar.
 
 Partimos de lo que necesitas resolver para definir contigo las funciones, el diseño y la forma de construirlo. Podemos incorporar integraciones e inteligencia artificial cuando aporten valor al proyecto.
 
