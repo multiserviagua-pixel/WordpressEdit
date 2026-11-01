@@ -183,5 +183,21 @@
     },
     "sitio": "https://nueva.humannaia.com",
     "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-ia-a-medida/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable"
+  },
+  {
+    "fecha": "2026-11-01",
+    "etiqueta": null,
+    "indice": 98.3,
+    "cobertura": 50,
+    "bloques": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo": 94.4,
+      "contenido": null,
+      "comprension": null,
+      "conversion": null
+    },
+    "sitio": "https://nueva.humannaia.com",
+    "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-ia-a-medida/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable"
   }
 ]
