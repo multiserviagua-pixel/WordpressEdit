@@ -1,50 +1,50 @@
 {
   "fecha": "2026-11-03",
-  "etiqueta": null,
-  "indice": 98.3,
+  "etiqueta": "Ruta nueva Desarrollo (#57)",
+  "indice": 100,
   "cobertura": 50,
   "bloques": {
     "rendimiento": 100,
     "accesibilidad": 100,
-    "seo": 94.4,
+    "seo": 100,
     "contenido": null,
     "comprension": null,
     "conversion": null
   },
   "sitio": "https://nueva.humannaia.com",
-  "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-ia-a-medida/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable",
+  "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-aplicaciones-software-webs/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable",
   "evolucion": {
     "fecha_base": "2026-10-21",
     "sitio_base": "https://humannaia.com",
     "indice_base": 71.5,
     "base_comparable": false,
-    "fecha_anterior": "2026-11-02",
+    "fecha_anterior": null,
     "evolucion_vs_base": null,
-    "evolucion_vs_anterior": 0,
+    "evolucion_vs_anterior": null,
     "avance_hacia_meta": null,
     "comparable": false,
     "bloques_comparados": [],
     "por_bloque": {
       "rendimiento": {
         "base": 54.1,
-        "anterior": 100,
+        "anterior": null,
         "actual": 100,
         "vs_base": null,
-        "vs_anterior": 0
+        "vs_anterior": null
       },
       "accesibilidad": {
         "base": 95.1,
-        "anterior": 100,
+        "anterior": null,
         "actual": 100,
         "vs_base": null,
-        "vs_anterior": 0
+        "vs_anterior": null
       },
       "seo": {
         "base": 71,
-        "anterior": 94.4,
-        "actual": 94.4,
+        "anterior": null,
+        "actual": 100,
         "vs_base": null,
-        "vs_anterior": 0
+        "vs_anterior": null
       },
       "contenido": {
         "base": null,
@@ -75,13 +75,13 @@
       "accesibilidad": 100,
       "seo_lighthouse": 100,
       "bruto": {
-        "rendimiento": 95,
+        "rendimiento": 98,
         "accesibilidad": 96,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 2221.795,
-        "cls": 0.04887911952039713,
-        "tbt_ms": 113
+        "lcp_ms": 2173.078,
+        "cls": 0.04930956528317748,
+        "tbt_ms": 68
       }
     },
     "/servicios-humanaia/": {
@@ -89,13 +89,13 @@
       "accesibilidad": 100,
       "seo_lighthouse": 100,
       "bruto": {
-        "rendimiento": 98,
+        "rendimiento": 99,
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1520.708,
+        "lcp_ms": 1451.4830000000002,
         "cls": 0.06915538708784837,
-        "tbt_ms": 28
+        "tbt_ms": 16
       }
     },
     "/servicios-humanaia/consultoria-ia/": {
@@ -103,13 +103,13 @@
       "accesibilidad": 100,
       "seo_lighthouse": 100,
       "bruto": {
-        "rendimiento": 97,
+        "rendimiento": 100,
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1934.104,
+        "lcp_ms": 1004.361,
         "cls": 0.02079384146354311,
-        "tbt_ms": 0
+        "tbt_ms": 9.999999999999943
       }
     },
     "/servicios-humanaia/automatizacion-procesos-ia/": {
@@ -121,9 +121,23 @@
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1512.5529999999999,
+        "lcp_ms": 1431.883,
         "cls": 0.06913040362087879,
-        "tbt_ms": 2.9999999999998863
+        "tbt_ms": 34
+      }
+    },
+    "/servicios-humanaia/desarrollo-aplicaciones-software-webs/": {
+      "rendimiento": 100,
+      "accesibilidad": 100,
+      "seo_lighthouse": 100,
+      "bruto": {
+        "rendimiento": 99,
+        "accesibilidad": 100,
+        "seo": 100,
+        "buenas_practicas": 100,
+        "lcp_ms": 1598.9589999999998,
+        "cls": 0.0185383148044087,
+        "tbt_ms": 21
       }
     },
     "/servicios-humanaia/formacion-ia-empresas/": {
@@ -135,9 +149,9 @@
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1934.654,
+        "lcp_ms": 1928.74,
         "cls": 0.06809755439724284,
-        "tbt_ms": 10
+        "tbt_ms": 12
       }
     },
     "/servicios-humanaia/escuela-negocios-ia/": {
@@ -149,9 +163,9 @@
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1519.518,
+        "lcp_ms": 1635.316,
         "cls": 0.02167630544574665,
-        "tbt_ms": 0
+        "tbt_ms": 2
       }
     },
     "/servicios-humanaia/ia-educacion-docentes/": {
@@ -163,9 +177,9 @@
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1508.682,
+        "lcp_ms": 1443.382,
         "cls": 0.03653711186357615,
-        "tbt_ms": 20
+        "tbt_ms": 0
       }
     },
     "/preguntas-frecuentes/": {
@@ -177,9 +191,9 @@
         "accesibilidad": 100,
         "seo": 100,
         "buenas_practicas": 100,
-        "lcp_ms": 1453.1950000000002,
+        "lcp_ms": 1451.411,
         "cls": 0.02420429635326436,
-        "tbt_ms": 0
+        "tbt_ms": 22
       }
     }
   },
@@ -273,25 +287,24 @@
         }
       },
       {
-        "ruta": "/servicios-humanaia/desarrollo-ia-a-medida/",
-        "url": "https://nueva.humannaia.com/servicios-humanaia/desarrollo-ia-a-medida/",
-        "estado": 404,
-        "titulo": "Página no encontrada - HumanaIA",
-        "descripcion": null,
+        "ruta": "/servicios-humanaia/desarrollo-aplicaciones-software-webs/",
+        "url": "https://nueva.humannaia.com/servicios-humanaia/desarrollo-aplicaciones-software-webs/",
+        "estado": 200,
+        "titulo": "Desarrollo de apps móviles, software y webs | HumanaIA",
+        "descripcion": "Desarrollamos aplicaciones móviles, software a medida y webs para tu empresa. De la idea a una solución útil, con integraciones e IA cuando aporten valor.",
         "h1": 1,
-        "imagenes": 3,
+        "imagenes": 2,
         "imagenes_sin_alt": 0,
         "imagenes_alt_vacio": 0,
-        "canonical": null,
-        "og_image": null,
+        "canonical": "https://nueva.humannaia.com/servicios-humanaia/desarrollo-aplicaciones-software-webs/",
+        "og_image": "https://nueva.humannaia.com/wp-content/uploads/2026/10/logo-humanaia.webp",
         "idioma": "es",
-        "json_ld": 1,
+        "json_ld": 2,
         "enlaces_rotos": [],
         "puntuacion": {
-          "nota": 0,
-          "fallos": [
-            "La página no responde"
-          ]
+          "nota": 100,
+          "fallos": [],
+          "avisos": []
         }
       },
       {

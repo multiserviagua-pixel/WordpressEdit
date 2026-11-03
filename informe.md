@@ -4,18 +4,20 @@ Web medida: https://nueva.humannaia.com
 
 > Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base del 21/10/2026 midió otra web (humannaia.com) y otras páginas: queda como referencia histórica y no se compara. Añade aquí cada página publicada. Las páginas legales no se miden: no son páginas de captación y su título corto es intencionado.
 
-**Índice: 98.3 / 100** · meta 85 · medido el 50 % del peso total
+**Ruta nueva Desarrollo (#57)**
+
+**Índice: 100 / 100** · meta 85 · medido el 50 % del peso total
 
 - Línea base (2026-10-21, https://humannaia.com): 71.5. **Referencia histórica, no comparable:** se midió otra web, con otras páginas y sin omitir auditorías. No se calculan evolución ni avance hacia la meta frente a ella.
-- Evolución desde la medición anterior comparable (2026-11-02): **0 %**
+- Primera medición de esta web y estas páginas: todavía no hay una medición anterior comparable.
 
 ## Bloques
 
 | Bloque | Peso | Referencia histórica (no comparable) | Anterior | Actual | vs base | vs anterior |
 | --- | --- | --- | --- | --- | --- | --- |
-| Rendimiento | 20 % | 54.1 | 100 | 100 | — | 0 % |
-| Accesibilidad | 15 % | 95.1 | 100 | 100 | — | 0 % |
-| SEO técnico | 15 % | 71 | 94.4 | 94.4 | — | 0 % |
+| Rendimiento | 20 % | 54.1 | — | 100 | — | — |
+| Accesibilidad | 15 % | 95.1 | — | 100 | — | — |
+| SEO técnico | 15 % | 71 | — | 100 | — | — |
 | Contenido | 20 % | — | — | — | — | — |
 | Comprensión | 15 % | — | — | — | — | — |
 | Conversión | 15 % | — | — | — | — | — |
@@ -26,15 +28,15 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 | Página | Rendimiento | Accesibilidad | SEO | Buenas prácticas | LCP | CLS | TBT | Checklist SEO |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | 95 | 96 | 100 | 100 | 2.22 s | 0.049 | 113 ms | 100 |
-| /servicios-humanaia/ | 98 | 100 | 100 | 100 | 1.52 s | 0.069 | 28 ms | 100 |
-| /servicios-humanaia/consultoria-ia/ | 97 | 100 | 100 | 100 | 1.93 s | 0.021 | 0 ms | 100 |
-| /servicios-humanaia/automatizacion-procesos-ia/ | 99 | 100 | 100 | 100 | 1.51 s | 0.069 | 3 ms | 100 |
-| /servicios-humanaia/desarrollo-ia-a-medida/ | — | — | — | — | — | — | — | 0 |
-| /servicios-humanaia/formacion-ia-empresas/ | 98 | 100 | 100 | 100 | 1.93 s | 0.068 | 10 ms | 100 |
-| /servicios-humanaia/escuela-negocios-ia/ | 99 | 100 | 100 | 100 | 1.52 s | 0.022 | 0 ms | 100 |
-| /servicios-humanaia/ia-educacion-docentes/ | 100 | 100 | 100 | 100 | 1.51 s | 0.037 | 20 ms | 100 |
-| /preguntas-frecuentes/ | 100 | 100 | 100 | 100 | 1.45 s | 0.024 | 0 ms | 100 |
+| / | 98 | 96 | 100 | 100 | 2.17 s | 0.049 | 68 ms | 100 |
+| /servicios-humanaia/ | 99 | 100 | 100 | 100 | 1.45 s | 0.069 | 16 ms | 100 |
+| /servicios-humanaia/consultoria-ia/ | 100 | 100 | 100 | 100 | 1 s | 0.021 | 10 ms | 100 |
+| /servicios-humanaia/automatizacion-procesos-ia/ | 99 | 100 | 100 | 100 | 1.43 s | 0.069 | 34 ms | 100 |
+| /servicios-humanaia/desarrollo-aplicaciones-software-webs/ | 99 | 100 | 100 | 100 | 1.6 s | 0.019 | 21 ms | 100 |
+| /servicios-humanaia/formacion-ia-empresas/ | 98 | 100 | 100 | 100 | 1.93 s | 0.068 | 12 ms | 100 |
+| /servicios-humanaia/escuela-negocios-ia/ | 99 | 100 | 100 | 100 | 1.64 s | 0.022 | 2 ms | 100 |
+| /servicios-humanaia/ia-educacion-docentes/ | 100 | 100 | 100 | 100 | 1.44 s | 0.037 | 0 ms | 100 |
+| /preguntas-frecuentes/ | 100 | 100 | 100 | 100 | 1.45 s | 0.024 | 22 ms | 100 |
 
 ## Qué corregir (checklist SEO)
 
@@ -47,8 +49,7 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 **/servicios-humanaia/automatizacion-procesos-ia/** — sin fallos
 
-**/servicios-humanaia/desarrollo-ia-a-medida/**
-- La página no responde
+**/servicios-humanaia/desarrollo-aplicaciones-software-webs/** — sin fallos
 
 **/servicios-humanaia/formacion-ia-empresas/** — sin fallos
 
@@ -64,6 +65,7 @@ Enlaces internos comprobados: 12 · rotos: 0
 
 | Fecha | Índice | Cobertura | Etiqueta |
 | --- | --- | --- | --- |
+| 2026-11-03 | 100 | 50 % | Ruta nueva Desarrollo (#57) |
 | 2026-11-03 | 98.3 | 50 % |  |
 | 2026-11-02 | 98.3 | 50 % |  |
 | 2026-11-01 | 98.3 | 50 % |  |
