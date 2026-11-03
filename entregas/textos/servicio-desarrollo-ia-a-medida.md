@@ -1,6 +1,6 @@
 ---
-pagina: "Desarrollo de aplicaciones, software y webs"
-url_copia: "https://nueva.humannaia.com/servicios-humanaia/desarrollo-ia-a-medida/"
+pagina: "Apps, software y webs"
+url_copia: "https://nueva.humannaia.com/servicios-humanaia/desarrollo-aplicaciones-software-webs/"
 palabra_clave: "desarrollo de software a medida"
 titulo_seo: "Desarrollo de apps móviles, software y webs | HumanaIA"
 meta_descripcion: "Desarrollamos aplicaciones móviles, software a medida y webs para tu empresa. De la idea a una solución útil, con integraciones e IA cuando aporten valor."
@@ -123,3 +123,7 @@ Claude debe coordinar las referencias de portada, catálogo, FAQ y fichas relaci
 Se conservan archivo y URL vigentes para no ejecutar una migración técnica sin coordinación. La ruta contiene desarrollo-ia-a-medida: Claude propone la decisión técnica sobre ruta y enlaces antes de cambiarla y evita páginas duplicadas.
 
 Solo cuerpo publicable y metadatos se llevan a nueva.humannaia.com tras revisión y unión. Las notas y el frontmatter no van al cuerpo. Registrar evidencia de montaje; mantener noindex hasta desarrollo completo y aprobación humana expresa de lanzamiento. ChatGPT no modifica WordPress; humannaia.com y /staging no se tocan.
+
+### Revisión final · 03/11/2026 · #60
+
+Texto y referencias alineados con el alcance confirmado de apps móviles, software y webs. Etiqueta corta confirmada por encargo humano: «Apps, software y webs». La ficha mantiene su H1 descriptivo completo. Cambios de esta revisión sustituyen las indicaciones históricas incompatibles; no se retiran notas de trazabilidad. Solo publicar el cuerpo anterior a Notas internas.

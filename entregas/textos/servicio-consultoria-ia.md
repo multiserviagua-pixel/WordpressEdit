@@ -25,7 +25,7 @@ Escuchamos qué necesitas, cómo trabaja tu equipo y qué herramientas utiliza. 
 
 ### Identificar oportunidades y prioridades
 
-Valoramos qué necesidades pueden abordarse con automatización, desarrollo a medida o formación, y trazamos un plan de implantación adecuado al contexto.
+Valoramos qué necesidades pueden abordarse con automatización, aplicaciones, software, webs o formación, y trazamos un plan de implantación adecuado al contexto.
 
 ### Acompañar la puesta en práctica
 
@@ -47,7 +47,7 @@ No. Puedes empezar explicando qué quieres resolver y cómo trabajáis. La elecc
 
 ### ¿La consultoría incluye desarrollar una solución?
 
-El desarrollo puede formar parte del trabajo posterior, y concretamos su alcance contigo. Lo concretamos contigo al definir el proyecto.
+El desarrollo puede formar parte del trabajo posterior. Definimos contigo su alcance al plantear el proyecto.
 
 ### ¿Puedo combinar consultoría y formación?
 
@@ -92,3 +92,7 @@ Objetivo: consultoría IA. 320/mes atribuidos a Claude/OpenRush. Título: 52 car
 ### Respuesta a revisión de Claude · 29/10/2026
 
 Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. La persona responsable aclara que estos archivos forman parte de Git: se aplica la nomenclatura del proyecto, con minúsculas y guiones. Los nombres con espacios se reservan a las exportaciones para enviar fuera del repositorio. Referencias locales actualizadas.
+
+### Revisión final · 03/11/2026 · #60
+
+Texto y referencias alineados con el alcance confirmado de apps móviles, software y webs. Etiqueta corta confirmada por encargo humano: «Apps, software y webs». La ficha mantiene su H1 descriptivo completo. Cambios de esta revisión sustituyen las indicaciones históricas incompatibles; no se retiran notas de trazabilidad. Solo publicar el cuerpo anterior a Notas internas.

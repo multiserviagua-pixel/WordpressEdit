@@ -17,7 +17,7 @@ Estas preguntas frecuentes te ayudan a entender qué hacemos, cómo plantear una
 
 ### ¿Qué hace HumanaIA?
 
-Trabajamos en consultoría, automatización de procesos, desarrollo a medida y formación en inteligencia artificial. La propuesta combina tecnología y aprendizaje para incorporarlos al trabajo de organizaciones y personas.
+Ofrecemos consultoría y automatización de procesos, creamos aplicaciones móviles, software a medida y webs, y formamos en inteligencia artificial. La propuesta combina tecnología y aprendizaje para incorporarlos al trabajo de organizaciones y personas.
 
 ### ¿Cómo sé si necesito consultoría, automatización o desarrollo?
 
@@ -100,3 +100,7 @@ Objetivo: preguntas frecuentes HumanaIA. Objetivo de marca y utilidad, sin volum
 ### Respuesta a revisión de Claude · 29/10/2026
 
 Se retira la referencia pública a FUNDAE; cualquier observación sobre ello es interna. El texto comercial se expresa en positivo, manteniendo alcance y condiciones verificables. La persona responsable aclara que estos archivos forman parte de Git: se aplica la nomenclatura del proyecto, con minúsculas y guiones. Los nombres con espacios se reservan a las exportaciones para enviar fuera del repositorio. Referencias locales actualizadas.
+
+### Revisión final · 03/11/2026 · #60
+
+Texto y referencias alineados con el alcance confirmado de apps móviles, software y webs. Etiqueta corta confirmada por encargo humano: «Apps, software y webs». La ficha mantiene su H1 descriptivo completo. Cambios de esta revisión sustituyen las indicaciones históricas incompatibles; no se retiran notas de trazabilidad. Solo publicar el cuerpo anterior a Notas internas.
