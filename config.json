@@ -1,10 +1,8 @@
 {
-  "sitio": "https://nueva.humannaia.com",
-  "nombre": "Nueva web (nueva.humannaia.com)",
-  "omitir_auditorias": [
-    "is-crawlable"
-  ],
-  "nota": "Se mide la nueva web, la construida y aceptada, desde el 27/10/2026. Está sin indexar a propósito hasta el lanzamiento, por eso Lighthouse omite la auditoría «is-crawlable». La línea base del 21/10/2026 midió otra web (humannaia.com) y otras páginas: queda como referencia histórica y no se compara. Añade aquí cada página publicada. Las páginas legales no se miden: no son páginas de captación y su título corto es intencionado.",
+  "sitio": "https://humannaia.com",
+  "nombre": "Web HumanaIA (humannaia.com)",
+  "omitir_auditorias": [],
+  "nota": "Desde el 03/11/2026 se mide humannaia.com: la nueva web se pasó al dominio real con WP Toolkit (#60). Ya es indexable, así que Lighthouse vuelve a evaluar «is-crawlable». Las mediciones anteriores (27/10–03/11) son de nueva.humannaia.com, con las mismas rutas. La línea base del 21/10 midió la web antigua: referencia histórica, no comparable. Las páginas legales no se miden. Añade aquí cada página publicada.",
   "urls": [
     "/",
     "/servicios-humanaia/",
