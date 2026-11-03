@@ -3,7 +3,7 @@ pagina: inicio
 url_copia: https://nueva.humannaia.com/
 palabra_clave: consultoría IA
 titulo_seo: "Consultoría IA, automatización y formación | HumanaIA"
-meta_descripcion: "Aplicamos la inteligencia artificial a tu organización con consultoría, automatización, desarrollo a medida y formación práctica. Conoce HumanaIA."
+meta_descripcion: "Consultoría IA, automatización, apps, software, webs y formación para tu organización. En HumanaIA conectamos tecnología y personas. Cuéntanos qué necesitas."
 estado: en revisión
 ---
 
@@ -20,7 +20,7 @@ Elige la situación que más se parece a la tuya y descubre qué servicio puede 
 
 - **Consultoría:** «Sabemos que la IA podría ayudarnos, pero no por dónde empezar».
 - **Automatización:** «Dedicamos demasiado tiempo a tareas repetitivas».
-- **Desarrollo a medida:** «Ninguna herramienta encaja con nuestra forma de trabajar».
+- **Apps, software y webs:** «Queremos crear una app, una web o una herramienta propia».
 - **Formación:** «El equipo necesita aprender a usar la IA con criterio».
 
 ## La IA no sustituye el criterio. Lo necesita.
@@ -41,9 +41,9 @@ Para empresas, administraciones, colectivos e instituciones. Identificamos neces
 
 Flujos y agentes de IA que conectan herramientas y ayudan a reducir tareas repetitivas. El alcance se define a partir de tus procesos.
 
-### Desarrollo a medida
+### Apps, software y webs
 
-Soluciones con inteligencia artificial e integraciones adaptadas a los sistemas que ya utilizas.
+Aplicaciones móviles, software a medida y webs para tu empresa, con integraciones e inteligencia artificial cuando aporten valor.
 
 ### Formación para equipos
 
@@ -90,9 +90,9 @@ Unimos experiencia en comunicación, formación y proyectos de inteligencia arti
 
 Partimos de las tareas y herramientas que utilizas para valorar qué procesos pueden automatizarse. El primer paso es conocer tu caso y definir el alcance.
 
-### ¿Hacéis desarrollos a medida o solo formación?
+### ¿Creáis apps, software y webs o solo ofrecéis formación?
 
-Trabajamos en consultoría, automatización y desarrollo a medida, además de formación. Podemos combinar estas líneas según lo que necesite tu organización.
+Creamos aplicaciones móviles, software a medida y webs, además de ofrecer consultoría, automatización y formación en IA. Podemos combinar estos servicios según lo que necesite tu organización.
 
 ### ¿Necesito conocimientos técnicos?
 
@@ -136,3 +136,7 @@ Se conservan teléfono y dirección ya presentes; no se modifican ni se añaden 
 La pregunta sobre ubicaciones de formación queda fuera del texto publicable hasta confirmar la respuesta: [PENDIENTE DE CONFIRMAR: ubicaciones y condiciones de desplazamiento para cada programa]. No se afirma cobertura geográfica.
 
 Los rótulos CTA y «Siguiente paso de cada servicio» son indicaciones para convertir en botones/enlaces, no texto literal de interfaz. Los metadatos del encabezado son campos SEO, no contenido visible. El bloque «Notas internas» y todos sus subapartados quedan fuera de WordPress.
+
+### Revisión final · 03/11/2026 · #60
+
+Texto y referencias alineados con el alcance confirmado de apps móviles, software y webs. Etiqueta corta confirmada por encargo humano: «Apps, software y webs». La ficha mantiene su H1 descriptivo completo. Cambios de esta revisión sustituyen las indicaciones históricas incompatibles; no se retiran notas de trazabilidad. Solo publicar el cuerpo anterior a Notas internas.

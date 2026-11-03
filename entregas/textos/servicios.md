@@ -3,17 +3,17 @@ pagina: "Servicios de inteligencia artificial"
 url_copia: "https://nueva.humannaia.com/servicios-humanaia/"
 palabra_clave: "servicios de inteligencia artificial"
 titulo_seo: "Servicios de inteligencia artificial aplicada | HumanaIA"
-meta_descripcion: "Explora los servicios de inteligencia artificial de HumanaIA: consultoría, automatización, desarrollo a medida y formación. Encuentra por dónde empezar."
+meta_descripcion: "Explora los servicios de HumanaIA: consultoría IA, automatización, aplicaciones móviles, software, webs y formación. Encuentra cómo dar el siguiente paso."
 estado: en revisión
 ---
 
 # Servicios de inteligencia artificial
 
-Aplicar IA a un proceso, desarrollar una solución o aprender a utilizarla requieren puntos de partida distintos. Explora los servicios de inteligencia artificial de HumanaIA y encuentra el que responde a tu necesidad.
+Aplicar IA a un proceso, crear una app o una web y aprender a utilizar la tecnología requieren puntos de partida distintos. Explora los servicios de inteligencia artificial de HumanaIA y encuentra el que responde a tu necesidad.
 
 [Cuéntanos qué necesitas](https://nueva.humannaia.com/#contacto)
 
-## Aplicar la IA a tu organización
+## Tecnología para tu organización
 
 ### Consultoría IA aplicada
 
@@ -23,9 +23,9 @@ Si necesitas decidir por dónde empezar, la consultoría identifica necesidades 
 
 Si el trabajo se repite entre tareas y herramientas, valoramos flujos y agentes de IA que ayuden a reducir esa repetición.
 
-### Desarrollo a medida
+### Apps, software y webs
 
-Si las herramientas disponibles no encajan con vuestro trabajo, planteamos soluciones e integraciones adaptadas a los sistemas que utilizáis.
+Aplicaciones móviles, software a medida y webs para tu empresa, con integraciones e inteligencia artificial cuando aporten valor.
 
 ## Aprender a utilizar la IA
 
@@ -80,3 +80,7 @@ La integración de esta entrega ordinaria no acepta la página terminada. Claude
 ### Comprobación específica de esta entrega
 
 Objetivo: servicios de inteligencia artificial. 90/mes atribuidos a Claude/OpenRush; intención de comparar servicios. Título: 56 caracteres; meta: 152; H1 único. Ruta del mapa #9; confirmar inventario actual antes de montar. El campo url_copia indica destino editorial, no una página ya existente. Issue #48.
+
+### Revisión final · 03/11/2026 · #60
+
+Texto y referencias alineados con el alcance confirmado de apps móviles, software y webs. Etiqueta corta confirmada por encargo humano: «Apps, software y webs». La ficha mantiene su H1 descriptivo completo. Cambios de esta revisión sustituyen las indicaciones históricas incompatibles; no se retiran notas de trazabilidad. Solo publicar el cuerpo anterior a Notas internas.
