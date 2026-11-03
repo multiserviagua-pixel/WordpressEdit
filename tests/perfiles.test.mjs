@@ -2,13 +2,13 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { perfiles } from '../scripts/lib/config.mjs';
 
-test('se mide la nueva web y se omite is-crawlable mientras esté en noindex', async () => {
+test('tras el lanzamiento se mide humannaia.com sin omitir is-crawlable', async () => {
   delete process.env.SITIO;
   const lista = await perfiles();
   assert.equal(lista.length, 1);
   const [web] = lista;
-  assert.equal(web.sitio, 'https://nueva.humannaia.com');
-  assert.deepEqual(web.omitir_auditorias, ['is-crawlable']);
+  assert.equal(web.sitio, 'https://humannaia.com');
+  assert.deepEqual(web.omitir_auditorias, []);
   assert.ok(web.informe.endsWith('informe.md'));
   assert.ok(web.resultados.endsWith('resultados'));
 });
