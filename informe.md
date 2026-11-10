@@ -1,4 +1,4 @@
-# Índice HumanaIA · 2026-11-09
+# Índice HumanaIA · 2026-11-10
 
 Web medida: https://nueva.humannaia.com
 
@@ -7,7 +7,7 @@ Web medida: https://nueva.humannaia.com
 **Índice: 100 / 100** · meta 85 · medido el 50 % del peso total
 
 - Línea base (2026-10-21, https://humannaia.com): 71.5. **Referencia histórica, no comparable:** se midió otra web, con otras páginas y sin omitir auditorías. No se calculan evolución ni avance hacia la meta frente a ella.
-- Evolución desde la medición anterior comparable (2026-11-08): **0 %**
+- Evolución desde la medición anterior comparable (2026-11-09): **0 %**
 
 ## Bloques
 
@@ -26,15 +26,15 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 | Página | Rendimiento | Accesibilidad | SEO | Buenas prácticas | LCP | CLS | TBT | Checklist SEO |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | 95 | 96 | 100 | 100 | 2.2 s | 0 | 165 ms | 100 |
-| /servicios-humanaia/ | 99 | 100 | 100 | 100 | 1.92 s | 0 | 2 ms | 100 |
-| /servicios-humanaia/consultoria-ia/ | 99 | 100 | 100 | 100 | 1.91 s | 0 | 20 ms | 100 |
-| /servicios-humanaia/automatizacion-procesos-ia/ | 100 | 100 | 100 | 100 | 1.59 s | 0 | 0 ms | 100 |
-| /servicios-humanaia/desarrollo-aplicaciones-software-webs/ | 99 | 100 | 100 | 100 | 1.91 s | 0 | 3 ms | 100 |
-| /servicios-humanaia/formacion-ia-empresas/ | 99 | 100 | 100 | 100 | 1.52 s | 0 | 2 ms | 100 |
-| /servicios-humanaia/escuela-negocios-ia/ | 99 | 100 | 100 | 100 | 1.91 s | 0 | 0 ms | 100 |
-| /servicios-humanaia/ia-educacion-docentes/ | 99 | 100 | 100 | 100 | 1.92 s | 0 | 26 ms | 100 |
-| /preguntas-frecuentes/ | 99 | 100 | 100 | 100 | 1.92 s | 0 | 2 ms | 100 |
+| / | 98 | 96 | 100 | 100 | 2.33 s | 0 | 2 ms | 100 |
+| /servicios-humanaia/ | 100 | 100 | 100 | 100 | 1.56 s | 0 | 0 ms | 100 |
+| /servicios-humanaia/consultoria-ia/ | 100 | 100 | 100 | 100 | 0.94 s | 0 | 3 ms | 100 |
+| /servicios-humanaia/automatizacion-procesos-ia/ | 100 | 100 | 100 | 100 | 1.57 s | 0 | 8 ms | 100 |
+| /servicios-humanaia/desarrollo-aplicaciones-software-webs/ | 100 | 100 | 100 | 100 | 1.56 s | 0 | 9 ms | 100 |
+| /servicios-humanaia/formacion-ia-empresas/ | 99 | 100 | 100 | 100 | 1.9 s | 0 | 8 ms | 100 |
+| /servicios-humanaia/escuela-negocios-ia/ | 100 | 100 | 100 | 100 | 1.56 s | 0 | 2 ms | 100 |
+| /servicios-humanaia/ia-educacion-docentes/ | 100 | 100 | 100 | 100 | 1.51 s | 0 | 2 ms | 100 |
+| /preguntas-frecuentes/ | 99 | 100 | 100 | 100 | 1.9 s | 0 | 30 ms | 100 |
 
 ## Qué corregir (checklist SEO)
 
@@ -63,6 +63,7 @@ Enlaces internos comprobados: 12 · rotos: 0
 
 | Fecha | Índice | Cobertura | Etiqueta |
 | --- | --- | --- | --- |
+| 2026-11-10 | 100 | 50 % |  |
 | 2026-11-09 | 100 | 50 % |  |
 | 2026-11-08 | 100 | 50 % |  |
 | 2026-11-07 | 100 | 50 % |  |
