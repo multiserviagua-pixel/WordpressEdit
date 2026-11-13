@@ -391,5 +391,21 @@
     },
     "sitio": "https://nueva.humannaia.com",
     "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-aplicaciones-software-webs/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable"
+  },
+  {
+    "fecha": "2026-11-13",
+    "etiqueta": null,
+    "indice": 98.3,
+    "cobertura": 50,
+    "bloques": {
+      "rendimiento": 95.8,
+      "accesibilidad": 100,
+      "seo": 100,
+      "contenido": null,
+      "comprension": null,
+      "conversion": null
+    },
+    "sitio": "https://nueva.humannaia.com",
+    "objeto": "https://nueva.humannaia.com | /,/servicios-humanaia/,/servicios-humanaia/consultoria-ia/,/servicios-humanaia/automatizacion-procesos-ia/,/servicios-humanaia/desarrollo-aplicaciones-software-webs/,/servicios-humanaia/formacion-ia-empresas/,/servicios-humanaia/escuela-negocios-ia/,/servicios-humanaia/ia-educacion-docentes/,/preguntas-frecuentes/ | is-crawlable"
   }
 ]
