@@ -1,4 +1,4 @@
-# Índice HumanaIA · 2026-11-15
+# Índice HumanaIA · 2026-11-16
 
 Web medida: https://nueva.humannaia.com
 
@@ -7,7 +7,7 @@ Web medida: https://nueva.humannaia.com
 **Índice: 100 / 100** · meta 85 · medido el 50 % del peso total
 
 - Línea base (2026-10-21, https://humannaia.com): 71.5. **Referencia histórica, no comparable:** se midió otra web, con otras páginas y sin omitir auditorías. No se calculan evolución ni avance hacia la meta frente a ella.
-- Evolución desde la medición anterior comparable (2026-11-14): **+0.1 %**
+- Evolución desde la medición anterior comparable (2026-11-15): **0 %**
 
 ## Bloques
 
@@ -15,7 +15,7 @@ Web medida: https://nueva.humannaia.com
 | --- | --- | --- | --- | --- | --- | --- |
 | Rendimiento | 20 % | 54.1 | 100 | 100 | — | 0 % |
 | Accesibilidad | 15 % | 95.1 | 100 | 100 | — | 0 % |
-| SEO técnico | 15 % | 71 | 99.6 | 100 | — | +0.4 % |
+| SEO técnico | 15 % | 71 | 100 | 100 | — | 0 % |
 | Contenido | 20 % | — | — | — | — | — |
 | Comprensión | 15 % | — | — | — | — | — |
 | Conversión | 15 % | — | — | — | — | — |
@@ -26,15 +26,15 @@ Sin nota manual todavía: Contenido, Comprensión, Conversión. Se rellenan en `
 
 | Página | Rendimiento | Accesibilidad | SEO | Buenas prácticas | LCP | CLS | TBT | Checklist SEO |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| / | 98 | 96 | 100 | 100 | 1.27 s | 0.049 | 7 ms | 100 |
-| /servicios-humanaia/ | 100 | 100 | 100 | 100 | 0.93 s | 0 | 10 ms | 100 |
-| /servicios-humanaia/consultoria-ia/ | 100 | 100 | 100 | 100 | 1.06 s | 0 | 0 ms | 100 |
-| /servicios-humanaia/automatizacion-procesos-ia/ | 100 | 100 | 100 | 100 | 0.95 s | 0 | 0 ms | 100 |
-| /servicios-humanaia/desarrollo-aplicaciones-software-webs/ | 99 | 100 | 100 | 100 | 1.67 s | 0 | 0 ms | 100 |
-| /servicios-humanaia/formacion-ia-empresas/ | 99 | 100 | 100 | 100 | 1.67 s | 0 | 90 ms | 100 |
-| /servicios-humanaia/escuela-negocios-ia/ | 99 | 100 | 100 | 100 | 1.51 s | 0 | 10 ms | 100 |
-| /servicios-humanaia/ia-educacion-docentes/ | 99 | 100 | 100 | 100 | 0.95 s | 0 | 86 ms | 100 |
-| /preguntas-frecuentes/ | 100 | 100 | 100 | 100 | 0.95 s | 0 | 0 ms | 100 |
+| / | 98 | 96 | 100 | 100 | 2.12 s | 0 | 107 ms | 100 |
+| /servicios-humanaia/ | 100 | 100 | 100 | 100 | 1.51 s | 0 | 0 ms | 100 |
+| /servicios-humanaia/consultoria-ia/ | 100 | 100 | 100 | 100 | 1.51 s | 0 | 0 ms | 100 |
+| /servicios-humanaia/automatizacion-procesos-ia/ | 100 | 100 | 100 | 100 | 1.55 s | 0 | 0 ms | 100 |
+| /servicios-humanaia/desarrollo-aplicaciones-software-webs/ | 100 | 100 | 100 | 100 | 1.55 s | 0 | 1 ms | 100 |
+| /servicios-humanaia/formacion-ia-empresas/ | 100 | 100 | 100 | 100 | 1.51 s | 0 | 0 ms | 100 |
+| /servicios-humanaia/escuela-negocios-ia/ | 100 | 100 | 100 | 100 | 1.51 s | 0 | 38 ms | 100 |
+| /servicios-humanaia/ia-educacion-docentes/ | 99 | 100 | 100 | 100 | 1.89 s | 0 | 0 ms | 100 |
+| /preguntas-frecuentes/ | 99 | 100 | 100 | 100 | 1.89 s | 0 | 51 ms | 100 |
 
 ## Qué corregir (checklist SEO)
 
@@ -63,6 +63,7 @@ Enlaces internos comprobados: 12 · rotos: 0
 
 | Fecha | Índice | Cobertura | Etiqueta |
 | --- | --- | --- | --- |
+| 2026-11-16 | 100 | 50 % |  |
 | 2026-11-15 | 100 | 50 % |  |
 | 2026-11-14 | 99.9 | 50 % |  |
 | 2026-11-13 | 98.3 | 50 % |  |
